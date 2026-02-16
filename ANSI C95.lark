@@ -152,7 +152,7 @@ type_specifier: VOID
 	// | SIGNED
 	// | UNSIGNED
 	| struct_or_union_specifier
-	| enum_specifier
+	// | enum_specifier
 	| TYPE_NAME
 
 
@@ -187,17 +187,17 @@ struct_declarator: declarator
 	| declarator ":" constant_expression
 
 
-enum_specifier: ENUM "{" enumerator_list "}"
-	| ENUM IDENTIFIER "{" enumerator_list "}"
-	| ENUM IDENTIFIER
+// enum_specifier: ENUM "{" enumerator_list "}"
+// 	| ENUM IDENTIFIER "{" enumerator_list "}"
+// 	| ENUM IDENTIFIER
 
 
-enumerator_list: enumerator
-	| enumerator_list "," enumerator
+// enumerator_list: enumerator
+// 	| enumerator_list "," enumerator
 
 
-enumerator: IDENTIFIER
-	| IDENTIFIER "=" constant_expression
+// enumerator: IDENTIFIER
+// 	| IDENTIFIER "=" constant_expression
 
 
 type_qualifier: CONST
@@ -358,7 +358,7 @@ CONTINUE: "continue"
 DO: "do"
 DOUBLE: "double"
 ELSE: "else"
-ENUM: "enum"
+// ENUM: "enum"
 // EXTERN: "extern"
 FLOAT: "float"
 FOR: "for"
