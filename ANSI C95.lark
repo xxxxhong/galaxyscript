@@ -3,6 +3,9 @@ start: translation_unit
 primary_expression: IDENTIFIER
 	| CONSTANT
 	| STRING_LITERAL
+	| TRUE
+    | FALSE
+    | NULL
 	| "(" expression ")"
 
 postfix_expression: primary_expression
@@ -95,7 +98,7 @@ assignment_expression: conditional_expression
 	| unary_expression assignment_operator assignment_expression
 
 
-assignment_operator: "="
+assignment_operator: ASSIGN
 	| MUL_ASSIGN
 	// | DIV_ASSIGN
 	// | MOD_ASSIGN
@@ -397,6 +400,9 @@ ELSE: "else"
 // FLOAT: "float"
 FIXED: "fixed"
 BOOL: "bool"
+TRUE: "true"
+FALSE: "false" 
+NULL: "null"
 STRING: "string"
 FOR: "for"
 // GOTO: "goto"
@@ -453,6 +459,7 @@ BREAKPOINT: "breakpoint"
 // ELLIPSIS: "..."
 // RIGHT_ASSIGN: ">>="
 // LEFT_ASSIGN: "<<="
+ASSIGN: "="
 ADD_ASSIGN: "+="
 SUB_ASSIGN: "-="
 MUL_ASSIGN: "*="
