@@ -11,8 +11,8 @@ postfix_expression: primary_expression
 	| postfix_expression "(" argument_expression_list ")"
 	| postfix_expression "." IDENTIFIER
 	| postfix_expression PTR_OP IDENTIFIER
-	| postfix_expression INC_OP
-	| postfix_expression DEC_OP
+	// | postfix_expression INC_OP
+	// | postfix_expression DEC_OP
 
 
 argument_expression_list: assignment_expression
@@ -20,8 +20,8 @@ argument_expression_list: assignment_expression
 
 
 unary_expression: postfix_expression
-	| INC_OP unary_expression
-	| DEC_OP unary_expression
+	// | INC_OP unary_expression
+	// | DEC_OP unary_expression
 	| unary_operator cast_expression
 	| SIZEOF unary_expression
 	| SIZEOF "(" type_name ")"
@@ -97,15 +97,15 @@ assignment_expression: conditional_expression
 
 assignment_operator: "="
 	| MUL_ASSIGN
-	| DIV_ASSIGN
-	| MOD_ASSIGN
+	// | DIV_ASSIGN
+	// | MOD_ASSIGN
 	| ADD_ASSIGN
 	| SUB_ASSIGN
-	| LEFT_ASSIGN
-	| RIGHT_ASSIGN
-	| AND_ASSIGN
-	| XOR_ASSIGN
-	| OR_ASSIGN
+	// | LEFT_ASSIGN
+	// | RIGHT_ASSIGN
+	// | AND_ASSIGN
+	// | XOR_ASSIGN
+	// | OR_ASSIGN
 
 
 expression: assignment_expression
@@ -229,7 +229,7 @@ type_qualifier_list: type_qualifier
 
 
 parameter_type_list: parameter_list
-	| parameter_list "," ELLIPSIS
+	// | parameter_list "," ELLIPSIS
 
 
 parameter_list: parameter_declaration
@@ -370,21 +370,21 @@ VOID: "void"
 VOLATILE: "volatile"
 WHILE: "while"
 
-ELLIPSIS: "..."
-RIGHT_ASSIGN: ">>="
-LEFT_ASSIGN: "<<="
+// ELLIPSIS: "..."
+// RIGHT_ASSIGN: ">>="
+// LEFT_ASSIGN: "<<="
 ADD_ASSIGN: "+="
 SUB_ASSIGN: "-="
 MUL_ASSIGN: "*="
-DIV_ASSIGN: "/="
-MOD_ASSIGN: "%="
-AND_ASSIGN: "&="
-XOR_ASSIGN: "^="
-OR_ASSIGN: "|="
+// DIV_ASSIGN: "/="
+// MOD_ASSIGN: "%="
+// AND_ASSIGN: "&="
+// XOR_ASSIGN: "^="
+// OR_ASSIGN: "|="
 RIGHT_OP: ">>"
 LEFT_OP: "<<"
-INC_OP: "++"
-DEC_OP: "--"
+// INC_OP: "++"
+// DEC_OP: "--"
 PTR_OP: "->"
 AND_OP: "&&"
 OR_OP: "||"
