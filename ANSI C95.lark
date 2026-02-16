@@ -156,6 +156,8 @@ type_specifier: VOID
 	// | UNSIGNED
 	// | enum_specifier
 	// | TYPE_NAME
+	| UNITFILTER
+	| UNITGROUP
 	| UNIT
 	| POINT
 	| TIMER
@@ -165,7 +167,6 @@ type_specifier: VOID
 	| ACTOR
 	| REVEALER
 	| PLAYERGROUP
-	| UNITGROUP
 	| TEXT
 	| SOUND
 	| SOUNDLINK
@@ -177,7 +178,6 @@ type_specifier: VOID
 	| CAMERAINFO
 	| ACTORSCOPE
 	| AIFILTER
-	| UNITFILTER
 	| WAVETARGET
 	| EFFECTHISTORY
 	| BITMASK
@@ -404,19 +404,22 @@ IF: "if"
 INT: "int"
 LONG: "long"
 // REGISTER: "register"
+UNITGROUP: "unitgroup"
+UNITFILTER: "unitfilter"
 UNIT: "unit"
 POINT: "point"
 TIMER: "timer"
 REGION: "region"
 TRIGGER: "trigger"
+WAVEINFO: "waveinfo"
+WAVETARGET: "wavetarget"
 WAVE: "wave"
 ACTOR: "actor"
 REVEALER: "revealer"
 PLAYERGROUP: "playergroup"
-UNITGROUP: "unitgroup"
 TEXT: "text"
-SOUND: "sound"
 SOUNDLINK: "soundlink"
+SOUND: "sound"
 COLOR: "color"
 ABILCMD: "abilcmd"
 ORDER: "order"
@@ -425,8 +428,6 @@ BANK: "bank"
 CAMERAINFO: "camerainfo"
 ACTORSCOPE: "actorscope"
 AIFILTER: "aifilter"
-UNITFILTER: "unitfilter"
-WAVETARGET: "wavetarget"
 EFFECTHISTORY: "effecthistory"
 BITMASK: "bitmask"
 DATETIME: "datetime"
@@ -434,7 +435,6 @@ DOODAD: "doodad"
 GENERICHANDLE: "generichandle"
 TRANSMISSIONSOURCE: "transmissionsource"
 UNITREF: "unitref"
-WAVEINFO: "waveinfo"
 RETURN: "return"
 // SHORT: "short"
 // SIGNED: "signed"
