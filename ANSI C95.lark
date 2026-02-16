@@ -147,8 +147,8 @@ type_specifier: VOID
 	// | SHORT
 	| INT
 	| LONG
-	| FLOAT
-	| DOUBLE
+	// | FLOAT
+	// | DOUBLE
 	// | SIGNED
 	// | UNSIGNED
 	| struct_or_union_specifier
@@ -356,11 +356,11 @@ CONST: "const"
 CONTINUE: "continue"
 // DEFAULT: "default"
 DO: "do"
-DOUBLE: "double"
+// DOUBLE: "double"
 ELSE: "else"
 // ENUM: "enum"
 // EXTERN: "extern"
-FLOAT: "float"
+// FLOAT: "float"
 FOR: "for"
 // GOTO: "goto"
 IF: "if"
