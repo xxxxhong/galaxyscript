@@ -1,0 +1,214 @@
+================================================================================
+Galaxy Script 语法分析报告
+================================================================================
+
+1. 关键字 (Keywords)
+----------------------------------------
+发现 20 个关键字:
+bool, break, const, continue, else, false, fixed, for, if, include, int, native, null, return, static, string, struct, true, void, while
+
+2. 数据类型 (Types)
+----------------------------------------
+发现 19 个数据类型:
+abilcmd, bank, bool, byte, camerainfo, fixed, int, marker, order, playergroup, point, region, sound, string, text, timer, unit, unitgroup, void
+
+3. 运算符 (Operators)
+----------------------------------------
+发现 33 个运算符:
+!, !!, !=, &, &&, *, **, *-, *=, +, +/, +=, -, --, -=, ->, /, //, /=, />, <, <-, </, <<, <=, =, ==, >, >+, ><, >=, |, ||
+
+4. Include语句示例
+----------------------------------------
+  include "TriggerLibs/Test"
+  include "LibCFADE8A7_h"
+  include "LibHCHO_h"
+  include "TriggerLibs/GameData/CliffMesh.galaxy"
+  include "LibNPLD_h"
+  include "TriggerLibs/GameData/Accumulator.galaxy"
+  include "TriggerLibs/GameData/Water.galaxy"
+  include "Lib293E1C45_h"
+  include "LibNCMI_h"
+  include "TriggerLibs/Orc/OrcHdVH"
+
+5. 常量定义示例 (前20个)
+----------------------------------------
+  const int c_classIdCAbil = 0;
+  const int c_classIdCAbilProgress = 1;
+  const int c_classIdCAbilEffect = 2;
+  const int c_classIdCAbilQueueable = 3;
+  const int c_classIdCAbilRedirect = 4;
+  const int c_classIdCAbilArmMagazine = 5;
+  const int c_classIdCAbilAttack = 6;
+  const int c_classIdCAbilAugment = 7;
+  const int c_classIdCAbilAttackModifier = 8;
+  const int c_classIdCAbilBattery = 9;
+  const int c_classIdCAbilBeacon = 10;
+  const int c_classIdCAbilBehavior = 11;
+  const int c_classIdCAbilBuild = 12;
+  const int c_classIdCAbilBuildable = 13;
+  const int c_classIdCAbilEffectInstant = 14;
+  const int c_classIdCAbilEffectTarget = 15;
+  const int c_classIdCAbilHarvest = 16;
+  const int c_classIdCAbilInteract = 17;
+  const int c_classIdCAbilInventory = 18;
+  const int c_classIdCAbilLearn = 19;
+
+6. 函数定义示例 (前20个)
+----------------------------------------
+  void ai0108C8E1_wave1_init()
+  void ai0108C8E1_wave1_enable(int p, bool val)
+  bool ai0108C8E1_wave1_isEnabled(int p)
+  wave ai0108C8E1_wave1_createdWave(int p)
+  bool ai0108C8E1_wave1_runFunc(bool c, bool a)
+  void ai0108C8E1_wave1_run(int p, playergroup target, bool wait)
+  void ai0108C8E1_wave2_init()
+  void ai0108C8E1_wave2_enable(int p, bool val)
+  bool ai0108C8E1_wave2_isEnabled(int p)
+  wave ai0108C8E1_wave2_createdWave(int p)
+  bool ai0108C8E1_wave2_runFunc(bool c, bool a)
+  void ai0108C8E1_wave2_run(int p, playergroup target, bool wait)
+  void ai0108C8E1_wave3_init()
+  void ai0108C8E1_wave3_enable(int p, bool val)
+  bool ai0108C8E1_wave3_isEnabled(int p)
+  wave ai0108C8E1_wave3_createdWave(int p)
+  bool ai0108C8E1_wave3_runFunc(bool c, bool a)
+  void ai0108C8E1_wave3_run(int p, playergroup target, bool wait)
+  void ai0108C8E1_wave4_init()
+  void ai0108C8E1_wave4_enable(int p, bool val)
+
+7. Native函数示例 (前20个)
+----------------------------------------
+  native void UnitAbilityRemove(
+    unit inUnit,                    /// * Unit               :: unit
+    string inBehavior               /// * Ability            :: gamelink<Abil>
+);
+  native void UnitAbilityAdd(
+    unit inUnit,                    /// * Unit               :: unit
+    string inBehavior               /// * Ability            :: gamelink<Abil>
+);
+  native int UnitAbilOrderStateFlags(
+    unit inUnit,                    /// * Unit               :: unit
+    order abilityCommand            /// * Ability Command    :: order
+);
+  native void UnitAbilityChangeLink(
+    unit inUnit,                    /// * Unit               :: unit
+    string ability,                 /// * Ability            :: gamelink<Abil>
+    string newAbility               /// * New Ability        :: gamelink<Abil>
+);
+  native void UnitAbilityChangeCardId(
+    unit inUnit,                    /// * Unit               :: unit
+    string ability,                 /// * Ability            :: gamelink<Abil>
+    string submenuCardId            /// * Submenu Card Id    :: string
+);
+  native string UnitAbilityGetCardId(
+    unit inUnit,                    /// * Unit               :: unit
+    string ability                  /// * Ability            :: gamelink<Abil>
+);
+  native void UnitLearnAbilResetLevel(
+    unit inUnit,                    /// * Unit               :: unit
+    string learnAbility,            /// * Learn Ability      :: gamelink<Abil>
+    int index                       /// * Index              :: int
+);
+  native void UnitLearnAbilAddLevel(
+    unit inUnit,                    /// * Unit               :: unit
+    string learnAbility,            /// * Learn Ability      :: gamelink<Abil>
+    int index,                      /// * Index              :: int
+    int level                       /// * Level              :: int
+);
+  native int UnitLearnAbilGetLevel(
+    unit inUnit,                    /// * Unit               :: unit
+    string learnAbility,            /// * Learn Ability      :: gamelink<Abil>
+    int index                       /// * Index              :: int
+);
+  native void UnitLearnAbilAddPoints(
+    unit inUnit,                    /// * Unit               :: unit
+    string learnAbility,            /// * Learn Ability      :: gamelink<Abil>
+    int points                      /// * Points             :: int
+);
+  native int UnitLearnAbilGetPoints(
+    unit inUnit,                    /// * Unit               :: unit
+    string learnAbility,            /// * Learn Ability      :: gamelink<Abil>
+    bool currentTotal               /// * Current/Total      :: Preset<libNtve_ge_CurrentTotalOptions>
+);
+  native void ActorScopeMoveTo(
+    actorscope inActorScope,        /// * Actor Scope        :: actorscope
+    actor inActor                   /// * Actor              :: actor
+);
+  native void ActorAddOrientUpdate(
+    string statusName,              /// * StatusName         :: string
+    int divisions                   /// * Divisions          :: int
+);
+  native void AIReleaseUnit(
+    unit inUnit                     /// * Unit               :: unit
+);
+  native unit AIGetScout(
+    int player,                     /// * Player             :: int
+    int indexSlot,                  /// * Index Slot         :: int
+    unit previousUnit               /// * Previous Unit      :: unit
+);
+  native void AIExecuteAbilTactical(
+    unit inUnit,                    /// * Unit               :: unit
+    string scrip,                   /// * Scrip              :: string
+    unitgroup scanGroup,            /// * Scan Group         :: unitgroup
+    string ability,                 /// * Ability            :: gamelink<Abil>
+    unit item                       /// * Item               :: unit
+);
+  native void AISetFilterEnergy(
+    aifilter filter,                /// * Filter             :: aifilter
+    fixed min,                      /// * Min                :: fixed
+    fixed max                       /// * Max                :: fixed
+);
+  native void BankBackupRemove(
+    bank backupBank,                /// * Backup Bank        :: bank
+    int backupid,                   /// * Backup Bank Id     :: int
+    int playerid                    /// * Player Id          :: int
+);
+  native int BankBackupGetId(
+    bank backupBank                 /// * Backup Bank        :: bank
+);
+  native int BankBackupGetLatestId(
+    bank backupBank                 /// * Backup Bank        :: bank
+);
+
+8. Struct定义示例 (前5个)
+----------------------------------------
+  struct libAIAI_gs_DefenderAI {
+    bool lv_used;
+    int lv_defenderCount;
+    unitgroup lv_defendersGroup;
+    unit[libAIAI_gv_defenderAIMaxNumberOfDefendersPerGroup + 1] lv_defenderUnits;
+    point[libAIAI_gv_defenderAIMaxNumberOfDefendersPerGroup + 1] lv_leashPositions;
+  }
+
+  struct libAIAI_gs_AIHeroTeamPlayerData {
+    playergroup lv_players;
+    playergroup lv_humanPlayers;
+    playergroup lv_aIPlayers;
+  }
+
+  struct libAIAI_gs_HeroAITalentBuild {
+    fixed lv_chance;
+    string[libCore_gv_talents_MaxTiers_C + 1] lv_talents;
+  }
+
+  struct libAIAI_gs_AIHeroData {
+    unit lv_currentHeroUnit;
+    bool lv_aIEnabled;
+    int lv_difficulty;
+    fixed lv_allowedToChooseTalentsTime;
+    int lv_pickedTalentBuild;
+  }
+
+  struct libGDHL_gs_SymbioteHivemind {
+    unit lv_symbioteUnit;
+    unit lv_hostUnit;
+  }
+
+================================================================================
+统计:
+  - Include语句: 2413
+  - 常量定义: 14132
+  - 函数定义: 40246
+  - Native函数: 274
+  - Struct定义: 266
+================================================================================

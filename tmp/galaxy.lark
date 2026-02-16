@@ -1,0 +1,322 @@
+"""
+Galaxy Script Grammar for Lark Parser
+======================================
+
+This grammar defines the complete syntax for Galaxy Script using Lark's EBNF notation.
+Lark is a modern parsing library for Python with excellent performance and ease of use.
+
+Based on: Analysis of 990 Galaxy files (655,866 lines of code)
+Created: 2026-02-14
+
+Usage:
+    from lark import Lark
+    
+    with open('galaxy.lark', 'r') as f:
+        grammar = f.read()
+    
+    parser = Lark(grammar, start='translation_unit', parser='lalr')
+    tree = parser.parse(source_code)
+"""
+
+// ============================================================================
+// TRANSLATION UNIT (Entry Point)
+// ============================================================================
+
+translation_unit: external_declaration+
+
+external_declaration: function_definition
+                    | declaration
+                    | native_declaration
+                    | struct_declaration
+                    | include_statement
+
+// ============================================================================
+// INCLUDE STATEMENTS
+// ============================================================================
+
+include_statement: "include" STRING
+
+// ============================================================================
+// DECLARATIONS
+// ============================================================================
+
+declaration: declaration_specifiers ";"
+           | declaration_specifiers init_declarator_list ";"
+
+declaration_specifiers: storage_class_specifier* type_specifier
+
+storage_class_specifier: "const"
+                       | "static"
+
+type_specifier: primitive_type
+              | game_type
+              | struct_specifier
+              | IDENTIFIER        // User-defined type (struct name)
+
+primitive_type: "void"
+              | "int"
+              | "bool"
+              | "fixed"
+              | "string"
+              | "byte"
+
+game_type: "unit"
+         | "point"
+         | "timer"
+         | "region"
+         | "trigger"
+         | "wave"
+         | "actor"
+         | "revealer"
+         | "playergroup"
+         | "unitgroup"
+         | "text"
+         | "sound"
+         | "soundlink"
+         | "color"
+         | "abilcmd"
+         | "order"
+         | "marker"
+         | "bank"
+         | "camerainfo"
+         | "actorscope"
+         | "aifilter"
+         | "unitfilter"
+         | "wavetarget"
+         | "effecthistory"
+
+init_declarator_list: init_declarator ("," init_declarator)*
+
+init_declarator: declarator
+               | declarator "=" initializer
+
+declarator: IDENTIFIER array_suffix*
+
+array_suffix: "[" constant_expression "]"
+            | "[" "]"
+            | "[" constant_expression "+" constant_expression "]"
+
+initializer: assignment_expression
+           | "{" initializer_list "}"
+           | "{" initializer_list "," "}"
+
+initializer_list: initializer ("," initializer)*
+
+// ============================================================================
+// STRUCT DECLARATIONS
+// ============================================================================
+
+struct_declaration: struct_specifier ";"
+
+struct_specifier: "struct" IDENTIFIER "{" struct_member_list "}"
+                | "struct" "{" struct_member_list "}"
+                | "struct" IDENTIFIER
+
+struct_member_list: struct_member+
+
+struct_member: type_specifier struct_declarator_list ";"
+
+struct_declarator_list: struct_declarator ("," struct_declarator)*
+
+struct_declarator: declarator
+
+// ============================================================================
+// FUNCTION DEFINITIONS
+// ============================================================================
+
+function_definition: type_specifier IDENTIFIER "(" parameter_list ")" compound_statement
+                   | type_specifier IDENTIFIER "(" ")" compound_statement
+
+parameter_list: parameter_declaration ("," parameter_declaration)*
+
+parameter_declaration: type_specifier IDENTIFIER
+                     | type_specifier IDENTIFIER "[" "]"
+                     | type_specifier IDENTIFIER "[" constant_expression "]"
+
+// ============================================================================
+// NATIVE DECLARATIONS (Galaxy-specific)
+// ============================================================================
+
+native_declaration: "native" type_specifier IDENTIFIER "(" native_parameter_list ")" ";"
+                  | "native" type_specifier IDENTIFIER "(" ")" ";"
+
+native_parameter_list: native_parameter_declaration ("," native_parameter_declaration)*
+
+native_parameter_declaration: type_specifier IDENTIFIER
+                            | type_specifier IDENTIFIER "[" "]"
+
+// ============================================================================
+// STATEMENTS
+// ============================================================================
+
+statement: compound_statement
+         | expression_statement
+         | selection_statement
+         | iteration_statement
+         | jump_statement
+
+compound_statement: "{" (declaration | statement)* "}"
+
+expression_statement: ";"
+                    | expression ";"
+
+selection_statement: "if" "(" expression ")" statement
+                   | "if" "(" expression ")" statement "else" statement
+
+iteration_statement: "while" "(" expression ")" statement
+                   | "for" "(" for_init_clause ";" for_condition_clause ";" for_iteration_clause ")" statement
+
+for_init_clause: 
+               | expression
+               | declaration_specifiers init_declarator_list
+
+for_condition_clause: 
+                    | expression
+
+for_iteration_clause: 
+                    | expression
+
+jump_statement: "continue" ";"
+              | "break" ";"
+              | "return" ";"
+              | "return" expression ";"
+
+// ============================================================================
+// EXPRESSIONS
+// ============================================================================
+
+?expression: assignment_expression
+
+constant_expression: logical_or_expression
+
+assignment_expression: logical_or_expression
+                     | unary_expression assignment_operator assignment_expression
+
+assignment_operator: "="
+                   | "*="
+                   | "/="
+                   | "+="
+                   | "-="
+
+logical_or_expression: logical_and_expression
+                     | logical_or_expression "||" logical_and_expression
+
+logical_and_expression: equality_expression
+                      | logical_and_expression "&&" equality_expression
+
+equality_expression: relational_expression
+                   | equality_expression "==" relational_expression
+                   | equality_expression "!=" relational_expression
+
+relational_expression: shift_expression
+                     | relational_expression "<" shift_expression
+                     | relational_expression ">" shift_expression
+                     | relational_expression "<=" shift_expression
+                     | relational_expression ">=" shift_expression
+                     | relational_expression "><" shift_expression
+                     | relational_expression ">+" shift_expression
+                     | relational_expression "/>" shift_expression
+                     | relational_expression "</" shift_expression
+
+shift_expression: additive_expression
+                | shift_expression "<<" additive_expression
+
+additive_expression: multiplicative_expression
+                   | additive_expression "+" multiplicative_expression
+                   | additive_expression "-" multiplicative_expression
+                   | additive_expression "+/" multiplicative_expression
+
+multiplicative_expression: unary_expression
+                         | multiplicative_expression "*" unary_expression
+                         | multiplicative_expression "/" unary_expression
+                         | multiplicative_expression "**" unary_expression
+                         | multiplicative_expression "*-" unary_expression
+
+unary_expression: postfix_expression
+                | "++" unary_expression
+                | "--" unary_expression
+                | unary_operator unary_expression
+
+unary_operator: "+"
+              | "-"
+              | "!"
+
+postfix_expression: primary_expression
+                  | postfix_expression "[" expression "]"
+                  | postfix_expression "(" ")"
+                  | postfix_expression "(" argument_expression_list ")"
+                  | postfix_expression "." IDENTIFIER
+                  | postfix_expression "++"
+                  | postfix_expression "--"
+
+argument_expression_list: assignment_expression ("," assignment_expression)*
+
+primary_expression: IDENTIFIER
+                  | INTEGER
+                  | FIXED
+                  | STRING
+                  | "true"
+                  | "false"
+                  | "null"
+                  | "(" expression ")"
+
+// ============================================================================
+// TERMINALS (Tokens)
+// ============================================================================
+
+// Identifiers
+IDENTIFIER: /[a-zA-Z_][a-zA-Z0-9_]*/
+
+// Literals
+INTEGER: /\d+/
+FIXED: /\d+\.\d+/
+STRING: /"([^"\\]|\\.)*"/
+
+// Comments
+COMMENT: "//" /[^\n]*/
+       | "/*" /(.|\n)*?/ "*/"
+
+DOC_COMMENT: "///" /[^\n]*/
+
+// Whitespace
+%import common.WS
+%ignore WS
+%ignore COMMENT
+// Note: DOC_COMMENT is not ignored, it can be used for documentation
+
+// ============================================================================
+// GRAMMAR NOTES
+// ============================================================================
+
+/*
+OPERATOR PRECEDENCE (Low to High):
+1.  =, +=, -=, *=, /=              (Assignment)
+2.  ||                              (Logical OR)
+3.  &&                              (Logical AND)
+4.  ==, !=                          (Equality)
+5.  <, >, <=, >=, ><, >+, />, </   (Relational)
+6.  <<                              (Shift)
+7.  +, -, +/                        (Additive)
+8.  *, /, **, *-                    (Multiplicative)
+9.  !, +, - (unary)                 (Unary)
+10. ++, -- (prefix/postfix)         (Inc/Dec)
+11. (), [], .                       (Postfix)
+
+SPECIAL FEATURES:
+- No pointers
+- No preprocessor (except include)
+- No enums (use const instead)
+- No switch/case
+- No goto
+- No bitwise operators (except <<)
+- No ternary operator (? :)
+- No comma operator
+- 30 game-specific types
+
+STATISTICS (Based on 990 files):
+- Total lines: 655,866
+- Functions: 40,246
+- Constants: 14,146
+- Native functions: 274
+- Structs: 266
+*/

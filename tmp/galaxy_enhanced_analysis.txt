@@ -1,0 +1,302 @@
+================================================================================
+Galaxy Script 增强版语法分析报告
+================================================================================
+
+【一、基础语法元素】
+================================================================================
+
+1. 关键字 (Keywords)
+----------------------------------------
+发现 20 个关键字:
+bool, break, const, continue, else, false, fixed, for, if, include, int, native, null, return, static, string, struct, true, void, while
+
+2. 数据类型 (Types)
+----------------------------------------
+发现 19 个数据类型:
+abilcmd, bank, bool, byte, camerainfo, fixed, int, marker, order, playergroup, point, region, sound, string, text, timer, unit, unitgroup, void
+
+3. 运算符 (Operators)
+----------------------------------------
+发现 33 个运算符:
+!, !!, !=, &, &&, *, **, *-, *=, +, +/, +=, -, --, -=, ->, /, //, /=, />, <, <-, </, <<, <=, =, ==, >, >+, ><, >=, |, ||
+
+【二、代码规模分析】
+================================================================================
+
+文件大小统计:
+  - 文件总数: 989 个
+  - 总大小: 28.45 MB
+  - 平均大小: 29.45 KB
+  - 最大文件: LibCOMI.galaxy (1610.75 KB)
+  - 最小文件: Computer.galaxy (1 bytes)
+
+代码行数统计:
+  - 总行数: 655,852 行
+  - 平均行数: 663 行/文件
+  - 最多: LibCOMI.galaxy (34,434 行)
+  - 最少: Computer.galaxy (2 行)
+
+【三、函数分析】
+================================================================================
+
+函数定义总数: 40246
+
+参数数量分布:
+  - 平均参数: 1.16 个
+  - 最多参数: 23 个
+
+  参数数量分布 (前10):
+    0个参数:  9359 次 (23.25%) ███████████
+    1个参数: 18922 次 (47.02%) ███████████████████████
+    2个参数:  9568 次 (23.77%) ███████████
+    3个参数:  1682 次 ( 4.18%) ██
+    4个参数:   392 次 ( 0.97%) 
+    5个参数:   138 次 ( 0.34%) 
+    6个参数:    74 次 ( 0.18%) 
+    7个参数:    54 次 ( 0.13%) 
+    8个参数:    25 次 ( 0.06%) 
+    9个参数:     9 次 ( 0.02%) 
+
+函数命名前缀分析 (Top 20):
+  if             : 13305 (33.06%)
+  libCOMI        :  1465 ( 3.64%)
+  libGDHL        :  1100 ( 2.73%)
+  libGame        :   962 ( 2.39%)
+  libSwaC        :   886 ( 2.20%)
+  lib281DEC45    :   764 ( 1.90%)
+  libCamp        :   607 ( 1.51%)
+  libCOMU        :   603 ( 1.50%)
+  auto           :   600 ( 1.49%)
+  libUIUI        :   566 ( 1.41%)
+  libVoiC        :   498 ( 1.24%)
+  libCOOC        :   466 ( 1.16%)
+  libNtve        :   459 ( 1.14%)
+  libA3DDD02B    :   444 ( 1.10%)
+  libVCUI        :   412 ( 1.02%)
+  libCOUI        :   378 ( 0.94%)
+  libVCST        :   378 ( 0.94%)
+  libSprt        :   376 ( 0.93%)
+  libNCST        :   352 ( 0.87%)
+  libPEB1        :   349 ( 0.87%)
+
+【四、Native函数分析】
+================================================================================
+
+Native函数总数: 274
+
+Native函数分类 (Top 20):
+  Data           :   95 个函数
+  Other          :   55 个函数
+  Unit           :   39 个函数
+  Event          :   13 个函数
+  Player         :   11 个函数
+  Bank           :   10 个函数
+  Cutscene       :    9 个函数
+  Dialog         :    8 个函数
+  Stat           :    6 个函数
+  Game           :    5 个函数
+  Automation     :    3 个函数
+  Actor          :    2 个函数
+  Trigger        :    2 个函数
+  Item           :    2 个函数
+  Tech           :    2 个函数
+  Behavior       :    1 个函数
+  Conversation   :    1 个函数
+  Date           :    1 个函数
+  String         :    1 个函数
+  Online         :    1 个函数
+
+各类别Native函数示例:
+
+  [Data] 类别:
+    - DataTableInstanceSetAbilCmd
+    - DataTableInstanceSetActor
+    - DataTableInstanceSetActorScope
+    - DataTableInstanceSetAIFilter
+    - DataTableInstanceSetBank
+
+  [Other] 类别:
+    - AIReleaseUnit
+    - AIGetScout
+    - AIExecuteAbilTactical
+    - AISetFilterEnergy
+    - UISetMiniMapBounds
+
+  [Unit] 类别:
+    - UnitAbilityRemove
+    - UnitAbilityAdd
+    - UnitAbilOrderStateFlags
+    - UnitAbilityChangeLink
+    - UnitAbilityChangeCardId
+
+  [Event] 类别:
+    - EventGameTimeEvent
+    - EventPlayerEffectUsedItem
+    - EventPlayerEffectUsedUnitImpact
+    - EventPlayerEffectUsedUnitLaunch
+    - EventPlayerEffectUsedItemType
+
+  [Player] 类别:
+    - PlayerSpray
+    - PlayerBrutalPlusDifficulty
+    - PlayerRetryMutation
+    - PlayerACEnemyWaveType
+    - PlayerSetConsoleSkin
+
+  [Bank] 类别:
+    - BankBackupRemove
+    - BankBackupGetId
+    - BankBackupGetLatestId
+    - BankRestore
+    - BankBackup
+
+  [Cutscene] 类别:
+    - CutsceneAddGlobalFilter
+    - CutsceneAddFilter
+    - CutsceneRemoveGlobalFilter
+    - CutsceneRemoveFilter
+    - CutsceneClearGlobalFilters
+
+  [Dialog] 类别:
+    - DialogControlSetMinXVisible
+    - DialogControlGetMinXValue
+    - DialogControlSetMaxXVisible
+    - DialogControlGetMaxXValue
+    - DialogControlSetMinYVisible
+
+  [Stat] 类别:
+    - StatEventCreate
+    - StatEventAddDataString
+    - StatEventAddDataInt
+    - StatEventAddDataFixed
+    - StatEventSend
+
+  [Game] 类别:
+    - GameTimeOfDayValueSet
+    - GameTimeOfDayTimeValueSet
+    - GameTimeOfDayValueGet
+    - GameTimeOfDayCurrentTimeEvent
+    - GameSetQuitOnQuitButton
+
+【五、常量分析】
+================================================================================
+
+常量定义总数: 14132
+
+常量类型分布:
+  int         :   9742 (68.94%) ██████████████████████████████████
+  string      :   3750 (26.54%) █████████████
+  fixed       :    602 ( 4.26%) ██
+  bool        :     32 ( 0.23%) 
+  color       :      2 ( 0.01%) 
+  point       :      1 ( 0.01%) 
+  marker      :      1 ( 0.01%) 
+  abilcmd     :      1 ( 0.01%) 
+  unit        :      1 ( 0.01%) 
+
+常量命名前缀 (Top 15):
+  c                   :  6023
+  libCamp             :   616
+  libGame             :   475
+  libCore             :   339
+  e                   :   235
+  libSwaC             :   206
+  libCOMI             :   176
+  lv                  :   165
+  libVoiC             :   128
+  libCOOC             :   116
+  libChal             :   112
+  libUIUI             :   110
+  libNtve             :    99
+  libNCMI             :    93
+  libMapM             :    90
+
+【六、结构体分析】
+================================================================================
+
+Struct定义总数: 266
+
+Struct成员数量统计:
+  - 平均成员: 10.23 个
+  - 最多成员: 97 个
+  - 最少成员: 1 个
+
+  成员数量分布:
+     1个成员:   9 个struct ( 3.38%) ███
+     2个成员:  34 个struct (12.78%) ████████████
+     3个成员:  33 个struct (12.41%) ████████████
+     4个成员:  27 个struct (10.15%) ██████████
+     5个成员:  20 个struct ( 7.52%) ███████
+     6个成员:  21 个struct ( 7.89%) ███████
+     7个成员:  14 个struct ( 5.26%) █████
+     8个成员:  14 个struct ( 5.26%) █████
+     9个成员:   7 个struct ( 2.63%) ██
+    10个成员:   9 个struct ( 3.38%) ███
+    11个成员:   5 个struct ( 1.88%) █
+    12个成员:   6 个struct ( 2.26%) ██
+    13个成员:   4 个struct ( 1.50%) █
+    14个成员:   4 个struct ( 1.50%) █
+    15个成员:   6 个struct ( 2.26%) ██
+
+最复杂的Struct (Top 10):
+  l                                       : 97 个成员
+  l                                       : 72 个成员
+  l                                       : 66 个成员
+  l                                       : 58 个成员
+  l                                       : 53 个成员
+  l                                       : 51 个成员
+  l                                       : 50 个成员
+  l                                       : 44 个成员
+  l                                       : 44 个成员
+  l                                       : 43 个成员
+
+【七、Include依赖分析】
+================================================================================
+
+Include语句总数: 2413
+唯一Include路径: 574 个
+
+最常被引用的库 (Top 20):
+  TriggerLibs/natives                               :  391 次
+  TriggerLibs/NativeLib                             :  356 次
+  LibCOMU                                           :  224 次
+  TriggerLibs/HeroesLib                             :  147 次
+  TriggerLibs/AI                                    :  109 次
+  TriggerLibs/Computer                              :  109 次
+  TriggerLibs/GameLib                               :   93 次
+  TriggerLibs/UILib                                 :   66 次
+  TriggerLibs/AILib                                 :   42 次
+  TriggerLibs/MapMechanicsLib                       :   39 次
+  TriggerLibs/SoundLib                              :   36 次
+  TriggerLibs/GameDataHelperLib                     :   20 次
+  TriggerLibs/StartingExperienceLib                 :   19 次
+  TriggerLibs/HeroesLib_h                           :   17 次
+  TriggerLibs/SupportLib                            :   17 次
+  TriggerLibs/LibertyLib                            :   13 次
+  TriggerLibs/GameLib_h                             :   11 次
+  LibAREN                                           :   10 次
+  TriggerLibs/StartingExperienceLib_h               :    9 次
+  TriggerLibs/MapMechanicsLib_h                     :    8 次
+
+Include分类:
+  - TriggerLibs库: 1766 次引用
+  - GameData库: 136 次引用
+  - Lib头文件: 360 次引用
+  - 其他: 151 次引用
+
+【八、总体统计摘要】
+================================================================================
+
+关键字数量:            20
+数据类型:              19
+运算符:                33
+Include语句:         2413
+常量定义:           14132
+函数定义:           40246
+Native函数:           274
+Struct定义:           266
+总代码行数:        655852
+
+================================================================================
+分析完成!
+================================================================================

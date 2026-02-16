@@ -1,0 +1,12 @@
+const int MAX_VALUE = 100;
+int add(int a, int b) {
+    return (a + b);
+}
+
+void main() {
+    int x;
+    int y;
+    x = 10;
+    y = 20;
+    int result = add(x, y);
+}

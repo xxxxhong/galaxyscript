@@ -1,0 +1,245 @@
+# Galaxy Script Language - BNF Grammar (巴科斯范式文法)
+# 基于对星际争霸II Galaxy脚本的逆向分析
+
+## 1. 程序结构 (Program Structure)
+
+<program> ::= <statement_list>
+
+<statement_list> ::= <statement>
+                  | <statement> <statement_list>
+
+<statement> ::= <include_statement>
+             | <const_declaration>
+             | <variable_declaration>
+             | <function_declaration>
+             | <struct_declaration>
+             | <native_declaration>
+             | <assignment_statement>
+             | <expression_statement>
+             | <if_statement>
+             | <while_statement>
+             | <for_statement>
+             | <return_statement>
+             | <break_statement>
+             | <continue_statement>
+             | <block_statement>
+
+## 2. 包含语句 (Include Statement)
+
+<include_statement> ::= "include" <string_literal>
+
+## 3. 常量声明 (Constant Declaration)
+
+<const_declaration> ::= "const" <type> <identifier> "=" <expression> ";"
+
+## 4. 变量声明 (Variable Declaration)
+
+<variable_declaration> ::= <type> <identifier> ";"
+                        | <type> <identifier> "=" <expression> ";"
+                        | <type> <identifier> "[" <expression> "]" ";"
+                        | "static" <type> <identifier> ";"
+                        | "static" <type> <identifier> "=" <expression> ";"
+
+## 5. 函数声明 (Function Declaration)
+
+<function_declaration> ::= <type> <identifier> "(" <parameter_list> ")" <block_statement>
+                        | <type> <identifier> "(" ")" <block_statement>
+
+<parameter_list> ::= <parameter>
+                  | <parameter> "," <parameter_list>
+
+<parameter> ::= <type> <identifier>
+             | <type> <identifier> "[" "]"
+
+## 6. Native函数声明 (Native Function Declaration)
+
+<native_declaration> ::= "native" <type> <identifier> "(" <parameter_list> ")" ";"
+                      | "native" <type> <identifier> "(" ")" ";"
+
+## 7. 结构体声明 (Struct Declaration)
+
+<struct_declaration> ::= "struct" <identifier> "{" <struct_member_list> "}" ";"
+
+<struct_member_list> ::= <struct_member>
+                      | <struct_member> <struct_member_list>
+
+<struct_member> ::= <type> <identifier> ";"
+                 | <type> <identifier> "[" <expression> "]" ";"
+
+## 8. 语句 (Statements)
+
+<block_statement> ::= "{" <statement_list> "}"
+                   | "{" "}"
+
+<if_statement> ::= "if" "(" <expression> ")" <statement>
+                | "if" "(" <expression> ")" <statement> "else" <statement>
+
+<while_statement> ::= "while" "(" <expression> ")" <statement>
+
+<for_statement> ::= "for" "(" <for_init> ";" <expression> ";" <for_update> ")" <statement>
+
+<for_init> ::= <variable_declaration>
+            | <assignment_statement>
+            | <expression>
+
+<for_update> ::= <assignment_statement>
+              | <expression>
+
+<return_statement> ::= "return" ";"
+                    | "return" <expression> ";"
+
+<break_statement> ::= "break" ";"
+
+<continue_statement> ::= "continue" ";"
+
+<assignment_statement> ::= <identifier> "=" <expression> ";"
+                        | <identifier> <assignment_operator> <expression> ";"
+                        | <identifier> "[" <expression> "]" "=" <expression> ";"
+                        | <identifier> "." <identifier> "=" <expression> ";"
+
+<expression_statement> ::= <expression> ";"
+
+## 9. 表达式 (Expressions)
+
+<expression> ::= <assignment_expression>
+              | <logical_or_expression>
+
+<assignment_expression> ::= <identifier> "=" <expression>
+                         | <identifier> <assignment_operator> <expression>
+
+<logical_or_expression> ::= <logical_and_expression>
+                         | <logical_or_expression> "||" <logical_and_expression>
+
+<logical_and_expression> ::= <equality_expression>
+                          | <logical_and_expression> "&&" <equality_expression>
+
+<equality_expression> ::= <relational_expression>
+                       | <equality_expression> "==" <relational_expression>
+                       | <equality_expression> "!=" <relational_expression>
+
+<relational_expression> ::= <additive_expression>
+                         | <relational_expression> "<" <additive_expression>
+                         | <relational_expression> ">" <additive_expression>
+                         | <relational_expression> "<=" <additive_expression>
+                         | <relational_expression> ">=" <additive_expression>
+
+<additive_expression> ::= <multiplicative_expression>
+                       | <additive_expression> "+" <multiplicative_expression>
+                       | <additive_expression> "-" <multiplicative_expression>
+
+<multiplicative_expression> ::= <unary_expression>
+                             | <multiplicative_expression> "*" <unary_expression>
+                             | <multiplicative_expression> "/" <unary_expression>
+
+<unary_expression> ::= <postfix_expression>
+                    | "!" <unary_expression>
+                    | "-" <unary_expression>
+                    | "++" <identifier>
+                    | "--" <identifier>
+
+<postfix_expression> ::= <primary_expression>
+                      | <identifier> "++"
+                      | <identifier> "--"
+                      | <function_call>
+                      | <array_access>
+                      | <member_access>
+
+<function_call> ::= <identifier> "(" <argument_list> ")"
+                 | <identifier> "(" ")"
+
+<argument_list> ::= <expression>
+                 | <expression> "," <argument_list>
+
+<array_access> ::= <identifier> "[" <expression> "]"
+
+<member_access> ::= <identifier> "." <identifier>
+                 | <member_access> "." <identifier>
+
+<primary_expression> ::= <identifier>
+                      | <literal>
+                      | "(" <expression> ")"
+
+## 10. 字面量 (Literals)
+
+<literal> ::= <integer_literal>
+           | <fixed_literal>
+           | <string_literal>
+           | <boolean_literal>
+           | <null_literal>
+
+<integer_literal> ::= <digit>+
+
+<fixed_literal> ::= <digit>+ "." <digit>+
+
+<string_literal> ::= '"' <character>* '"'
+
+<boolean_literal> ::= "true" | "false"
+
+<null_literal> ::= "null"
+
+## 11. 类型 (Types)
+
+<type> ::= <basic_type>
+        | <complex_type>
+
+<basic_type> ::= "void"
+              | "int"
+              | "bool"
+              | "fixed"
+              | "string"
+              | "byte"
+
+<complex_type> ::= "point"
+                | "unit"
+                | "timer"
+                | "playergroup"
+                | "unitgroup"
+                | "region"
+                | "text"
+                | "abilcmd"
+                | "sound"
+                | "marker"
+                | "order"
+                | "bank"
+                | "camerainfo"
+                | <identifier>  # 用户定义的struct类型
+
+## 12. 运算符 (Operators)
+
+<assignment_operator> ::= "+=" | "-=" | "*=" | "/="
+
+<comparison_operator> ::= "==" | "!=" | "<" | ">" | "<=" | ">="
+
+<logical_operator> ::= "&&" | "||"
+
+<arithmetic_operator> ::= "+" | "-" | "*" | "/"
+
+<unary_operator> ::= "!" | "-" | "++" | "--"
+
+## 13. 标识符和注释 (Identifiers and Comments)
+
+<identifier> ::= <letter> (<letter> | <digit> | "_")*
+
+<letter> ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
+
+<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+<comment> ::= "//" <any_character_until_newline>
+           | "/*" <any_characters> "*/"
+
+## 14. 关键字 (Keywords)
+
+保留关键字:
+- if, else, while, for, return, break, continue
+- struct, const, static, native, include
+- void, int, bool, fixed, string, byte
+- true, false, null
+
+## 15. 特殊语法特性 (Special Features)
+
+# Galaxy支持的特殊语法:
+# 1. 数组可以有动态大小
+# 2. 支持多维数组
+# 3. 支持结构体嵌套
+# 4. 函数可以返回复杂类型
+# 5. 支持类型自动转换(int <-> fixed)
