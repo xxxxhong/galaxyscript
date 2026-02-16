@@ -144,7 +144,7 @@ storage_class_specifier: TYPEDEF
 
 type_specifier: VOID
 	| CHAR
-	| SHORT
+	// | SHORT
 	| INT
 	| LONG
 	| FLOAT
@@ -162,7 +162,7 @@ struct_or_union_specifier: struct_or_union IDENTIFIER "{" struct_declaration_lis
 
 
 struct_or_union: STRUCT
-	| UNION
+	// | UNION
 
 
 struct_declaration_list: struct_declaration
@@ -201,7 +201,7 @@ enumerator: IDENTIFIER
 
 
 type_qualifier: CONST
-	| VOLATILE
+	// | VOLATILE
 
 
 declarator: pointer direct_declarator
@@ -357,17 +357,17 @@ INT: "int"
 LONG: "long"
 // REGISTER: "register"
 RETURN: "return"
-SHORT: "short"
+// SHORT: "short"
 // SIGNED: "signed"
 // SIZEOF: "sizeof"
 STATIC: "static"
 STRUCT: "struct"
 // SWITCH: "switch"
 TYPEDEF: "typedef"
-UNION: "union"
+// UNION: "union"
 // UNSIGNED: "unsigned"
 VOID: "void"
-VOLATILE: "volatile"
+// VOLATILE: "volatile"
 WHILE: "while"
 
 // ELLIPSIS: "..."
