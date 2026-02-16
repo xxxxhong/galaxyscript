@@ -149,6 +149,7 @@ type_specifier: VOID
 	| LONG
 	// | FLOAT
 	// | DOUBLE
+	| FIXED
 	// | SIGNED
 	// | UNSIGNED
 	| struct_or_union_specifier
@@ -361,6 +362,7 @@ ELSE: "else"
 // ENUM: "enum"
 // EXTERN: "extern"
 // FLOAT: "float"
+FIXED: "fixed"
 FOR: "for"
 // GOTO: "goto"
 IF: "if"
