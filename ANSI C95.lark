@@ -156,37 +156,37 @@ type_specifier: VOID
 	// | UNSIGNED
 	// | enum_specifier
 	// | TYPE_NAME
-	| "unit"
-	| "point"
-	| "timer"
-	| "region"
-	| "trigger"
-	| "wave"
-	| "actor"
-	| "revealer"
-	| "playergroup"
-	| "unitgroup"
-	| "text"
-	| "sound"
-	| "soundlink"
-	| "color"
-	| "abilcmd"
-	| "order"
-	| "marker"
-	| "bank"
-	| "camerainfo"
-	| "actorscope"
-	| "aifilter"
-	| "unitfilter"
-	| "wavetarget"
-	| "effecthistory"
-	| "bitmask"
-	| "datetime"
-	| "doodad"
-	| "generichandle"
-	| "transmissionsource"
-	| "unitref"
-	| "waveinfo"
+	| UNIT
+	| POINT
+	| TIMER
+	| REGION
+	| TRIGGER
+	| WAVE
+	| ACTOR
+	| REVEALER
+	| PLAYERGROUP
+	| UNITGROUP
+	| TEXT
+	| SOUND
+	| SOUNDLINK
+	| COLOR
+	| ABILCMD
+	| ORDER
+	| MARKER
+	| BANK
+	| CAMERAINFO
+	| ACTORSCOPE
+	| AIFILTER
+	| UNITFILTER
+	| WAVETARGET
+	| EFFECTHISTORY
+	| BITMASK
+	| DATETIME
+	| DOODAD
+	| GENERICHANDLE
+	| TRANSMISSIONSOURCE
+	| UNITREF
+	| WAVEINFO
 	| struct_or_union_specifier
 
 struct_or_union_specifier: struct_or_union IDENTIFIER "{" struct_declaration_list "}"
@@ -404,6 +404,37 @@ IF: "if"
 INT: "int"
 LONG: "long"
 // REGISTER: "register"
+UNIT: "unit"
+POINT: "point"
+TIMER: "timer"
+REGION: "region"
+TRIGGER: "trigger"
+WAVE: "wave"
+ACTOR: "actor"
+REVEALER: "revealer"
+PLAYERGROUP: "playergroup"
+UNITGROUP: "unitgroup"
+TEXT: "text"
+SOUND: "sound"
+SOUNDLINK: "soundlink"
+COLOR: "color"
+ABILCMD: "abilcmd"
+ORDER: "order"
+MARKER: "marker"
+BANK: "bank"
+CAMERAINFO: "camerainfo"
+ACTORSCOPE: "actorscope"
+AIFILTER: "aifilter"
+UNITFILTER: "unitfilter"
+WAVETARGET: "wavetarget"
+EFFECTHISTORY: "effecthistory"
+BITMASK: "bitmask"
+DATETIME: "datetime"
+DOODAD: "doodad"
+GENERICHANDLE: "generichandle"
+TRANSMISSIONSOURCE: "transmissionsource"
+UNITREF: "unitref"
+WAVEINFO: "waveinfo"
 RETURN: "return"
 // SHORT: "short"
 // SIGNED: "signed"
@@ -442,7 +473,7 @@ GE_OP: ">="
 EQ_OP: "=="
 NE_OP: "!="
 
-TYPE_NAME: /[a-z_][a-z0-9_]*/
+// TYPE_NAME: /[a-z_][a-z0-9_]*/
 IDENTIFIER: /[a-zA-Z_][a-zA-Z0-9_]*/
 
 CONSTANT: HEX_CONSTANT
