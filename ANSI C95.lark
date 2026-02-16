@@ -150,12 +150,44 @@ type_specifier: VOID
 	// | FLOAT
 	// | DOUBLE
 	| FIXED
+	| BOOL
+	| STRING
 	// | SIGNED
 	// | UNSIGNED
-	| struct_or_union_specifier
 	// | enum_specifier
-	| TYPE_NAME
-
+	// | TYPE_NAME
+	| "unit"
+	| "point"
+	| "timer"
+	| "region"
+	| "trigger"
+	| "wave"
+	| "actor"
+	| "revealer"
+	| "playergroup"
+	| "unitgroup"
+	| "text"
+	| "sound"
+	| "soundlink"
+	| "color"
+	| "abilcmd"
+	| "order"
+	| "marker"
+	| "bank"
+	| "camerainfo"
+	| "actorscope"
+	| "aifilter"
+	| "unitfilter"
+	| "wavetarget"
+	| "effecthistory"
+	| "bitmask"
+	| "datetime"
+	| "doodad"
+	| "generichandle"
+	| "transmissionsource"
+	| "unitref"
+	| "waveinfo"
+	| struct_or_union_specifier
 
 struct_or_union_specifier: struct_or_union IDENTIFIER "{" struct_declaration_list "}"
 	| struct_or_union "{" struct_declaration_list "}"
@@ -331,6 +363,7 @@ iteration_statement: WHILE "(" expression ")" statement
 
 jump_statement: CONTINUE ";"
 	| BREAK ";"
+	| BREAKPOINT ";"
 	| RETURN ";"
 	| RETURN expression ";"
 
@@ -363,6 +396,8 @@ ELSE: "else"
 // EXTERN: "extern"
 // FLOAT: "float"
 FIXED: "fixed"
+BOOL: "bool"
+STRING: "string"
 FOR: "for"
 // GOTO: "goto"
 IF: "if"
@@ -382,6 +417,7 @@ TYPEDEF: "typedef"
 VOID: "void"
 // VOLATILE: "volatile"
 WHILE: "while"
+BREAKPOINT: "breakpoint"
 
 // ELLIPSIS: "..."
 // RIGHT_ASSIGN: ">>="
