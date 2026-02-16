@@ -23,8 +23,8 @@ unary_expression: postfix_expression
 	// | INC_OP unary_expression
 	// | DEC_OP unary_expression
 	| unary_operator cast_expression
-	| SIZEOF unary_expression
-	| SIZEOF "(" type_name ")"
+	// | SIZEOF unary_expression
+	// | SIZEOF "(" type_name ")"
 
 
 unary_operator: "&"
@@ -149,8 +149,8 @@ type_specifier: VOID
 	| LONG
 	| FLOAT
 	| DOUBLE
-	| SIGNED
-	| UNSIGNED
+	// | SIGNED
+	// | UNSIGNED
 	| struct_or_union_specifier
 	| enum_specifier
 	| TYPE_NAME
@@ -358,14 +358,14 @@ LONG: "long"
 // REGISTER: "register"
 RETURN: "return"
 SHORT: "short"
-SIGNED: "signed"
-SIZEOF: "sizeof"
+// SIGNED: "signed"
+// SIZEOF: "sizeof"
 STATIC: "static"
 STRUCT: "struct"
 // SWITCH: "switch"
 TYPEDEF: "typedef"
 UNION: "union"
-UNSIGNED: "unsigned"
+// UNSIGNED: "unsigned"
 VOID: "void"
 VOLATILE: "volatile"
 WHILE: "while"
