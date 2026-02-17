@@ -1,0 +1,613 @@
+start: translation_unit
+
+primary_expression: IDENTIFIER
+	| CONSTANT
+	| STRING_LITERAL
+	| TRUE
+    | FALSE
+    | NULL
+	| "(" expression ")"
+
+// postfix_expression: primary_expression
+// 	| postfix_expression "[" expression "]"
+// 	| postfix_expression "(" ")"
+// 	| postfix_expression "(" argument_expression_list ")"
+// 	| postfix_expression "." IDENTIFIER
+	// | postfix_expression PTR_OP IDENTIFIER
+	// | postfix_expression INC_OP
+	// | postfix_expression DEC_OP
+
+postfix_expression: primary_expression postfix_suffix*
+postfix_suffix: "[" expression "]"
+    | "(" ")"
+    | "(" argument_expression_list ")"
+    | "." IDENTIFIER
+
+
+// argument_expression_list: assignment_expression
+// 	| argument_expression_list "," assignment_expression
+
+argument_expression_list: assignment_expression ("," assignment_expression)*
+
+
+unary_expression: postfix_expression
+	// | INC_OP unary_expression
+	// | DEC_OP unary_expression
+	| unary_operator cast_expression
+	// | SIZEOF unary_expression
+	// | SIZEOF "(" type_name ")"
+
+
+// unary_operator: "&"
+// 	| "*"
+// 	| "+"
+// 	| "-"
+// 	| "~"
+// 	| "!"
+
+unary_operator: "+"
+	| "-"
+	| LOGICAL_NOT	// logical not
+	| BITWISE_NOT	// bitwise not, not used in GalaxyScript but included for completeness
+
+
+cast_expression: unary_expression
+	| "(" type_name ")" cast_expression
+
+
+// multiplicative_expression: cast_expression
+// 	| multiplicative_expression "*" cast_expression
+// 	| multiplicative_expression "/" cast_expression
+// 	| multiplicative_expression "%" cast_expression
+
+// multiplicative_expression: cast_expression
+// 	| multiplicative_expression MUL_OP cast_expression
+// 	| multiplicative_expression DIV_OP cast_expression
+// 	| multiplicative_expression MOD_OP cast_expression
+
+multiplicative_expression: cast_expression (( MUL_OP | DIV_OP | MOD_OP ) cast_expression)*
+
+// additive_expression: multiplicative_expression
+// 	| additive_expression "+" multiplicative_expression
+// 	| additive_expression "-" multiplicative_expression
+
+// additive_expression: multiplicative_expression
+// 	| additive_expression ADD_OP multiplicative_expression
+// 	| additive_expression SUB_OP multiplicative_expression
+
+additive_expression: multiplicative_expression (( ADD_OP | SUB_OP ) multiplicative_expression)*
+
+// shift_expression: additive_expression
+// 	| shift_expression LEFT_OP additive_expression
+// 	| shift_expression RIGHT_OP additive_expression
+
+shift_expression: additive_expression (( LEFT_OP | RIGHT_OP ) additive_expression)*
+
+
+// relational_expression: shift_expression
+// 	| relational_expression "<" shift_expression
+// 	| relational_expression ">" shift_expression
+// 	| relational_expression LE_OP shift_expression
+// 	| relational_expression GE_OP shift_expression
+
+// relational_expression: shift_expression
+// 	| relational_expression LT_OP shift_expression
+// 	| relational_expression GT_OP shift_expression
+// 	| relational_expression LE_OP shift_expression
+// 	| relational_expression GE_OP shift_expression
+
+relational_expression: shift_expression (( LT_OP | GT_OP | LE_OP | GE_OP ) shift_expression)*
+
+// equality_expression: relational_expression
+// 	| equality_expression EQ_OP relational_expression
+// 	| equality_expression NE_OP relational_expression
+
+equality_expression: relational_expression (( EQ_OP | NE_OP ) relational_expression)*
+
+// and_expression: equality_expression
+// 	| and_expression "&" equality_expression
+
+and_expression: equality_expression ("&" equality_expression)*
+
+// exclusive_or_expression: and_expression
+// 	| exclusive_or_expression "^" and_expression
+
+exclusive_or_expression: and_expression ("^" and_expression)*
+
+// inclusive_or_expression: exclusive_or_expression
+// 	| inclusive_or_expression "|" exclusive_or_expression
+
+inclusive_or_expression: exclusive_or_expression ("|" exclusive_or_expression)*
+
+// logical_and_expression: inclusive_or_expression
+// 	| logical_and_expression LOGICAL_AND_OP inclusive_or_expression
+logical_and_expression: inclusive_or_expression (LOGICAL_AND_OP inclusive_or_expression)*
+
+// logical_or_expression: logical_and_expression
+// 	| logical_or_expression LOGICAL_OR_OP logical_and_expression
+logical_or_expression: logical_and_expression (LOGICAL_OR_OP logical_and_expression)*
+
+conditional_expression: logical_or_expression
+	| logical_or_expression "?" expression ":" conditional_expression
+
+
+assignment_expression: conditional_expression
+	| unary_expression assignment_operator assignment_expression
+
+
+assignment_operator: ASSIGN
+	| MUL_ASSIGN
+	| ADD_ASSIGN
+	| SUB_ASSIGN
+	| DIV_ASSIGN
+	// | MOD_ASSIGN
+	// | LEFT_ASSIGN
+	// | RIGHT_ASSIGN
+	// | AND_ASSIGN
+	// | XOR_ASSIGN
+	// | OR_ASSIGN
+
+
+// expression: assignment_expression
+// 	| expression "," assignment_expression
+
+expression: assignment_expression ("," assignment_expression)*
+
+constant_expression: conditional_expression
+
+
+declaration: declaration_specifiers ";"
+	| declaration_specifiers init_declarator_list ";"
+
+
+// declaration_specifiers: storage_class_specifier
+// 	| storage_class_specifier declaration_specifiers
+// 	| type_specifier
+// 	| type_specifier declaration_specifiers
+// 	| type_qualifier
+// 	| type_qualifier declaration_specifiers
+
+declaration_specifiers: (storage_class_specifier | type_qualifier)* type_specifier (storage_class_specifier | type_qualifier)*
+
+
+// init_declarator_list: init_declarator
+// 	| init_declarator_list "," init_declarator
+
+init_declarator_list: init_declarator ("," init_declarator)*
+
+
+// init_declarator: declarator
+// 	| declarator "=" initializer
+
+init_declarator: declarator
+	| declarator ASSIGN initializer
+
+storage_class_specifier: TYPEDEF
+	| STATIC
+	// | EXTERN
+	// | AUTO
+	// | REGISTER
+
+// type_specifier: base_type_specifier
+//     | base_type_specifier "[" constant_expression "]"
+
+type_specifier: base_type_specifier
+    | base_type_specifier array_dimensions
+
+// array_dimensions: "[" constant_expression "]"
+//     | array_dimensions "[" constant_expression "]"
+
+array_dimensions: ("[" constant_expression "]")+
+
+base_type_specifier: VOID
+	| INTEGER
+	| BOOLEAN
+	| INT
+	| FIXED
+	| BOOL
+	| STRING
+	// | CHAR
+	// | SHORT
+	// | LONG
+	// | FLOAT
+	// | DOUBLE
+	// | SIGNED
+	// | UNSIGNED
+	// | enum_specifier
+	| UNITFILTER
+	| UNITGROUP
+	| UNIT
+	| POINT
+	| TIMER
+	| REGION
+	| TRIGGER
+	| WAVE
+	| ACTOR
+	| REVEALER
+	| PLAYERGROUP
+	| ENTRYSET
+	| TEXT
+	| SOUND
+	| SOUNDLINK
+	| COLOR
+	| ABILCMD
+	| ORDER
+	| MARKER
+	| BANK
+	| CAMERAINFO
+	| ACTORSCOPE
+	| AIFILTER
+	| WAVETARGET
+	| EFFECTHISTORY
+	| BITMASK
+	| DATETIME
+	| DOODAD
+	| GENERICHANDLE
+	| TRANSMISSIONSOURCE
+	| UNITREF
+	| WAVEINFO
+	| struct_or_union_specifier
+	// | TYPE_NAME
+	// | IDENTIFIER
+
+struct_or_union_specifier: struct_or_union IDENTIFIER "{" struct_declaration_list "}"
+	| struct_or_union "{" struct_declaration_list "}"
+	| struct_or_union IDENTIFIER
+
+
+struct_or_union: STRUCT
+	// | UNION
+
+
+// struct_declaration_list: struct_declaration
+// 	| struct_declaration_list struct_declaration
+struct_declaration_list: struct_declaration+
+
+
+struct_declaration: specifier_qualifier_list struct_declarator_list ";"
+
+
+// specifier_qualifier_list: type_specifier specifier_qualifier_list
+// 	| type_specifier
+// 	| type_qualifier specifier_qualifier_list
+// 	| type_qualifier
+
+specifier_qualifier_list: (type_specifier | type_qualifier)+
+
+
+// struct_declarator_list: struct_declarator
+// 	| struct_declarator_list "," struct_declarator
+
+struct_declarator_list: struct_declarator ("," struct_declarator)*
+
+
+struct_declarator: declarator
+	| ":" constant_expression
+	| declarator ":" constant_expression
+
+
+// enum_specifier: ENUM "{" enumerator_list "}"
+// 	| ENUM IDENTIFIER "{" enumerator_list "}"
+// 	| ENUM IDENTIFIER
+
+
+// enumerator_list: enumerator
+// 	| enumerator_list "," enumerator
+
+
+// enumerator: IDENTIFIER
+// 	| IDENTIFIER "=" constant_expression
+
+
+type_qualifier: CONST
+	// | VOLATILE
+
+
+// declarator: pointer direct_declarator
+// 	| direct_declarator
+
+declarator: direct_declarator
+
+direct_declarator: IDENTIFIER
+	| "(" declarator ")"
+	// | direct_declarator "[" constant_expression "]"
+	// | direct_declarator "[" "]"
+	| direct_declarator "(" parameter_type_list ")"
+	| direct_declarator "(" identifier_list ")"
+	| direct_declarator "(" ")"
+
+
+// pointer: "*"
+// 	| "*" type_qualifier_list
+// 	| "*" pointer
+// 	| "*" type_qualifier_list pointer
+
+
+// type_qualifier_list: type_qualifier
+// 	| type_qualifier_list type_qualifier
+
+type_qualifier_list: type_qualifier+
+
+
+parameter_type_list: parameter_list
+	// | parameter_list "," ELLIPSIS
+
+
+// parameter_list: parameter_declaration
+// 	| parameter_list "," parameter_declaration
+parameter_list: parameter_declaration ("," parameter_declaration)*
+
+parameter_declaration: declaration_specifiers declarator
+	| declaration_specifiers abstract_declarator
+	| declaration_specifiers
+
+
+// identifier_list: IDENTIFIER
+// 	| identifier_list "," IDENTIFIER
+
+identifier_list: IDENTIFIER ("," IDENTIFIER)*
+
+
+type_name: specifier_qualifier_list
+	| specifier_qualifier_list abstract_declarator
+
+
+// abstract_declarator: pointer
+// 	| direct_abstract_declarator
+// 	| pointer direct_abstract_declarator
+
+abstract_declarator: direct_abstract_declarator
+
+direct_abstract_declarator: "(" abstract_declarator ")"
+	| "[" "]"
+	// | "[" constant_expression "]"
+	// | direct_abstract_declarator "[" "]"
+	// | direct_abstract_declarator "[" constant_expression "]"
+	| "(" ")"
+	| "(" parameter_type_list ")"
+	| direct_abstract_declarator "(" ")"
+	| direct_abstract_declarator "(" parameter_type_list ")"
+
+
+initializer: assignment_expression
+	| "{" initializer_list "}"
+	| "{" initializer_list "," "}"
+
+
+initializer_list: initializer
+	| initializer_list "," initializer
+
+
+// statement: labeled_statement
+// 	| compound_statement
+// 	| expression_statement
+// 	| selection_statement
+// 	| iteration_statement
+// 	| jump_statement
+
+statement: compound_statement
+	| expression_statement
+	| selection_statement
+	| iteration_statement
+	| jump_statement
+
+
+// labeled_statement: IDENTIFIER ":" statement
+	// | CASE constant_expression ":" statement
+	// | DEFAULT ":" statement
+
+
+compound_statement: "{" "}"
+	| "{" statement_list "}"
+	| "{" declaration_list "}"
+	| "{" declaration_list statement_list "}"
+
+
+// declaration_list: declaration
+// 	| declaration_list declaration
+declaration_list: declaration+
+
+// statement_list: statement
+// 	| statement_list statement
+statement_list: statement+
+
+expression_statement: ";"
+	| expression ";"
+
+
+selection_statement: IF "(" expression ")" statement
+	| IF "(" expression ")" statement ELSE statement
+	// | SWITCH "(" expression ")" statement
+
+
+iteration_statement: WHILE "(" expression ")" statement
+	| DO statement WHILE "(" expression ")" ";"
+	| FOR "(" expression_statement expression_statement ")" statement
+	| FOR "(" expression_statement expression_statement expression ")" statement
+
+
+// jump_statement: GOTO IDENTIFIER ";"
+// 	| CONTINUE ";"
+// 	| BREAK ";"
+// 	| RETURN ";"
+// 	| RETURN expression ";"
+
+jump_statement: CONTINUE ";"
+	| BREAK ";"
+	| BREAKPOINT ";"
+	| RETURN ";"
+	| RETURN expression ";"
+
+
+// translation_unit: external_declaration
+// 	| translation_unit external_declaration
+
+translation_unit: 
+    | translation_unit external_declaration
+
+
+external_declaration: function_definition
+	| declaration
+	| include_directive
+	| native_declaration
+	| forward_declaration
+
+function_definition: declaration_specifiers declarator declaration_list compound_statement
+	| declaration_specifiers declarator compound_statement
+	| declarator declaration_list compound_statement
+	| declarator compound_statement
+
+include_directive: INCLUDE STRING_LITERAL
+native_declaration: NATIVE declaration_specifiers declarator ";"
+forward_declaration: declaration_specifiers declarator ";"
+
+BREAKPOINT: "breakpoint"
+CONTINUE: "continue"
+RETURN: "return"
+BREAK: "break"
+WHILE: "while"
+ELSE: "else"
+FOR: "for"
+DO: "do"
+IF: "if"
+
+STRING: "string"
+FIXED: "fixed"
+BOOLEAN: "boolean"	//rarely used, but included for completeness
+INTEGER: "integer"	//rarely used, but included for completeness
+BOOL: "bool"
+VOID: "void"
+INT: "int"
+
+FALSE: "false" 
+CONST: "const"
+NULL: "null"
+TRUE: "true"
+
+TYPEDEF: "typedef"
+STATIC: "static"
+STRUCT: "struct"
+INCLUDE: "include"
+NATIVE: "native"
+
+ENTRYSET: "entryset"
+UNITFILTER: "unitfilter"
+UNITGROUP: "unitgroup"
+UNITREF: "unitref"
+UNIT: "unit"
+WAVETARGET: "wavetarget"
+WAVEINFO: "waveinfo"
+WAVE: "wave"
+ACTORSCOPE: "actorscope"
+ACTOR: "actor"
+SOUNDLINK: "soundlink"
+SOUND: "sound"
+POINT: "point"
+TIMER: "timer"
+REGION: "region"
+TRIGGER: "trigger"
+REVEALER: "revealer"
+PLAYERGROUP: "playergroup"
+TEXT: "text"
+COLOR: "color"
+ABILCMD: "abilcmd"
+ORDER: "order"
+MARKER: "marker"
+BANK: "bank"
+CAMERAINFO: "camerainfo"
+AIFILTER: "aifilter"
+EFFECTHISTORY: "effecthistory"
+BITMASK: "bitmask"
+DATETIME: "datetime"
+DOODAD: "doodad"
+GENERICHANDLE: "generichandle"
+TRANSMISSIONSOURCE: "transmissionsource"
+// AUTO: "auto"
+// SWITCH: "switch"
+// CASE: "case"
+// DEFAULT: "default"
+// DOUBLE: "double"
+// ENUM: "enum"
+// EXTERN: "extern"
+// FLOAT: "float"
+// GOTO: "goto"
+// REGISTER: "register"
+// SHORT: "short"
+// SIGNED: "signed"
+// SIZEOF: "sizeof"
+// UNION: "union"
+// UNSIGNED: "unsigned"
+// VOLATILE: "volatile"
+// LONG: "long"
+// CHAR: "char"
+
+ADD_ASSIGN: "+="
+SUB_ASSIGN: "-="
+MUL_ASSIGN: "*="
+DIV_ASSIGN: "/="
+RIGHT_OP: ">>"
+LEFT_OP: "<<"
+LOGICAL_AND_OP: "&&"
+LOGICAL_OR_OP: "||"
+LE_OP: "<="
+GE_OP: ">="
+EQ_OP: "=="
+NE_OP: "!="
+ASSIGN: "="
+MUL_OP: "*"
+DIV_OP: "/"	
+MOD_OP: "%"
+ADD_OP: "+"
+SUB_OP: "-"
+LT_OP: "<"
+GT_OP: ">"
+LOGICAL_NOT: "!"
+BITWISE_NOT: "~"
+// PTR_OP: "->"
+// ELLIPSIS: "..."
+// RIGHT_ASSIGN: ">>="
+// LEFT_ASSIGN: "<<="
+// MOD_ASSIGN: "%="
+// AND_ASSIGN: "&="
+// XOR_ASSIGN: "^="
+// OR_ASSIGN: "|="
+// INC_OP: "++"
+// DEC_OP: "--"
+
+// CONSTANT: HEX_CONSTANT
+//         | OCT_CONSTANT
+//         | DEC_CONSTANT
+//         | CHAR_CONSTANT
+//         | FLOAT_CONSTANT
+
+// HEX_CONSTANT: /0[xX][a-fA-F0-9]+[uUlL]*/
+// OCT_CONSTANT: /0[0-7]+[uUlL]*/
+// DEC_CONSTANT: /[0-9]+[uUlL]*/
+// CHAR_CONSTANT: /L?'(\\.|[^\\'])'/
+// FLOAT_CONSTANT_1: /[0-9]+[Ee][+-]?[0-9]+[flFL]?/
+// FLOAT_CONSTANT_2: /[0-9]*\.[0-9]+([Ee][+-]?[0-9]+)?[flFL]?/
+// FLOAT_CONSTANT_3: /[0-9]+\.[0-9]*([Ee][+-]?[0-9]+)?[flFL]?/
+// FLOAT_CONSTANT: FLOAT_CONSTANT_1
+//               | FLOAT_CONSTANT_2
+//               | FLOAT_CONSTANT_3
+
+CONSTANT: /0[xX][a-fA-F0-9]+[uUlL]*/                      // hex
+        | /0[0-7]+[uUlL]*/                                  // oct
+        | /[0-9]+[Ee][+-]?[0-9]+[flFL]?/                   // float 1
+        | /[0-9]*\.[0-9]+([Ee][+-]?[0-9]+)?[flFL]?/        // float 2
+        | /[0-9]+\.[0-9]*([Ee][+-]?[0-9]+)?[flFL]?/        // float 3
+        | /[0-9]+[uUlL]*/                                   // dec
+        | /L?'(\\.|[^\\'])'/                                // char
+
+STRING_LITERAL: /L?"(\\.|[^\\"])*"/
+
+BLOCK_COMMENT: /\/\*(.|\n)*?\*\//
+LINE_COMMENT: /\/\/[^\n]*/
+
+TYPE_NAME: /[a-z_][a-z0-9_]*/
+IDENTIFIER: /[a-zA-Z_][a-zA-Z0-9_]*/
+
+%import common.WS
+%ignore WS
+%ignore BLOCK_COMMENT
+%ignore LINE_COMMENT
