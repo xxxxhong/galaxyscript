@@ -39,8 +39,8 @@ unary_expression: postfix_expression
 
 unary_operator: "+"
 	| "-"
-	| "!"	// logical not
-	| "~"	// bitwise not, not used in GalaxyScript but included for completeness
+	| LOGICAL_NOT	// logical not
+	| BITWISE_NOT	// bitwise not, not used in GalaxyScript but included for completeness
 
 
 cast_expression: unary_expression
@@ -101,11 +101,11 @@ inclusive_or_expression: exclusive_or_expression
 
 
 logical_and_expression: inclusive_or_expression
-	| logical_and_expression AND_OP inclusive_or_expression
+	| logical_and_expression LOGICAL_AND_OP inclusive_or_expression
 
 
 logical_or_expression: logical_and_expression
-	| logical_or_expression OR_OP logical_and_expression
+	| logical_or_expression LOGICAL_OR_OP logical_and_expression
 
 
 conditional_expression: logical_or_expression
@@ -118,10 +118,10 @@ assignment_expression: conditional_expression
 
 assignment_operator: ASSIGN
 	| MUL_ASSIGN
-	// | DIV_ASSIGN
-	// | MOD_ASSIGN
 	| ADD_ASSIGN
 	| SUB_ASSIGN
+	// | DIV_ASSIGN
+	// | MOD_ASSIGN
 	// | LEFT_ASSIGN
 	// | RIGHT_ASSIGN
 	// | AND_ASSIGN
@@ -159,26 +159,25 @@ init_declarator: declarator
 	| declarator ASSIGN initializer
 
 storage_class_specifier: TYPEDEF
-	// | EXTERN
 	| STATIC
+	// | EXTERN
 	// | AUTO
 	// | REGISTER
 
 
 type_specifier: VOID
-	// | CHAR
-	// | SHORT
 	| INT
-	// | LONG
-	// | FLOAT
-	// | DOUBLE
 	| FIXED
 	| BOOL
 	| STRING
+	// | CHAR
+	// | SHORT
+	// | LONG
+	// | FLOAT
+	// | DOUBLE
 	// | SIGNED
 	// | UNSIGNED
 	// | enum_specifier
-	// | TYPE_NAME
 	| UNITFILTER
 	| UNITGROUP
 	| UNIT
@@ -211,6 +210,7 @@ type_specifier: VOID
 	| UNITREF
 	| WAVEINFO
 	| struct_or_union_specifier
+	// | TYPE_NAME
 
 struct_or_union_specifier: struct_or_union IDENTIFIER "{" struct_declaration_list "}"
 	| struct_or_union "{" struct_declaration_list "}"
@@ -260,9 +260,10 @@ type_qualifier: CONST
 	// | VOLATILE
 
 
-declarator: pointer direct_declarator
-	| direct_declarator
+// declarator: pointer direct_declarator
+// 	| direct_declarator
 
+declarator: direct_declarator
 
 direct_declarator: IDENTIFIER
 	| "(" declarator ")"
@@ -273,15 +274,14 @@ direct_declarator: IDENTIFIER
 	| direct_declarator "(" ")"
 
 
-pointer: "*"
-	| "*" type_qualifier_list
-	| "*" pointer
-	| "*" type_qualifier_list pointer
+// pointer: "*"
+// 	| "*" type_qualifier_list
+// 	| "*" pointer
+// 	| "*" type_qualifier_list pointer
 
 
 type_qualifier_list: type_qualifier
 	| type_qualifier_list type_qualifier
-
 
 
 parameter_type_list: parameter_list
@@ -305,10 +305,11 @@ type_name: specifier_qualifier_list
 	| specifier_qualifier_list abstract_declarator
 
 
-abstract_declarator: pointer
-	| direct_abstract_declarator
-	| pointer direct_abstract_declarator
+// abstract_declarator: pointer
+// 	| direct_abstract_declarator
+// 	| pointer direct_abstract_declarator
 
+abstract_declarator: direct_abstract_declarator
 
 direct_abstract_declarator: "(" abstract_declarator ")"
 	| "[" "]"
@@ -485,8 +486,8 @@ SUB_ASSIGN: "-="
 MUL_ASSIGN: "*="
 RIGHT_OP: ">>"
 LEFT_OP: "<<"
-AND_OP: "&&"
-OR_OP: "||"
+LOGICAL_AND_OP: "&&"
+LOGICAL_OR_OP: "||"
 LE_OP: "<="
 GE_OP: ">="
 EQ_OP: "=="
