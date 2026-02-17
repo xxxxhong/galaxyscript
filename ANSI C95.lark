@@ -120,7 +120,7 @@ assignment_operator: ASSIGN
 	| MUL_ASSIGN
 	| ADD_ASSIGN
 	| SUB_ASSIGN
-	// | DIV_ASSIGN
+	| DIV_ASSIGN
 	// | MOD_ASSIGN
 	// | LEFT_ASSIGN
 	// | RIGHT_ASSIGN
@@ -174,6 +174,8 @@ array_dimensions: "[" constant_expression "]"
     | array_dimensions "[" constant_expression "]"
 
 base_type_specifier: VOID
+	| INTEGER
+	| BOOLEAN
 	| INT
 	| FIXED
 	| BOOL
@@ -197,6 +199,7 @@ base_type_specifier: VOID
 	| ACTOR
 	| REVEALER
 	| PLAYERGROUP
+	| ENTRYSET
 	| TEXT
 	| SOUND
 	| SOUNDLINK
@@ -219,6 +222,7 @@ base_type_specifier: VOID
 	| WAVEINFO
 	| struct_or_union_specifier
 	// | TYPE_NAME
+	// | IDENTIFIER
 
 struct_or_union_specifier: struct_or_union IDENTIFIER "{" struct_declaration_list "}"
 	| struct_or_union "{" struct_declaration_list "}"
@@ -400,14 +404,18 @@ jump_statement: CONTINUE ";"
 	| RETURN expression ";"
 
 
-translation_unit: external_declaration
-	| translation_unit external_declaration
+// translation_unit: external_declaration
+// 	| translation_unit external_declaration
+
+translation_unit: 
+    | translation_unit external_declaration
 
 
 external_declaration: function_definition
 	| declaration
 	| include_directive
-
+	| native_declaration
+	| forward_declaration
 
 function_definition: declaration_specifiers declarator declaration_list compound_statement
 	| declaration_specifiers declarator compound_statement
@@ -415,6 +423,8 @@ function_definition: declaration_specifiers declarator declaration_list compound
 	| declarator compound_statement
 
 include_directive: INCLUDE STRING_LITERAL
+native_declaration: NATIVE declaration_specifiers declarator ";"
+forward_declaration: declaration_specifiers declarator ";"
 
 BREAKPOINT: "breakpoint"
 CONTINUE: "continue"
@@ -428,6 +438,8 @@ IF: "if"
 
 STRING: "string"
 FIXED: "fixed"
+BOOLEAN: "boolean"	//rarely used, but included for completeness
+INTEGER: "integer"	//rarely used, but included for completeness
 BOOL: "bool"
 VOID: "void"
 INT: "int"
@@ -441,7 +453,9 @@ TYPEDEF: "typedef"
 STATIC: "static"
 STRUCT: "struct"
 INCLUDE: "include"
+NATIVE: "native"
 
+ENTRYSET: "entryset"
 UNITFILTER: "unitfilter"
 UNITGROUP: "unitgroup"
 UNITREF: "unitref"
@@ -495,6 +509,7 @@ TRANSMISSIONSOURCE: "transmissionsource"
 ADD_ASSIGN: "+="
 SUB_ASSIGN: "-="
 MUL_ASSIGN: "*="
+DIV_ASSIGN: "/="
 RIGHT_OP: ">>"
 LEFT_OP: "<<"
 LOGICAL_AND_OP: "&&"
@@ -517,7 +532,6 @@ BITWISE_NOT: "~"
 // ELLIPSIS: "..."
 // RIGHT_ASSIGN: ">>="
 // LEFT_ASSIGN: "<<="
-// DIV_ASSIGN: "/="
 // MOD_ASSIGN: "%="
 // AND_ASSIGN: "&="
 // XOR_ASSIGN: "^="
@@ -555,7 +569,7 @@ STRING_LITERAL: /L?"(\\.|[^\\"])*"/
 BLOCK_COMMENT: /\/\*(.|\n)*?\*\//
 LINE_COMMENT: /\/\/[^\n]*/
 
-// TYPE_NAME: /[a-z_][a-z0-9_]*/
+TYPE_NAME: /[a-z_][a-z0-9_]*/
 IDENTIFIER: /[a-zA-Z_][a-zA-Z0-9_]*/
 
 %import common.WS
