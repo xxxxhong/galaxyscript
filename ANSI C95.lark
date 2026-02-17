@@ -13,7 +13,7 @@ postfix_expression: primary_expression
 	| postfix_expression "(" ")"
 	| postfix_expression "(" argument_expression_list ")"
 	| postfix_expression "." IDENTIFIER
-	| postfix_expression PTR_OP IDENTIFIER
+	// | postfix_expression PTR_OP IDENTIFIER
 	// | postfix_expression INC_OP
 	// | postfix_expression DEC_OP
 
@@ -30,37 +30,55 @@ unary_expression: postfix_expression
 	// | SIZEOF "(" type_name ")"
 
 
-unary_operator: "&"
-	| "*"
-	| "+"
+// unary_operator: "&"
+// 	| "*"
+// 	| "+"
+// 	| "-"
+// 	| "~"
+// 	| "!"
+
+unary_operator: "+"
 	| "-"
-	| "~"
-	| "!"
+	| "!"	// logical not
+	| "~"	// bitwise not, not used in GalaxyScript but included for completeness
 
 
 cast_expression: unary_expression
 	| "(" type_name ")" cast_expression
 
 
-multiplicative_expression: cast_expression
-	| multiplicative_expression "*" cast_expression
-	| multiplicative_expression "/" cast_expression
-	| multiplicative_expression "%" cast_expression
+// multiplicative_expression: cast_expression
+// 	| multiplicative_expression "*" cast_expression
+// 	| multiplicative_expression "/" cast_expression
+// 	| multiplicative_expression "%" cast_expression
 
+multiplicative_expression: cast_expression
+	| multiplicative_expression MUL_OP cast_expression
+	| multiplicative_expression DIV_OP cast_expression
+	| multiplicative_expression MOD_OP cast_expression
+
+// additive_expression: multiplicative_expression
+// 	| additive_expression "+" multiplicative_expression
+// 	| additive_expression "-" multiplicative_expression
 
 additive_expression: multiplicative_expression
-	| additive_expression "+" multiplicative_expression
-	| additive_expression "-" multiplicative_expression
-
+	| additive_expression ADD_OP multiplicative_expression
+	| additive_expression SUB_OP multiplicative_expression
 
 shift_expression: additive_expression
 	| shift_expression LEFT_OP additive_expression
 	| shift_expression RIGHT_OP additive_expression
 
 
+// relational_expression: shift_expression
+// 	| relational_expression "<" shift_expression
+// 	| relational_expression ">" shift_expression
+// 	| relational_expression LE_OP shift_expression
+// 	| relational_expression GE_OP shift_expression
+
 relational_expression: shift_expression
-	| relational_expression "<" shift_expression
-	| relational_expression ">" shift_expression
+	| relational_expression LT_OP shift_expression
+	| relational_expression GT_OP shift_expression
 	| relational_expression LE_OP shift_expression
 	| relational_expression GE_OP shift_expression
 
@@ -134,9 +152,11 @@ init_declarator_list: init_declarator
 	| init_declarator_list "," init_declarator
 
 
-init_declarator: declarator
-	| declarator "=" initializer
+// init_declarator: declarator
+// 	| declarator "=" initializer
 
+init_declarator: declarator
+	| declarator ASSIGN initializer
 
 storage_class_specifier: TYPEDEF
 	// | EXTERN
@@ -460,19 +480,28 @@ TRANSMISSIONSOURCE: "transmissionsource"
 // LONG: "long"
 // CHAR: "char"
 
-ASSIGN: "="
 ADD_ASSIGN: "+="
 SUB_ASSIGN: "-="
 MUL_ASSIGN: "*="
 RIGHT_OP: ">>"
 LEFT_OP: "<<"
-PTR_OP: "->"
 AND_OP: "&&"
 OR_OP: "||"
 LE_OP: "<="
 GE_OP: ">="
 EQ_OP: "=="
 NE_OP: "!="
+ASSIGN: "="
+MUL_OP: "*"
+DIV_OP: "/"	
+MOD_OP: "%"
+ADD_OP: "+"
+SUB_OP: "-"
+LT_OP: "<"
+GT_OP: ">"
+LOGICAL_NOT: "!"
+BITWISE_NOT: "~"
+// PTR_OP: "->"
 // ELLIPSIS: "..."
 // RIGHT_ASSIGN: ">>="
 // LEFT_ASSIGN: "<<="
@@ -487,22 +516,30 @@ NE_OP: "!="
 // TYPE_NAME: /[a-z_][a-z0-9_]*/
 IDENTIFIER: /[a-zA-Z_][a-zA-Z0-9_]*/
 
-CONSTANT: HEX_CONSTANT
-        | OCT_CONSTANT
-        | DEC_CONSTANT
-        | CHAR_CONSTANT
-        | FLOAT_CONSTANT
+// CONSTANT: HEX_CONSTANT
+//         | OCT_CONSTANT
+//         | DEC_CONSTANT
+//         | CHAR_CONSTANT
+//         | FLOAT_CONSTANT
 
-HEX_CONSTANT: /0[xX][a-fA-F0-9]+[uUlL]*/
-OCT_CONSTANT: /0[0-7]+[uUlL]*/
-DEC_CONSTANT: /[0-9]+[uUlL]*/
-CHAR_CONSTANT: /L?'(\\.|[^\\'])'/
-FLOAT_CONSTANT_1: /[0-9]+[Ee][+-]?[0-9]+[flFL]?/
-FLOAT_CONSTANT_2: /[0-9]*\.[0-9]+([Ee][+-]?[0-9]+)?[flFL]?/
-FLOAT_CONSTANT_3: /[0-9]+\.[0-9]*([Ee][+-]?[0-9]+)?[flFL]?/
-FLOAT_CONSTANT: FLOAT_CONSTANT_1
-              | FLOAT_CONSTANT_2
-              | FLOAT_CONSTANT_3
+// HEX_CONSTANT: /0[xX][a-fA-F0-9]+[uUlL]*/
+// OCT_CONSTANT: /0[0-7]+[uUlL]*/
+// DEC_CONSTANT: /[0-9]+[uUlL]*/
+// CHAR_CONSTANT: /L?'(\\.|[^\\'])'/
+// FLOAT_CONSTANT_1: /[0-9]+[Ee][+-]?[0-9]+[flFL]?/
+// FLOAT_CONSTANT_2: /[0-9]*\.[0-9]+([Ee][+-]?[0-9]+)?[flFL]?/
+// FLOAT_CONSTANT_3: /[0-9]+\.[0-9]*([Ee][+-]?[0-9]+)?[flFL]?/
+// FLOAT_CONSTANT: FLOAT_CONSTANT_1
+//               | FLOAT_CONSTANT_2
+//               | FLOAT_CONSTANT_3
+
+CONSTANT: /0[xX][a-fA-F0-9]+[uUlL]*/                      // hex
+        | /0[0-7]+[uUlL]*/                                  // oct
+        | /[0-9]+[Ee][+-]?[0-9]+[flFL]?/                   // float 1
+        | /[0-9]*\.[0-9]+([Ee][+-]?[0-9]+)?[flFL]?/        // float 2
+        | /[0-9]+\.[0-9]*([Ee][+-]?[0-9]+)?[flFL]?/        // float 3
+        | /[0-9]+[uUlL]*/                                   // dec
+        | /L?'(\\.|[^\\'])'/                                // char
 
 STRING_LITERAL: /L?"(\\.|[^\\"])*"/
 
