@@ -199,8 +199,9 @@ base_type_specifier: VOID
 	| ACTOR
 	| REVEALER
 	| PLAYERGROUP
-	| ENTRYSET
+	// | ENTRYSET
 	| TEXT
+	| SHUFFLER
 	| SOUND
 	| SOUNDLINK
 	| COLOR
@@ -455,7 +456,7 @@ STRUCT: "struct"
 INCLUDE: "include"
 NATIVE: "native"
 
-ENTRYSET: "entryset"
+// ENTRYSET: "entryset"
 UNITFILTER: "unitfilter"
 UNITGROUP: "unitgroup"
 UNITREF: "unitref"
@@ -475,6 +476,7 @@ REVEALER: "revealer"
 PLAYERGROUP: "playergroup"
 TEXT: "text"
 COLOR: "color"
+SHUFFLER: "shuffler"
 ABILCMD: "abilcmd"
 ORDER: "order"
 MARKER: "marker"
