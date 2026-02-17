@@ -1,0 +1,19 @@
+Galaxy Script 语法验证报告
+生成时间 : 2026-02-17 15:55:36
+语法文件 : D:\galaxyscript\ANSI C95.lark
+脚本目录 : E:\SMAC_Auto-master\gen_history
+总计     : 15 个文件，2 个失败
+========================================================================
+
+FILE: 0.galaxy
+PATH: E:\SMAC_Auto-master\gen_history\0.galaxy
+UnexpectedToken 'uGroup' at line 127, col 19
+  Expected: {'DIV_OP', 'COMMA', 'RSQB', 'ADD_OP', 'MOD_OP', 'RPAR', 'VBAR', 'GT_OP', 'LOGICAL_OR_OP', 'LEFT_OP', 'LT_OP', 'LE_OP', 'ASSIGN', 'GE_OP', 'AMPERSAND', 'ADD_ASSIGN', 'SEMICOLON', 'DIV_ASSIGN', 'EQ_OP', 'MUL_OP', 'RIGHT_OP', 'RBRACE', 'MUL_ASSIGN', 'LSQB', 'DOT', 'QMARK', 'SUB_ASSIGN', 'NE_OP', 'CIRCUMFLEX', 'SUB_OP', 'LPAR', 'LOGICAL_AND_OP', 'COLON'}
+------------------------------------------------------------------------
+
+FILE: 20260120-211306.galaxy
+PATH: E:\SMAC_Auto-master\gen_history\20260120-211306.galaxy
+UnexpectedToken '' at line 137, col 5
+  Expected: {'DIV_OP', 'COMMA', 'RSQB', 'ADD_OP', 'MOD_OP', 'RPAR', 'VBAR', 'GT_OP', 'LOGICAL_OR_OP', 'LEFT_OP', 'LT_OP', 'LE_OP', 'ASSIGN', 'GE_OP', 'AMPERSAND', 'ADD_ASSIGN', 'SEMICOLON', 'DIV_ASSIGN', 'EQ_OP', 'MUL_OP', 'RIGHT_OP', 'RBRACE', 'MUL_ASSIGN', 'LSQB', 'DOT', 'QMARK', 'SUB_ASSIGN', 'NE_OP', 'CIRCUMFLEX', 'SUB_OP', 'LPAR', 'LOGICAL_AND_OP', 'COLON'}
+------------------------------------------------------------------------
+

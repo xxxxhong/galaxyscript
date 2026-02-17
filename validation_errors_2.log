@@ -1,0 +1,427 @@
+Galaxy Script 语法验证报告
+生成时间 : 2026-02-17 15:29:22
+语法文件 : D:\galaxyscript\ANSI C95.lark
+脚本目录 : D:\galaxyscript\galaxy_scripts
+总计     : 989 个文件，70 个失败
+========================================================================
+
+FILE: AILib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\AILib_h.galaxy
+UnexpectedToken 'libAIAI_gs_HeroAITalentBuild' at line 105, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: GameDataHelperLib.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\GameDataHelperLib.galaxy
+UnexpectedToken 'lv_symbioteHivemind' at line 5502, col 33
+  Expected: {'DIV_ASSIGN', 'COLON', 'LOGICAL_AND_OP', 'COMMA', 'DOT', 'ADD_OP', 'SUB_ASSIGN', 'ADD_ASSIGN', 'LEFT_OP', 'EQ_OP', 'AMPERSAND', 'RBRACE', 'ASSIGN', 'CIRCUMFLEX', 'NE_OP', 'RPAR', 'RIGHT_OP', 'MOD_OP', 'LOGICAL_OR_OP', 'VBAR', 'QMARK', 'MUL_ASSIGN', 'LE_OP', 'SUB_OP', 'SEMICOLON', 'RSQB', 'GT_OP', 'DIV_OP', 'MUL_OP', 'LPAR', 'LT_OP', 'LSQB', 'GE_OP'}
+------------------------------------------------------------------------
+
+FILE: GameDataHelperLib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\GameDataHelperLib_h.galaxy
+UnexpectedToken '[' at line 255, col 35
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: GameLib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\GameLib_h.galaxy
+UnexpectedToken 'libGame_gs_DeathRecapMaxDamageAbil' at line 565, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: HeroesLib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\HeroesLib_h.galaxy
+UnexpectedToken 'libCore_gs_AnnouncerVOLine' at line 365, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: Lib281DEC45_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\Lib281DEC45_h.galaxy
+UnexpectedToken '[' at line 304, col 25
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibAMCT_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibAMCT_h.galaxy
+UnexpectedToken '[' at line 81, col 24
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibAMGT_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibAMGT_h.galaxy
+UnexpectedToken '[' at line 75, col 32
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibAMPU_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibAMPU_h.galaxy
+UnexpectedToken '[' at line 69, col 31
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibAMVS_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibAMVS_h.galaxy
+UnexpectedToken 'libAMVS_gv_aRM_TrialGrounds' at line 112, col 29
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibAREN_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibAREN_h.galaxy
+UnexpectedToken '[' at line 72, col 30
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibAtDe_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibAtDe_h.galaxy
+UnexpectedToken 'libAtDe_gv_attackDefend' at line 62, col 25
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibCOMI_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibCOMI_h.galaxy
+UnexpectedToken '[' at line 231, col 41
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibCOUI_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibCOUI_h.galaxy
+UnexpectedToken '[' at line 175, col 31
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibGRDN_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibGRDN_h.galaxy
+UnexpectedToken '[' at line 49, col 21
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibHALA_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibHALA_h.galaxy
+UnexpectedToken 'libHALA_gv_alarakUI' at line 20, col 21
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibHAMA_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibHAMA_h.galaxy
+UnexpectedToken 'libHAMA_gv_amazonUI' at line 13, col 21
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibHANA_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibHANA_h.galaxy
+UnexpectedToken 'libHANA_gv_anaUI' at line 21, col 18
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibHAUR_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibHAUR_h.galaxy
+UnexpectedToken 'libHAUR_gv_aurielUI' at line 40, col 21
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibHDVA_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibHDVA_h.galaxy
+UnexpectedToken 'libHDVA_gv_dVaUI' at line 22, col 18
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibHSAM_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibHSAM_h.galaxy
+UnexpectedToken 'libHSAM_gv_samuroUI' at line 27, col 21
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibHSTU_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibHSTU_h.galaxy
+UnexpectedToken 'libHSTU_gv_stukovUI' at line 14, col 21
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibHZAR_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibHZAR_h.galaxy
+UnexpectedToken 'libHZAR_gv_zaryaUI' at line 19, col 20
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibHZUL_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibHZUL_h.galaxy
+UnexpectedToken 'libHZUL_gv_zuljinUI' at line 16, col 21
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibIGHS.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibIGHS.galaxy
+UnexpectedToken 'lv_rosterSlotShuffler' at line 251, col 14
+  Expected: {'DIV_ASSIGN', 'COLON', 'LOGICAL_AND_OP', 'COMMA', 'DOT', 'ADD_OP', 'SUB_ASSIGN', 'ADD_ASSIGN', 'LEFT_OP', 'EQ_OP', 'AMPERSAND', 'RBRACE', 'ASSIGN', 'CIRCUMFLEX', 'NE_OP', 'RPAR', 'RIGHT_OP', 'MOD_OP', 'LOGICAL_OR_OP', 'VBAR', 'QMARK', 'MUL_ASSIGN', 'LE_OP', 'SUB_OP', 'SEMICOLON', 'RSQB', 'GT_OP', 'DIV_OP', 'MUL_OP', 'LPAR', 'LT_OP', 'LSQB', 'GE_OP'}
+------------------------------------------------------------------------
+
+FILE: LibIGHS_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibIGHS_h.galaxy
+UnexpectedToken 'libIGHS_gs_ShufflePlayerSettings' at line 29, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibLNYF.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibLNYF.galaxy
+UnexpectedToken 'lv_shuffler' at line 1303, col 14
+  Expected: {'DIV_ASSIGN', 'COLON', 'LOGICAL_AND_OP', 'COMMA', 'DOT', 'ADD_OP', 'SUB_ASSIGN', 'ADD_ASSIGN', 'LEFT_OP', 'EQ_OP', 'AMPERSAND', 'RBRACE', 'ASSIGN', 'CIRCUMFLEX', 'NE_OP', 'RPAR', 'RIGHT_OP', 'MOD_OP', 'LOGICAL_OR_OP', 'VBAR', 'QMARK', 'MUL_ASSIGN', 'LE_OP', 'SUB_OP', 'SEMICOLON', 'RSQB', 'GT_OP', 'DIV_OP', 'MUL_OP', 'LPAR', 'LT_OP', 'LSQB', 'GE_OP'}
+------------------------------------------------------------------------
+
+FILE: LibLNYF_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibLNYF_h.galaxy
+UnexpectedToken '[' at line 69, col 20
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMDoE_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMDoE_h.galaxy
+UnexpectedToken '[' at line 159, col 21
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMHPP_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMHPP_h.galaxy
+UnexpectedToken 'libMHPP_gv_payloadPath' at line 87, col 24
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMHmu_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMHmu_h.galaxy
+UnexpectedToken 'libMHmu_gv_hanamura' at line 37, col 21
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMHtM_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMHtM_h.galaxy
+UnexpectedToken '[' at line 78, col 33
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMLBD_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMLBD_h.galaxy
+UnexpectedToken 'libMLBD_gv_mMBOEPanel' at line 105, col 23
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMLCP_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMLCP_h.galaxy
+UnexpectedToken '[' at line 102, col 23
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMMAP_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMMAP_h.galaxy
+UnexpectedToken 'shuffler' at line 67, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMMPP_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMMPP_h.galaxy
+UnexpectedToken 'libMMPP_gv_pullPartyMapData' at line 14, col 29
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMSC2_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMSC2_h.galaxy
+UnexpectedToken 'libMSC2_gv_mMSC2_Nuke_Info' at line 103, col 30
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMSHE_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMSHE_h.galaxy
+UnexpectedToken 'libMSHE_gv_mMTowerPushPanel' at line 123, col 29
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMSOC_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMSOC_h.galaxy
+UnexpectedToken 'libMSOC_gs_MMTombSpiderQueenSoulEaterModeFrames' at line 82, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibMTOD_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibMTOD_h.galaxy
+UnexpectedToken 'libMTOD_gs_MMFieldOfSlaughterTown2' at line 56, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibNCMI_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibNCMI_h.galaxy
+UnexpectedToken 'libNCMI_gs_StealthAIDefendingUnit' at line 125, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibNCST_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibNCST_h.galaxy
+UnexpectedToken '[' at line 169, col 24
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibNPLD_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibNPLD_h.galaxy
+UnexpectedToken 'libNPLD_gv_neutralPayload' at line 48, col 27
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibPBUI_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibPBUI_h.galaxy
+UnexpectedToken 'libPBUI_gv_curateHeroSelectionUI' at line 94, col 34
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibPEB1_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibPEB1_h.galaxy
+UnexpectedToken '[' at line 139, col 20
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibPESC_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibPESC_h.galaxy
+UnexpectedToken 'libPESC_gv_pVEBrawlTopBar' at line 38, col 27
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibPVEB_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibPVEB_h.galaxy
+UnexpectedToken 'libPVEB_gv_pvEBrawlSetting' at line 85, col 28
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibPVEM_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibPVEM_h.galaxy
+UnexpectedToken '[' at line 65, col 25
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibPVEU_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibPVEU_h.galaxy
+UnexpectedToken 'libPVEU_gv_pvEUICurateHeroSelectionUI' at line 141, col 39
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibSCHO_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibSCHO_h.galaxy
+UnexpectedToken '[' at line 146, col 35
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibTrac_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibTrac_h.galaxy
+UnexpectedToken 'libTrac_gv_tracerUI' at line 25, col 20
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibVLSK_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibVLSK_h.galaxy
+UnexpectedToken '[' at line 108, col 33
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibVLSS_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibVLSS_h.galaxy
+UnexpectedToken '[' at line 15, col 20
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: LibertyLib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\LibertyLib_h.galaxy
+UnexpectedToken 'libLbty_gv_autoRevealers' at line 41, col 29
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: MapMechanicsLib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\MapMechanicsLib_h.galaxy
+UnexpectedToken 'libMapM_gs_JungleCampPathData' at line 185, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: MeleeLowAI.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\MeleeLowAI.galaxy
+UnexpectedToken 'funcref' at line 313, col 64
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: StartingExperienceLib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\StartingExperienceLib_h.galaxy
+UnexpectedToken '[' at line 188, col 27
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: SupportLib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\SupportLib_h.galaxy
+UnexpectedToken 'libSprt_gs_RS_Structure' at line 65, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: TacticalAI.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\TacticalAI.galaxy
+UnexpectedToken 'native' at line 62, col 1
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'MARKER', 'ACTORSCOPE', 'PLAYERGROUP', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'STRING', 'DATETIME', 'SOUNDLINK', 'WAVEINFO', 'WAVETARGET', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'REVEALER', 'GENERICHANDLE', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: TacticalAIWar3.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\TacticalAIWar3.galaxy
+UnexpectedToken 'funcref' at line 7, col 50
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: UILib.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\UILib.galaxy
+UnexpectedToken 'lv_questArrayBuffer' at line 14422, col 34
+  Expected: {'DIV_ASSIGN', 'COLON', 'LOGICAL_AND_OP', 'COMMA', 'DOT', 'ADD_OP', 'SUB_ASSIGN', 'ADD_ASSIGN', 'LEFT_OP', 'EQ_OP', 'AMPERSAND', 'RBRACE', 'ASSIGN', 'CIRCUMFLEX', 'NE_OP', 'RPAR', 'RIGHT_OP', 'MOD_OP', 'LOGICAL_OR_OP', 'VBAR', 'QMARK', 'MUL_ASSIGN', 'LE_OP', 'SUB_OP', 'SEMICOLON', 'RSQB', 'GT_OP', 'DIV_OP', 'MUL_OP', 'LPAR', 'LT_OP', 'LSQB', 'GE_OP'}
+------------------------------------------------------------------------
+
+FILE: UILib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\UILib_h.galaxy
+UnexpectedToken 'libUIUI_gs_UITabScreenPlayerStats' at line 690, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: VoidCampaignMissionLib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\VoidCampaignMissionLib_h.galaxy
+UnexpectedToken '[' at line 164, col 24
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: VoidCampaignStoryLib_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\VoidCampaignStoryLib_h.galaxy
+UnexpectedToken '[' at line 177, col 24
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: WarClassic.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\WarClassic.galaxy
+UnexpectedToken 'GAw3_EntrySetEmpty' at line 80, col 10
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: WarClassicSystem.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\WarClassicSystem.galaxy
+UnexpectedToken 'funcref' at line 64, col 48
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: WarClassicSystem_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\WarClassicSystem_h.galaxy
+UnexpectedToken '[' at line 29, col 21
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'COLON', 'COMMA', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'ASSIGN', 'RPAR', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'SEMICOLON', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'LPAR', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: WarCoopData.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\WarCoopData.galaxy
+UnexpectedToken '<' at line 1523, col 123
+  Expected: {'LBRACE', 'COLON', 'COMMA', 'LPAR', 'RPAR', 'LSQB', 'SEMICOLON', 'IDENTIFIER'}
+------------------------------------------------------------------------
+
+FILE: WarCoopData_h.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\WarCoopData_h.galaxy
+UnexpectedToken 'libWCdr_gs_LegendPlayer' at line 53, col 5
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'RBRACE', 'BOOLEAN', 'MARKER', 'PLAYERGROUP', 'ACTORSCOPE', 'INT', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'DATETIME', 'SOUNDLINK', 'STRING', 'WAVETARGET', 'WAVEINFO', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'GENERICHANDLE', 'REVEALER', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
+FILE: natives_missing.galaxy
+PATH: D:\galaxyscript\galaxy_scripts\natives_missing.galaxy
+UnexpectedToken 'native' at line 12, col 1
+  Expected: {'UNITFILTER', 'EFFECTHISTORY', 'VOID', 'POINT', 'FIXED', 'UNITREF', 'ABILCMD', 'TRANSMISSIONSOURCE', 'TRIGGER', 'ORDER', 'LBRACE', 'BOOLEAN', 'MARKER', 'ACTORSCOPE', 'PLAYERGROUP', 'INT', 'STATIC', 'UNITGROUP', 'STRUCT', 'REGION', 'AIFILTER', 'ACTOR', 'TYPEDEF', 'WAVE', 'TIMER', 'UNIT', 'BITMASK', 'STRING', 'DATETIME', 'SOUNDLINK', 'WAVEINFO', 'WAVETARGET', 'CAMERAINFO', 'TEXT', 'BANK', 'BOOL', 'REVEALER', 'GENERICHANDLE', 'COLOR', 'DOODAD', 'INTEGER', 'SOUND', 'CONST'}
+------------------------------------------------------------------------
+
