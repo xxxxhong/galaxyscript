@@ -1,0 +1,4 @@
+[ERROR]
+Unexpected token Token('IDENTIFIER', 'libTrac_gs_TracerRecallRecord') at line 30, column 1.
+Expected one of: 
+	* LBRACE

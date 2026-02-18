@@ -1,0 +1,513 @@
+start
+  translation_unit
+    external_declaration
+      include_directive
+        include
+        "TriggerLibs/HeroesLib"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoStormBowDefaultBaseRange
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	6.0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoStormBowDefaultMaximumRange
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	13.0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoHanzoTriggerRegistrationCount0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoScatterArrowImpactCountThreshold
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	fixed
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxPlayers
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoStormBowBaseRangeForPlayer
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	fixed
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxPlayers
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoStormBowMaximumRangeForPlayer
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	4
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoTargetPracticeSpecialSnowflakes
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	unitgroup
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxPlayers
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoTargetPracticeAllEnemyHeroes
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	unitgroup
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxPlayers
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoTargetPracticeHeroesNotHit
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	unitgroup
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxPlayers
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoTargetPracticeEnemyHeroesHitOnce
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	unitgroup
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxPlayers
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoTargetPracticeEnemyHeroesHitTwice
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	unitgroup
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxPlayers
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoTargetPracticeEnemyHeroesHitThreeTimes
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gv_heroHanzoTargetPracticeRewardRangeMultiplier
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHHAN_gf_HeroHanzoIncrementHeroCountFunction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHHAN_gf_HeroHanzoDecrementHeroCountFunction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHHAN_gf_HeroHanzoTargetPracticeConfigureQuestForPlayer
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_player
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHHAN_gf_HeroHanzoTargetPracticeResetQuestProgress
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_player
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoDragonstrikeSearch
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoScatterArrowPlayImpactFX
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoSonicArrowUnitGainsTrackingBehavior
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoStormBowCharging
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoTargetPracticeTalentSelected
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoTargetPracticeHeroHitByStormBow
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoTargetPracticePlayerGetsRangeIncrease
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoTargetPracticePlayerLosesRangeIncrease
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoTargetPracticePlayerRespecs
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoTargetPracticeHeroSpawned
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoTargetPracticeCloneorMechSpawned
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHHAN_gt_HeroHanzoNinjaAssassinRefreshNaturalAgilityonTakedown
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHHAN_InitVariables

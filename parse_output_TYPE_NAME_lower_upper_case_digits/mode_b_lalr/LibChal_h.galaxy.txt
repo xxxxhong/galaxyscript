@@ -1,0 +1,4841 @@
+start
+  translation_unit
+    external_declaration
+      include_directive
+        include
+        "TriggerLibs/natives"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CHL_DefeatPanelWaveResult_HaventTried
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CHL_DefeatPanelWaveResult_Failed
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CHL_DefeatPanelWaveResult_Survived
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_SuccessFailure_Success
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_SuccessFailure_Failure
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageFormatNotFormat_FormatMessage
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageFormatNotFormat_NotFormatMessage
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageType_ChallengeFailed
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageType_ChallengeFailed2
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageType_Hint
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageType_SimpleHint
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	3
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageType_Secret
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	4
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageType_Score
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	5
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageType_Warning
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	6
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageType_NewUnitAcquired
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	7
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageType_NewUnitAvailable
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	8
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_CampaignMessageType_NewTechAvailable
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	9
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ObjectiveMessageType_ObjectiveDiscovered
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ObjectiveMessageType_ObjectiveUpdate
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ObjectiveMessageType_ObjectiveCompleted
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ObjectiveMessageType_ObjectiveFailed
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	3
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeScoreType_Count
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeScoreType_Timeseconds
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeType_ChallengeNone
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeType_AdvancedCommand
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeType_Economy
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeType_TerranCombat
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	3
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeType_TerranCovertOps
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	4
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeType_RushDefense
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	5
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeType_ProtossPsionics
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	6
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeType_ProtossCombat
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	7
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeType_ZergInfestation
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	8
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeType_ZergCombat
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	9
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeAwardType_None
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeAwardType_Bronze
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeAwardType_Silver
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeAwardType_Gold
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	3
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_ge_ChallengeAwardType_Platinum
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	4
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VPWAVEMAXCOUNT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VPACHIEVEMAXCOUNT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANEL_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	780
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELTOPBORDER_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	23
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELTOPBORDER_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	582
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELTOPBORDER_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELTITLE_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	65
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELSUBTITLE_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	95
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELSPLIT_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	125
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELSPLIT_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	580
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELSPLIT_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	8
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELGLOW_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	55
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELGLOW_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	380
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELGLOW_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	48
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELWAVEPANEL_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	150
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELWAVEPANEL_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	640
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELWAVEPANELWAVE_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	604
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELWAVEPANELWAVE_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	50
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELWAVEPANELWAVELABEL_OFFSET
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	22
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELWAVEPANELWAVEBUTTON_OFFSET
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          unary_operator
+                                          cast_expression
+                                            unary_expression
+                                              postfix_expression
+                                                primary_expression	10
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELWAVEPANELBUTTON_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	110
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELWAVEPANELBUTTON_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	44
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELACHIEVEPANELITEM_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	153
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELACHIEVEPANELITEM_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	640
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELSCORE_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	604
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELSCORE_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	45
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELCONTINUE_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	280
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_VICTORYPANELCONTINUE_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	90
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DPWAVEMAXCOUNT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VPWAVEMAXCOUNT
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANEL_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANEL_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELTOPBORDER_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELTOPBORDER_Y
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELTOPBORDER_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELTOPBORDER_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELTOPBORDER_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELTOPBORDER_HEIGHT
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELTITLE_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELTITLE_Y
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELSUBTITLE_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELSUBTITLE_Y
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELSUBTITLE_Y_NOWAVE
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	120
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELSPLIT_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELSPLIT_Y
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELSPLIT_Y_NOWAVE
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	100
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELSPLIT_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELSPLIT_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELSPLIT_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELSPLIT_HEIGHT
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELGLOW_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	50
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELGLOW_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	540
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELGLOW_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	54
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELWAVEPANEL_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELWAVEPANEL_Y
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELWAVEPANEL_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELWAVEPANEL_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELWAVEPANELWAVE_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELWAVEPANELWAVE_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELWAVEPANELWAVE_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELWAVEPANELWAVE_HEIGHT
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELWAVEPANELWAVELABEL_OFFSET
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELWAVEPANELWAVELABEL_OFFSET
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELWAVEPANELWAVEBUTTON_OFFSET
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELWAVEPANELWAVEBUTTON_OFFSET
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELWAVEPANELBUTTON_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELWAVEPANELBUTTON_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELWAVEPANELBUTTON_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELWAVEPANELBUTTON_HEIGHT
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELCONTINUE_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELCONTINUE_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_DEFEATPANELCONTINUE_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELCONTINUE_HEIGHT
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANEL_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANEL_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELTOPBORDER_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELTOPBORDER_Y
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELTOPBORDER_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELTOPBORDER_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELTOPBORDER_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELTOPBORDER_HEIGHT
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELTITLE_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	88
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELSUBTITLE_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELTITLE_Y
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELSPLIT_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	128
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELSPLIT_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELSPLIT_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELSPLIT_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELSPLIT_HEIGHT
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELGLOW_Y
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	75
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELGLOW_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	460
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELGLOW_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	54
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELCONTINUE_WIDTH
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELCONTINUE_WIDTH
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_WSPANELCONTINUE_HEIGHT
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libChal_gv_cHLC_VICTORYPANELCONTINUE_HEIGHT
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_challengeSecretDelay
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	5.0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_challengeTipDelay
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	5.0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_challengeObjectiveDelay
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	5.0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_BANKNAME
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Challenge"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_KEYAWARD
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Award"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_KEYSCORE
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Score"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHLC_KEYSCORETIME
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"ScoreTime"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_challengeStopped
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_boardMade
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_finalCountdownDIALOG
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelWaveCount
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelWaveLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelWaveRetry
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelAchievementCount
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelAchievements
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelContinue
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelRetry
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelDlg
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelBorder
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelBlackMask
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelGradient
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelInnerLine
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelTitleGlowImg
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelTitleLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelSubTitleLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelScoreBG
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelScoreLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelContinueBtn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VictoryPanelRetryBtn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VPWavePanelHeight
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VPWavePanelTitle
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VPWavePanelBGImage
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VPWavePanelTitleLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VPWavePanelWaveBGImage
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VPWavePanelWaveLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VPWavePanelWaveButton
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VPAchievePanelHeight
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VPAchievePanelBGImage
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_VPAchievePanelAchievements
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelWaveCount
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelWaveLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelWaveResult
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelWaveRetry
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelContinue
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelRetry
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelDlg
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelBorder
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelBlackMask
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelGradient
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelInnerLine
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelTitleGlowImg
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelTitleLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelSubTitleLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelSplitImg
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelContinueBtn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefeatPanelRetryBtn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DPWavePanelHeight
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DPWavePanelBGImage
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DPWavePanelWaveBGImage
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DPWavePanelWaveLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DPWavePanelWaveButton
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelScore2Text
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelContinue
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelDlg
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelBorder
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelBlackMask
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelGradient
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelInnerLine
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelOverlay
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelTitleGlowImg
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelTitleLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelSubTitleLabel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelScoreLabel1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelScoreLabel2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelSplitImg
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_WSPanelContinueBtn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_Score
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_CurrentType
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	21
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_ChallengeName
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bank
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gv_cHL_DefaultChallengeBank
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ShowRacingStart
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ShowRacingStartCustomDelay
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_delayTime
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ShowFinalCountdown
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_countdownStart
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_HideFinalCountdown
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ChallengeScoreWindow
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_unitsText
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_finalScore
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_rankScore
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ChallengeScoreWindowwithRounds
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_round1Text
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_round2Text
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_round3Text
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_totalLossesText
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_round1Losses
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_round2Losses
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_round3Losses
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_totalLosses
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ChallengeReadyButton
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_screenButtonID
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_player
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_runTrigger
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CreateChallengeVictoryPanel
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_title
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_subTitle
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_wavePanelTitle
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_scoreText
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_continueTrigger
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_retryTrigger
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_AddWaveToChallengeVictoryPanel
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_label
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_retry_Trigger
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_AddAchievementToChallengeVictoryPanel
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_achievement
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ShowHideChallengeVictoryPanel
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_showHide
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_UpdateVictoryPanel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_VPCreateWavePanel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_VPUpdateWavePanel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_VPCreateAchievePanel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_VPUpdateAchievePanel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CreateChallengeDefeatPanel
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_title
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_subTitle
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_continueTrigger
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_retryTrigger
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_AddWaveToChallengeDefeatPanel
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_label
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_result
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_retry_Trigger
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ShowHideChallengeDefeatPanel
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_showHide
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_UpdateDefeatPanel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_DPCreateWavePanel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_DPUpdateWavePanel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CreateChallengeWaveSuccessPanel
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_successFailure
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_title
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_subTitle
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_scoreText1
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_scoreText2
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_continueTrigger
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ShowHideChallengeWaveSuccessPanel
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_showHide
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_UpdateWSPanel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_DisplayChallengeMessage
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	playergroup
+                      declarator
+                        direct_declarator	lp_toPlayerGroup
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_messageType
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	text
+                      declarator
+                        direct_declarator	lp_message
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_formatOrNot
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_FormatSoreText
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_score
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_scoreType
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ChallengeScore
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_UpdateChallengeScore
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ChallengeAwardFromBank
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_challengeType
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ChallengeScoreFromBank
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_challengeType
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_SaveChallengeAwardToBank
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_challengeType
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_award
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_SaveChallengeScoreToBank
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_challengeType
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_score
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_LoadChallengeData
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_type
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_SaveChallengeData
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_InitChallengeBank
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CHL_InitChallengeData
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_ChallengeName
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_challenge
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_gf_CurrentChallengeType
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gt_CHL_VictoryPanelButtonClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gt_CHL_DefeatPanelButtonClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libChal_gt_CHL_WSPanelContinue
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libChal_InitVariables

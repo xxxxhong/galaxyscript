@@ -1,0 +1,8 @@
+[ERROR]
+Unexpected token Token('LSQB', '[') at line 125, column 38.
+Expected one of: 
+	* SEMICOLON
+	* COLON
+	* COMMA
+	* LPAR
+Previous tokens: [Token('IDENTIFIER', 'NCMI_gs_StealthAIDefendingUnit')]

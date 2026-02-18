@@ -1,0 +1,9 @@
+[ERROR]
+Unexpected token Token('WAVE', 'wave') at line 325, column 10.
+Expected one of: 
+	* LPAR
+	* TYPEDEF
+	* CONST
+	* STATIC
+	* IDENTIFIER
+	* SEMICOLON

@@ -1,0 +1,136 @@
+start
+  translation_unit
+    external_declaration
+      include_directive
+        include
+        "TriggerLibs/natives"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libW3AI_gv_d
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libW3AI_gv_warningframe
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libW3AI_gv_helpButton
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libW3AI_gf_UseExtraWar3AISettings
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libW3AI_gf__LoadAllFeatures
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libW3AI_gf__LoadAllPatchNotes
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libW3AI_gt_Dialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libW3AI_gt_Over
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libW3AI_gt_ExtraWorkDelay
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libW3AI_gt_ClearPatchNoteTips
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libW3AI_gt_TeleportGather
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libW3AI_gt_ThrallTooltip
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libW3AI_gt_Hook
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libW3AI_InitVariables

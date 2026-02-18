@@ -1,0 +1,252 @@
+start
+  translation_unit
+    external_declaration
+      include_directive
+        include
+        "TriggerLibs/natives"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gv_heroYrelTriggerRegistrationVariable
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gv_heroYrelVindicationPlayerCount
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gv_heroYrelRighteousHammerPlayerCount
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gv_heroYrelAvengingWrathPlayerCount
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gv_heroYrelArdentDefenderDamageConversionScale
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gv_heroYrelArdentDefenderPlayerCount
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHYRL_gf_HeroYrelIncrementHeroCountFunction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHYRL_gf_HeroYrelDecrementHeroCountFunction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelHeroSpawned
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelAbathurUltimateEvolutionHeroCopied
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelGameOverEvent
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelVindicationOn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelVindicationPlayerClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelVindicationOff
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelRighteousHammerOn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelRighteousHammerPlayerClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelRighteousHammerOff
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelAvengingWrathOn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelAvengingWrathPlayerClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelAvengingWrathOff
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelArdentDefenderOn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelArdentDefenderDamageTracker
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelArdentDefenderOff
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelBubbleHearthOverlayOn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelBubbleHearthOverlayOff
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHYRL_gt_HeroYrelBubbleHearthHearthstoneTalentDisableCheck
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHYRL_InitVariables

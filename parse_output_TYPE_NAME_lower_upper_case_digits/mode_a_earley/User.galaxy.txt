@@ -1,0 +1,954 @@
+start
+  translation_unit
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_classIdCUser
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_classIdCUserName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"CUser"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeAbilCmd
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeActor
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeColor
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeCompare
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	3
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeFixed
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	4
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeGameLink
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	5
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeImage
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	6
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeInt
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	7
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeModel
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	8
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeMovie
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	9
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeSound
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeString
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeText
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	12
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeUnit
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	13
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeUpgrade
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	14
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeUser
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	15
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeAbilCmdName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"AbilCmd"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeActorName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Actor"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeColorName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Color"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeCompareName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Compare"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeFixedName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Fixed"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeGameLinkName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"GameLink"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeImageName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Image"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeIntName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Int"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeModelName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Model"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeMovieName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Movie"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeSoundName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Sound"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeStringName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"String"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeTextName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Text"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeUnitName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Unit"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeUpgradeName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"Upgrade"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	c_userTypeUserName
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	"User"

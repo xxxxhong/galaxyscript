@@ -1,0 +1,14 @@
+[ERROR]
+Unexpected token Token('STATIC', 'static') at line 75, column 9.
+Expected one of: 
+	* LPAR
+	* SUB_OP
+	* CONSTANT
+	* BITWISE_NOT
+	* TRUE
+	* ADD_OP
+	* STRING_LITERAL
+	* FALSE
+	* IDENTIFIER
+	* NULL
+	* LOGICAL_NOT

@@ -1,0 +1,99 @@
+start
+  translation_unit
+    external_declaration
+      include_directive
+        include
+        "TriggerLibs/natives"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHFEN_gv_heroFenixTriggerRegistrationVariable
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHFEN_gv_heroFenixRapidRechargeRegistrationVariable
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHFEN_gv_heroFenixRapidRechargeHealingModifier
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHFEN_gf_HeroFenixIncrementHeroCountFunction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHFEN_gf_HeroFenixDecrementHeroCountFunction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHFEN_gt_FenixRapidRechargeOn
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHFEN_gt_FenixRapidRechargeShieldHealing
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHFEN_gt_FenixRapidRechargeOff
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHFEN_gt_FenixWarpWarpWarfareCooldownReset
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHFEN_InitVariables

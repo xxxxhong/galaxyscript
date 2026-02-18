@@ -1,0 +1,4 @@
+[ERROR]
+Unexpected token Token('IDENTIFIER', 'libWCdr_gs_DebugHeroSelectUI') at line 166, column 1.
+Expected one of: 
+	* LBRACE

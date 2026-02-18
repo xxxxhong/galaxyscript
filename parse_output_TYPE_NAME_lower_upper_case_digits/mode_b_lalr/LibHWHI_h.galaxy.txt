@@ -1,0 +1,95 @@
+start
+  translation_unit
+    external_declaration
+      include_directive
+        include
+        "TriggerLibs/HeroesLib"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHWHI_gv_heroWhitemaneTriggerRegistrationVariable
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	fixed
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxPlayers
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHWHI_gv_heroWhitemaneZealCombinedHeal
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHWHI_gf_HeroWhitemaneIncrementHeroCountFunction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHWHI_gf_HeroWhitemaneDecrementHeroCountFunction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHWHI_gt_HeroWhitemaneZealDamageTracker
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHWHI_gt_HeroWhitemaneZealCombinedHeal
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHWHI_InitVariables

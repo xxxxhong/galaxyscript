@@ -1,0 +1,150 @@
+start
+  translation_unit
+    external_declaration
+      include_directive
+        include
+        "TriggerLibs/natives"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libLotv_gf_DifficultyValueInt2
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_casual
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_normal
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_hard
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_brutal
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libLotv_gf_DifficultyValueFixed2
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_casual
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_normal
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_hard
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_brutal
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libLotv_gf_DifficultyValueVoidUnitType
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_casual
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_normal
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_hard
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_brutal
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libLotv_gf_DifficultyValueVoidBoolean
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_casual
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_normal
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_hard
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_brutal

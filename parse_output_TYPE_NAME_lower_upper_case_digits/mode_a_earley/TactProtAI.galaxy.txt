@@ -1,0 +1,10 @@
+[ERROR]
+Unexpected token Token('FOR', 'for') at line 36, column 11.
+Expected one of: 
+	* LPAR
+	* TYPEDEF
+	* CONST
+	* STATIC
+	* LSQB
+	* IDENTIFIER
+	* SEMICOLON

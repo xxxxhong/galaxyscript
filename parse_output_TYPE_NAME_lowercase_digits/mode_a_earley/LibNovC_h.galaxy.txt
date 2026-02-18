@@ -1,0 +1,4650 @@
+start
+  translation_unit
+    external_declaration
+      include_directive
+        include
+        "TriggerLibs/natives"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_Cinematic
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_Speech
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_Game
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_Victory
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	3
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_Speech2
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	4
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_Speech3
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	5
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_SpeechAndMusicNoEffects
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	6
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_LowHealthBegin
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	7
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_LowHealthEnd
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	8
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_Game2
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	9
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_Game3
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_MissionLaunchUI
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	11
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_VolumeChannelModeCampaign_VictoryInstant
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	12
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_NovaArc_NovaArcNone
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_NovaArc_NovaArcOne
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_DebugProgressBonusObjectiveAmount_NoObjectives
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_DebugProgressBonusObjectiveAmount_FullObjectives
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_NC_EventFirst
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10000
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignArmyCheatStarts
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10001
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignArmyCheatEnds
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10002
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignDataReset
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10003
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignMapTransition
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10004
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignProgressCheatStart
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10005
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignProgressCheatSave
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10006
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignProgressCheatLoad
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10007
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignProgressMapCompleted
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10008
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignProgressCheatCancel
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10009
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignArchivesSynced
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10010
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_UIArchivesQuit
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10011
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_UIArchivesPlayMission
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10012
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_UIArchivesPlayScene
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10013
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_UIMissionQuit
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10014
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_UIMissionLaunch
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10015
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_UIArmyQuit
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10016
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_UIBottomBarRoomChange
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10017
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_StoryMissionLaunch
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10018
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_StoryInstanceStart
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10019
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_StoryStoryCheatPlay
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10020
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_CampaignOverrideEvents
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10021
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_Event_NC_EventLast
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	10022
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_MissionObjectiveState_Undiscovered
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_MissionObjectiveState_Available
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_MissionObjectiveState_Completed
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_MissionObjectiveState_Failed
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	3
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_ArmyTechItemState_Locked
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_ArmyTechItemState_Unlocked
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_ge_NC_ArmyTechItemState_Missed
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nCC_DebugCampaignTechEquipmentGroupCount
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	4
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nCC_DebugCampaignTechEquipmentItemCount
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	6
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nCC_DebugCampaignTechUpgradesItemsCountMax
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	20
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nCC_DebugCampaignTechUpgradesUnitsCountMax
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	5
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nCC_CampaignNovaIndex
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	5
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nCC_DataVersion
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nCC_NovaPlayerSlot
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_resultsDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechEquipmentGroupCount
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechEquipmentItemCount
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechEquipmentCheckBox
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechEquipmentGroupCount
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechEquipmentItemCount
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechEquipment
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesOpen
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesOK
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesCancel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechUpgradesUnitsCountMax
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesCheckBox
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechUpgradesUnitsCountMax
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesCheckBoxName
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechUpgradesUnitsCountMax
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesCheckBoxUnit
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechUpgradesItemsCountMax
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesItemList
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechUpgradesItemsCountMax
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesAssignedUnitList
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechUpgradesItemsCountMax
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesAssignedUnitLabelList
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libNovC_gv_nCC_DebugCampaignTechUpgradesItemsCountMax
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesButtonList
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesActiveButton
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesActiveButtonIndex
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugCampaignTechUpgradesActiveItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugCampaignTechDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugCampaignTechOK
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugCampaignTechCancel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugCampaignTechRandomizeTechButton
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_TechLimitsCallback
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressButtonOK
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressButtonCancel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressButtonReset
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressButtonDirectSelect
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressLabelInfo
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressLastMission
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressLastCreditMission
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressCurrentMapBak
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressExitCallbackOK
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressExitCallbackCancel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressResetUsed
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressDocDirty
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressShowRewards
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressDirectSelectEnabled
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressBonusObjectiveLevel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressButtonNoObjectives
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressButtonAllObjectives
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressRetailMode
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugStartedFirstStorymodeEpisode
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bank
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_DebugProgressBank
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nC_DebugProgressTempBugFlag
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_NC_LoadingComplete
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gv_nCX_UpgradesTaught
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_PlayCinematic
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_scene
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_animatic
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_CampaignAwardAchievement
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_achievement
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_player
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_EnableCampaignTechUnit
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_enableDisable
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techUnit
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_player
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_CampaignTechUnitIsEnabled
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techUnit
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_LoadCampaignData
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_map
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_CampaignPlayCutscene
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_file
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	point
+                      declarator
+                        direct_declarator	lp_position
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_waitDontWait
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_allowSkip
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_DisplayConversationTimestamp
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_conversation
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_DisplayTimestamp
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_timestamp
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_waitDontWait
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_HaltTimestamp
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_CampaignPlayCutscene2
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_file
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_waitDontWait
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_allowSkip
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_CampaignStopCutscene
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_CinematicFade
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_fadeIn
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_duration
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	color
+                      declarator
+                        direct_declarator	lp_color
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_waitUntilDone
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_PauseAITimeCampaign
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_pauseUnpause
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_PauseMissionTimeCampaign
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_pauseUnpause
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_FormatTimeCampaign
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_second
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	actor
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_AttachModelToUnit
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	unit
+                      declarator
+                        direct_declarator	lp_unit
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_model
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_attachPoint
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_ShowHideWorldCover
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_showHide
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_transparency
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_ClearAnimationwithblendtime
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_identifier
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	unit
+                      declarator
+                        direct_declarator	lp_unit
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_blendTime
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_SetAllSoundChannelVolumesCampaign
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_mode
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_CampaignDebugModeIsOn
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_mode
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechUpgradesCreateDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechUpdateDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechUpgradesUpdateDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechUpdateData
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechUpgradesUpdateData
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechUpgradesAssignUnit
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_upgradeItemIndex
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_activeUpgradeItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechCreateDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechCloseDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechDisplayDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechStoreStates
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechRestoreStates
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugCampaignTechIsDupe
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_mission
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_category
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_SetTechRestrictionsCallback
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_callbackTrigger
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_PurchaseStorymodeTech
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DefaultTechProgress
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_mission
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressDataTableID
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_type
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_name
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressDialogOpened
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressSetFirstStorymodeEpisode
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_state
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressAddMissionButton
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_mission
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_col
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_row
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressCreateDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressUpdateDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressUpdateRequirementLabel
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_label
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_status
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressCloseDialog
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressMapName
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_mission
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressDisplayDialog
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_currentMission
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_oKCallback
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	trigger
+                      declarator
+                        direct_declarator	lp_cancelCallback
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_showRewards
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressSaveStats
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressRestoreStats
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressAdjustBonusObjectives
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressCompleteToMission
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_goalMission
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressSetObjectiveProgress
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_missionObjective
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_DebugProgressUpdateTutorialProgress
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_currentMission
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_LocationCutsceneFilter
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_location
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_MapNewsReport
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_map
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_MissionRewardsBonusPossible
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_map
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_MissionContainingObjective
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_objective
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_MissionCampaignScreenImage
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_map
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_MissionIsInstallation
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_mission
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_MissionFinal
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_EnableDisableTechItemForUnit
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_enableDisable
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_armyUnit
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_EnableDisableTechItemForAllUnits
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_enableDisable
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_UpdateArmyTechItemStates
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemAssignedUnitSet
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_assignedUnit
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemStateSet
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_armyTechItemState
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemIsNewSetFromIndex
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_unitIndex
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_isNewStatus
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemState
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemStateCheck
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_armyTechItemState
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemUnlocked
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemMissed
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemName
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemImage
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemDescriptionFromIndex
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_upgradeIndex
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemTooltipReward
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemAssignedUnit
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemIsNewFromIndex
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_unitIndex
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemUnitFromIndex
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_unitIndex
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemUpgradeFromIndex
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_upgradeIndex
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemMovieFromIndex
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_upgradeIndex
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemRequiredMission
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemRequiredObjective
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemSourceMission
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_techItem
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ArmyTechItemNewItemsAvailable
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_UpdateArmyUnitStates
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_ArmyHasUnusedTech
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_SaveArmyTechItemsToBank
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bank
+                      declarator
+                        direct_declarator	lp_bank
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_section
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_LoadArmyTechItemsFromBank
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bank
+                      declarator
+                        direct_declarator	lp_bank
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_section
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ApplyArmyTechItems
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ResetArmyTechItems
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NovaActiveEquipmentInSlot
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_equipmentSlot
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_EnableDisableNovaEquipment
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_enableDisable
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_equipment
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_UnequipNovaEquipmentForSlot
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_equipmentSlot
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_PerkIsNewSet
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_campaignPerk
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	bool
+                      declarator
+                        direct_declarator	lp_isNewState
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_EquipmentUnlocked
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_equipment
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_EquipmentMissed
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_equipment
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_PerkCost
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_campaignPerk
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_PerkDescriptionExtra
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_campaignPerk
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_PerkUISound
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_campaignPerk
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	text
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_PerkTooltipReward
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_campaignPerk
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_PerkIsNew
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_campaignPerk
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_PerkIsSecret
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_perk
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_PerkNewEquipmentAvailable
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_PerkUpgradesActive
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_perk
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_player
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_UpdatePerkStates
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ResetTech
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_ApplyUserTechChoicestoPlayer
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_player
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_UpdateOptionalTechUnlocks
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ApplyGeneralTech
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_player
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_UpdateWeaponArmorUpgrades
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_player
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_UpdateTerranAddOnStates
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_player
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_Initialize
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_map
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_AutoHeatMapTestMode
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_CampaignPreload
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_TransitionChooseNextMap
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_UpdateCampaignScreen
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_mission
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_UpdateCampaignIndex
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_map
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ResetCampaignIndex
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_CampaignSaveIndex
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ClickableConversationLink
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_characterInstance
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_gf_NC_ChampResAbility
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	string
+                      declarator
+                        direct_declarator	lp_champion
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_TimeExpired
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_QuitDemo
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_TestUserOverrides
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugCampaignTechOK
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugCampaignTechCancel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugCampaignTechEquipmentCheckClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugCampaignTechRandomizeClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugCampaignTechUpgradesOK
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugCampaignTechUpgradesCancel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugCampaignTechUpgradesCheckClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugCampaignTechUpgradesOpenClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugCampaignTechUpgradesItemClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugTech
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressMissionButtonClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressDirectMissionButtonClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressDirectSelectButtonClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressOK
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressLaunchMission
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressDirectLaunchMission
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressCancel
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressReset
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressBonusObjectiveButtonClicked
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgress
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressDevelop
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressOKCallback
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressCancelCallback
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_DebugProgressRetailMode
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_MissionSimulationAgesUpate
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_UpdateMissionFlow
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_ObjectiveBonusText
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_ApplyTech
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_UpdateTechStates
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_TechUnitUpdate
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_TrackLoadingComplete
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_SaveTransitionVars
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_LoadTransitionVars
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_ResetCampaignData
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_StorySimulationStart
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libNovC_gt_NC_StorySimulationEnd
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libNovC_InitVariables

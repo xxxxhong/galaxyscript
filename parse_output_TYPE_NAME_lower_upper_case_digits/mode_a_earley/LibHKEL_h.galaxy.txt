@@ -1,0 +1,398 @@
+start
+  translation_unit
+    external_declaration
+      include_directive
+        include
+        "TriggerLibs/HeroesLib"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gv_heroKelThuzadChainVictimMaxCount
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gv_heroKelThuzadChainVictimHostIndex
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gv_heroKelThuzadChainVictimTargetIndex
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	2
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gv_heroKelThuzadChainMaxPullDistance
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	18.0
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	int
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gv_heroKelThuzadTriggerRegistrationVariable
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	fixed
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gv_heroKelThuzadMasteroftheColdDarkMaxTokenCount
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	string
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gv_heroKelThuzadMasteroftheColdDarkMaxTokenName
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	unit
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxEnginePlayerCount
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libHKEL_gv_heroKelThuzadChainVictimMaxCount
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gv_heroKelThuzadChainsVictims
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	bool
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxEnginePlayerCount
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gv_heroKelThuzadChainsQuestComplete
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	unit
+            array_dimensions
+              constant_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	libCore_gv_bALMaxPlayers
+                                    +
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	1
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gv_heroKelThuzadShades
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHKEL_gf_HeroKelThuzadIncrementHeroCountFunction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHKEL_gf_HeroKelThuzadDecrementHeroCountFunction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHKEL_gf_HeroKelThuzadPullVictims
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	unit
+                      declarator
+                        direct_declarator	lp_kelThuzad
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	int
+                      declarator
+                        direct_declarator	lp_kelThuzadPlayer
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gt_HeroKelThuzadChainsPull
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gt_KelThuzadRespec
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gt_KelThuzadPicksLevel1TalentAfterMaxBlight
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gt_HeroKelThuzadChainsOfIceApplied
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gt_HeroKelThuzadDeathchillExplosion
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gt_HeroKelThuzadShiftingMaliceTakedownReduction
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gt_HeroKelThuzadKelThuzadsPhylacteryAbilityCast
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gt_HeroKelThuzadRegisterShade
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libHKEL_gt_HeroKelThuzadShadeCastDeathandDecay
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libHKEL_InitVariables

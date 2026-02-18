@@ -1,0 +1,300 @@
+--- LALR:   ai46315C0D.galaxy+++ Earley: ai46315C0D.galaxy@@ -555,7 +555,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -5387,7 +5404,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -9995,7 +10029,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -14399,7 +14450,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -19231,7 +19299,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -24715,7 +24800,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -29547,7 +29649,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -34379,7 +34498,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -39751,7 +39887,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -49278,7 +49431,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -50214,7 +50384,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -50623,7 +50810,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               selection_statement
+                 if

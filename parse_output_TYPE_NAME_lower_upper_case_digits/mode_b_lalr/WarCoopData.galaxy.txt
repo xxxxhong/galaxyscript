@@ -1,0 +1,13 @@
+[ERROR]
+Unexpected token Token('LT_OP', '<') at line 1523, column 123.
+Expected one of: 
+	* TYPEDEF
+	* LPAR
+	* CONST
+	* STATIC
+	* RPAR
+	* LBRACE
+	* LSQB
+	* COMMA
+	* IDENTIFIER
+Previous tokens: [Token('IDENTIFIER', 'ref')]

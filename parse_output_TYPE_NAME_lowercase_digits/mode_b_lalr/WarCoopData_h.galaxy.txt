@@ -1,0 +1,8 @@
+[ERROR]
+Unexpected token Token('LSQB', '[') at line 53, column 28.
+Expected one of: 
+	* SEMICOLON
+	* COLON
+	* COMMA
+	* LPAR
+Previous tokens: [Token('IDENTIFIER', 'WCdr_gs_LegendPlayer')]

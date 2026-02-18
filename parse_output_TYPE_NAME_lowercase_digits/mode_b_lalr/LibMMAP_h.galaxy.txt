@@ -1,0 +1,8 @@
+[ERROR]
+Unexpected token Token('LSQB', '[') at line 121, column 36.
+Expected one of: 
+	* SEMICOLON
+	* COLON
+	* COMMA
+	* LPAR
+Previous tokens: [Token('IDENTIFIER', 'MMAP_gs_AVTeamSpecificSounds')]

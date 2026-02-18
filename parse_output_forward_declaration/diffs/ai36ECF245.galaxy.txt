@@ -1,0 +1,743 @@
+--- LALR:   ai36ECF245.galaxy+++ Earley: ai36ECF245.galaxy@@ -13,7 +13,7 @@         include
+         "TriggerLibs/Computer"
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	point
+@@ -34,10 +34,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_defGather
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_defGather
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	string
+@@ -58,10 +60,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_customData
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_customData
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	wave
+@@ -82,10 +86,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_lastWave
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_lastWave
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	bool
+@@ -106,10 +112,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave1_enabled
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave1_enabled
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	wave
+@@ -130,8 +138,10 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave1_lastWave
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave1_lastWave
+     external_declaration
+       declaration
+         declaration_specifiers
+@@ -160,19 +170,23 @@                                           postfix_expression
+                                             primary_expression	null
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	int
+-        declarator
+-          direct_declarator	ai36ECF245_wave1_runPlayer
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave1_runPlayer
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	playergroup
+-        declarator
+-          direct_declarator	ai36ECF245_wave1_runTarget
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave1_runTarget
+     external_declaration
+       function_definition
+         declaration_specifiers
+@@ -473,7 +487,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -2394,7 +2425,7 @@                                                                                 postfix_expression
+                                                                                   primary_expression	wait
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	bool
+@@ -2415,10 +2446,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave2_enabled
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave2_enabled
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	wave
+@@ -2439,8 +2472,10 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave2_lastWave
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave2_lastWave
+     external_declaration
+       declaration
+         declaration_specifiers
+@@ -2469,19 +2504,23 @@                                           postfix_expression
+                                             primary_expression	null
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	int
+-        declarator
+-          direct_declarator	ai36ECF245_wave2_runPlayer
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave2_runPlayer
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	playergroup
+-        declarator
+-          direct_declarator	ai36ECF245_wave2_runTarget
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave2_runTarget
+     external_declaration
+       function_definition
+         declaration_specifiers
+@@ -2782,7 +2821,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -4703,7 +4759,7 @@                                                                                 postfix_expression
+                                                                                   primary_expression	wait
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	bool
+@@ -4724,10 +4780,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave3_enabled
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave3_enabled
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	unitgroup
+@@ -4748,10 +4806,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave3_lastUnits
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave3_lastUnits
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	wave
+@@ -4772,8 +4832,10 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave3_lastWave
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave3_lastWave
+     external_declaration
+       declaration
+         declaration_specifiers
+@@ -4802,19 +4864,23 @@                                           postfix_expression
+                                             primary_expression	null
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	int
+-        declarator
+-          direct_declarator	ai36ECF245_wave3_runPlayer
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave3_runPlayer
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	playergroup
+-        declarator
+-          direct_declarator	ai36ECF245_wave3_runTarget
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave3_runTarget
+     external_declaration
+       function_definition
+         declaration_specifiers
+@@ -5157,7 +5223,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -7326,7 +7409,7 @@                                                                                 postfix_expression
+                                                                                   primary_expression	wait
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	bool
+@@ -7347,10 +7430,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave4_enabled
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave4_enabled
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	unitgroup
+@@ -7371,10 +7456,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave4_lastUnits
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave4_lastUnits
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	wave
+@@ -7395,8 +7482,10 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave4_lastWave
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave4_lastWave
+     external_declaration
+       declaration
+         declaration_specifiers
+@@ -7425,19 +7514,23 @@                                           postfix_expression
+                                             primary_expression	null
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	int
+-        declarator
+-          direct_declarator	ai36ECF245_wave4_runPlayer
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave4_runPlayer
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	playergroup
+-        declarator
+-          direct_declarator	ai36ECF245_wave4_runTarget
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave4_runTarget
+     external_declaration
+       function_definition
+         declaration_specifiers
+@@ -7780,7 +7873,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -9949,7 +10059,7 @@                                                                                 postfix_expression
+                                                                                   primary_expression	wait
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	bool
+@@ -9970,10 +10080,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave5_enabled
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave5_enabled
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	unitgroup
+@@ -9994,10 +10106,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave5_lastUnits
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave5_lastUnits
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	wave
+@@ -10018,8 +10132,10 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave5_lastWave
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave5_lastWave
+     external_declaration
+       declaration
+         declaration_specifiers
+@@ -10048,19 +10164,23 @@                                           postfix_expression
+                                             primary_expression	null
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	int
+-        declarator
+-          direct_declarator	ai36ECF245_wave5_runPlayer
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave5_runPlayer
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	playergroup
+-        declarator
+-          direct_declarator	ai36ECF245_wave5_runTarget
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave5_runTarget
+     external_declaration
+       function_definition
+         declaration_specifiers
+@@ -10403,7 +10523,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -12572,7 +12709,7 @@                                                                                 postfix_expression
+                                                                                   primary_expression	wait
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	bool
+@@ -12593,10 +12730,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave6_enabled
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave6_enabled
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	unitgroup
+@@ -12617,10 +12756,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave6_lastUnits
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave6_lastUnits
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	wave
+@@ -12641,8 +12782,10 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai36ECF245_wave6_lastWave
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave6_lastWave
+     external_declaration
+       declaration
+         declaration_specifiers
+@@ -12671,19 +12814,23 @@                                           postfix_expression
+                                             primary_expression	null
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	int
+-        declarator
+-          direct_declarator	ai36ECF245_wave6_runPlayer
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave6_runPlayer
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	playergroup
+-        declarator
+-          direct_declarator	ai36ECF245_wave6_runTarget
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_wave6_runTarget
+     external_declaration
+       function_definition
+         declaration_specifiers
+@@ -13026,7 +13173,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -17656,19 +17820,23 @@                                           postfix_expression
+                                             primary_expression	null
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	int
+-        declarator
+-          direct_declarator	ai36ECF245_waves_runPlayer
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_waves_runPlayer
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	playergroup
+-        declarator
+-          direct_declarator	ai36ECF245_waves_runTarget
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai36ECF245_waves_runTarget
+     external_declaration
+       function_definition
+         declaration_specifiers
+@@ -18542,7 +18710,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -19208,7 +19393,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -19617,7 +19819,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               selection_statement
+                 if

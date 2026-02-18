@@ -1,0 +1,238 @@
+--- LALR:   ai392DEDDF.galaxy+++ Earley: ai392DEDDF.galaxy@@ -13,7 +13,7 @@         include
+         "TriggerLibs/Computer"
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	point
+@@ -34,10 +34,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai392DEDDF_defGather
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai392DEDDF_defGather
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	string
+@@ -58,10 +60,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai392DEDDF_customData
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai392DEDDF_customData
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	wave
+@@ -82,10 +86,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai392DEDDF_lastWave
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai392DEDDF_lastWave
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	bool
+@@ -106,10 +112,12 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai392DEDDF_wave10_enabled
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai392DEDDF_wave10_enabled
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	wave
+@@ -130,8 +138,10 @@                                         unary_expression
+                                           postfix_expression
+                                             primary_expression	17
+-        declarator
+-          direct_declarator	ai392DEDDF_wave10_lastWave
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai392DEDDF_wave10_lastWave
+     external_declaration
+       declaration
+         declaration_specifiers
+@@ -160,19 +170,23 @@                                           postfix_expression
+                                             primary_expression	null
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	int
+-        declarator
+-          direct_declarator	ai392DEDDF_wave10_runPlayer
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai392DEDDF_wave10_runPlayer
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	playergroup
+-        declarator
+-          direct_declarator	ai392DEDDF_wave10_runTarget
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai392DEDDF_wave10_runTarget
+     external_declaration
+       function_definition
+         declaration_specifiers
+@@ -473,7 +487,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -2945,19 +2976,23 @@                                           postfix_expression
+                                             primary_expression	null
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	int
+-        declarator
+-          direct_declarator	ai392DEDDF_waves_runPlayer
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai392DEDDF_waves_runPlayer
+     external_declaration
+-      forward_declaration
++      declaration
+         declaration_specifiers
+           type_specifier
+             base_type_specifier	playergroup
+-        declarator
+-          direct_declarator	ai392DEDDF_waves_runTarget
++        init_declarator_list
++          init_declarator
++            declarator
++              direct_declarator	ai392DEDDF_waves_runTarget
+     external_declaration
+       function_definition
+         declaration_specifiers
+@@ -3486,7 +3521,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -3702,7 +3754,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               expression_statement
+                 expression
+@@ -4111,7 +4180,24 @@                   compound_statement
+                     statement_list
+                       statement
+-                        jump_statement	return
++                        expression_statement
++                          expression
++                            assignment_expression
++                              conditional_expression
++                                logical_or_expression
++                                  logical_and_expression
++                                    inclusive_or_expression
++                                      exclusive_or_expression
++                                        and_expression
++                                          equality_expression
++                                            relational_expression
++                                              shift_expression
++                                                additive_expression
++                                                  multiplicative_expression
++                                                    cast_expression
++                                                      unary_expression
++                                                        postfix_expression
++                                                          primary_expression	return
+             statement
+               selection_statement
+                 if

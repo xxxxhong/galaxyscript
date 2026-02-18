@@ -36,7 +36,8 @@ def load_grammar(grammar_path: str) -> Lark:
     """加载 lark 语法文件，返回解析器（开启行列号记录）"""
     with open(grammar_path, "r", encoding="utf-8") as f:
         grammar = f.read()
-    return Lark(grammar, parser="lalr", propagate_positions=True)
+    # return Lark(grammar, parser="lalr", propagate_positions=True)
+    return Lark(grammar, parser="earley", ambiguity="resolve", propagate_positions=True)
 
 
 def collect_scripts(scripts_dir: str) -> list:

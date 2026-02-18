@@ -1,0 +1,10 @@
+[ERROR]
+Unexpected token Token('DO', 'do') at line 43, column 10.
+Expected one of: 
+	* LPAR
+	* STATIC
+	* TYPEDEF
+	* SEMICOLON
+	* IDENTIFIER
+	* CONST
+	* LSQB

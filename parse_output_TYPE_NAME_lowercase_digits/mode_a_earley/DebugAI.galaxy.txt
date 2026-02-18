@@ -1,0 +1,1255 @@
+start
+  translation_unit
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	DEBUG_AI
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	false
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	DEBUG_MAIN_STATE
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	false
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	DEBUG_ATTACK_STATE
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	false
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	DEBUG_WAVE
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	false
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_qualifier	const
+          type_specifier
+            base_type_specifier	bool
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	DEBUG_WITH_MESSAGE
+            =
+            initializer
+              assignment_expression
+                conditional_expression
+                  logical_or_expression
+                    logical_and_expression
+                      inclusive_or_expression
+                        exclusive_or_expression
+                          and_expression
+                            equality_expression
+                              relational_expression
+                                shift_expression
+                                  additive_expression
+                                    multiplicative_expression
+                                      cast_expression
+                                        unary_expression
+                                          postfix_expression
+                                            primary_expression	false
+    external_declaration
+      function_definition
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        declarator
+          direct_declarator
+            direct_declarator	DebugAI
+            parameter_type_list
+              parameter_list
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s
+        compound_statement
+          statement_list
+            statement
+              selection_statement
+                if
+                expression
+                  assignment_expression
+                    conditional_expression
+                      logical_or_expression
+                        logical_and_expression
+                          inclusive_or_expression
+                            exclusive_or_expression
+                              and_expression
+                                equality_expression
+                                  relational_expression
+                                    shift_expression
+                                      additive_expression
+                                        multiplicative_expression
+                                          cast_expression
+                                            unary_expression
+                                              postfix_expression
+                                                primary_expression	DEBUG_AI
+                statement
+                  compound_statement
+                    statement_list
+                      statement
+                        expression_statement
+                          expression
+                            assignment_expression
+                              conditional_expression
+                                logical_or_expression
+                                  logical_and_expression
+                                    inclusive_or_expression
+                                      exclusive_or_expression
+                                        and_expression
+                                          equality_expression
+                                            relational_expression
+                                              shift_expression
+                                                additive_expression
+                                                  multiplicative_expression
+                                                    cast_expression
+                                                      unary_expression
+                                                        postfix_expression
+                                                          primary_expression	TriggerDebugOutput
+                                                          postfix_suffix
+                                                            argument_expression_list
+                                                              assignment_expression
+                                                                conditional_expression
+                                                                  logical_or_expression
+                                                                    logical_and_expression
+                                                                      inclusive_or_expression
+                                                                        exclusive_or_expression
+                                                                          and_expression
+                                                                            equality_expression
+                                                                              relational_expression
+                                                                                shift_expression
+                                                                                  additive_expression
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	1
+                                                              assignment_expression
+                                                                conditional_expression
+                                                                  logical_or_expression
+                                                                    logical_and_expression
+                                                                      inclusive_or_expression
+                                                                        exclusive_or_expression
+                                                                          and_expression
+                                                                            equality_expression
+                                                                              relational_expression
+                                                                                shift_expression
+                                                                                  additive_expression
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	StringToText
+                                                                                            postfix_suffix
+                                                                                              argument_expression_list
+                                                                                                assignment_expression
+                                                                                                  conditional_expression
+                                                                                                    logical_or_expression
+                                                                                                      logical_and_expression
+                                                                                                        inclusive_or_expression
+                                                                                                          exclusive_or_expression
+                                                                                                            and_expression
+                                                                                                              equality_expression
+                                                                                                                relational_expression
+                                                                                                                  shift_expression
+                                                                                                                    additive_expression
+                                                                                                                      multiplicative_expression
+                                                                                                                        cast_expression
+                                                                                                                          unary_expression
+                                                                                                                            postfix_expression
+                                                                                                                              primary_expression	s
+                                                              assignment_expression
+                                                                conditional_expression
+                                                                  logical_or_expression
+                                                                    logical_and_expression
+                                                                      inclusive_or_expression
+                                                                        exclusive_or_expression
+                                                                          and_expression
+                                                                            equality_expression
+                                                                              relational_expression
+                                                                                shift_expression
+                                                                                  additive_expression
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	true
+    external_declaration
+      function_definition
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        declarator
+          direct_declarator
+            direct_declarator	DebugAIPlayer
+            parameter_type_list
+              parameter_list
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	int
+                  declarator
+                    direct_declarator	player
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s
+        compound_statement
+          statement_list
+            statement
+              selection_statement
+                if
+                expression
+                  assignment_expression
+                    conditional_expression
+                      logical_or_expression
+                        logical_and_expression
+                          inclusive_or_expression
+                            exclusive_or_expression
+                              and_expression
+                                equality_expression
+                                  relational_expression
+                                    shift_expression
+                                      additive_expression
+                                        multiplicative_expression
+                                          cast_expression
+                                            unary_expression
+                                              postfix_expression
+                                                primary_expression	DEBUG_AI
+                statement
+                  compound_statement
+                    statement_list
+                      statement
+                        expression_statement
+                          expression
+                            assignment_expression
+                              conditional_expression
+                                logical_or_expression
+                                  logical_and_expression
+                                    inclusive_or_expression
+                                      exclusive_or_expression
+                                        and_expression
+                                          equality_expression
+                                            relational_expression
+                                              shift_expression
+                                                additive_expression
+                                                  multiplicative_expression
+                                                    cast_expression
+                                                      unary_expression
+                                                        postfix_expression
+                                                          primary_expression	TriggerDebugOutput
+                                                          postfix_suffix
+                                                            argument_expression_list
+                                                              assignment_expression
+                                                                conditional_expression
+                                                                  logical_or_expression
+                                                                    logical_and_expression
+                                                                      inclusive_or_expression
+                                                                        exclusive_or_expression
+                                                                          and_expression
+                                                                            equality_expression
+                                                                              relational_expression
+                                                                                shift_expression
+                                                                                  additive_expression
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	1
+                                                              assignment_expression
+                                                                conditional_expression
+                                                                  logical_or_expression
+                                                                    logical_and_expression
+                                                                      inclusive_or_expression
+                                                                        exclusive_or_expression
+                                                                          and_expression
+                                                                            equality_expression
+                                                                              relational_expression
+                                                                                shift_expression
+                                                                                  additive_expression
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	StringToText
+                                                                                            postfix_suffix
+                                                                                              argument_expression_list
+                                                                                                assignment_expression
+                                                                                                  conditional_expression
+                                                                                                    logical_or_expression
+                                                                                                      logical_and_expression
+                                                                                                        inclusive_or_expression
+                                                                                                          exclusive_or_expression
+                                                                                                            and_expression
+                                                                                                              equality_expression
+                                                                                                                relational_expression
+                                                                                                                  shift_expression
+                                                                                                                    additive_expression
+                                                                                                                      multiplicative_expression
+                                                                                                                        cast_expression
+                                                                                                                          unary_expression
+                                                                                                                            postfix_expression
+                                                                                                                              primary_expression	"["
+                                                                                    +
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	PlayerColorName
+                                                                                            postfix_suffix
+                                                                                              argument_expression_list
+                                                                                                assignment_expression
+                                                                                                  conditional_expression
+                                                                                                    logical_or_expression
+                                                                                                      logical_and_expression
+                                                                                                        inclusive_or_expression
+                                                                                                          exclusive_or_expression
+                                                                                                            and_expression
+                                                                                                              equality_expression
+                                                                                                                relational_expression
+                                                                                                                  shift_expression
+                                                                                                                    additive_expression
+                                                                                                                      multiplicative_expression
+                                                                                                                        cast_expression
+                                                                                                                          unary_expression
+                                                                                                                            postfix_expression
+                                                                                                                              primary_expression	PlayerGetColorIndex
+                                                                                                                              postfix_suffix
+                                                                                                                                argument_expression_list
+                                                                                                                                  assignment_expression
+                                                                                                                                    conditional_expression
+                                                                                                                                      logical_or_expression
+                                                                                                                                        logical_and_expression
+                                                                                                                                          inclusive_or_expression
+                                                                                                                                            exclusive_or_expression
+                                                                                                                                              and_expression
+                                                                                                                                                equality_expression
+                                                                                                                                                  relational_expression
+                                                                                                                                                    shift_expression
+                                                                                                                                                      additive_expression
+                                                                                                                                                        multiplicative_expression
+                                                                                                                                                          cast_expression
+                                                                                                                                                            unary_expression
+                                                                                                                                                              postfix_expression
+                                                                                                                                                                primary_expression	player
+                                                                                                                                  assignment_expression
+                                                                                                                                    conditional_expression
+                                                                                                                                      logical_or_expression
+                                                                                                                                        logical_and_expression
+                                                                                                                                          inclusive_or_expression
+                                                                                                                                            exclusive_or_expression
+                                                                                                                                              and_expression
+                                                                                                                                                equality_expression
+                                                                                                                                                  relational_expression
+                                                                                                                                                    shift_expression
+                                                                                                                                                      additive_expression
+                                                                                                                                                        multiplicative_expression
+                                                                                                                                                          cast_expression
+                                                                                                                                                            unary_expression
+                                                                                                                                                              postfix_expression
+                                                                                                                                                                primary_expression	false
+                                                                                    +
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	StringToText
+                                                                                            postfix_suffix
+                                                                                              argument_expression_list
+                                                                                                assignment_expression
+                                                                                                  conditional_expression
+                                                                                                    logical_or_expression
+                                                                                                      logical_and_expression
+                                                                                                        inclusive_or_expression
+                                                                                                          exclusive_or_expression
+                                                                                                            and_expression
+                                                                                                              equality_expression
+                                                                                                                relational_expression
+                                                                                                                  shift_expression
+                                                                                                                    additive_expression
+                                                                                                                      multiplicative_expression
+                                                                                                                        cast_expression
+                                                                                                                          unary_expression
+                                                                                                                            postfix_expression
+                                                                                                                              primary_expression	"] "
+                                                                                    +
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	StringToText
+                                                                                            postfix_suffix
+                                                                                              argument_expression_list
+                                                                                                assignment_expression
+                                                                                                  conditional_expression
+                                                                                                    logical_or_expression
+                                                                                                      logical_and_expression
+                                                                                                        inclusive_or_expression
+                                                                                                          exclusive_or_expression
+                                                                                                            and_expression
+                                                                                                              equality_expression
+                                                                                                                relational_expression
+                                                                                                                  shift_expression
+                                                                                                                    additive_expression
+                                                                                                                      multiplicative_expression
+                                                                                                                        cast_expression
+                                                                                                                          unary_expression
+                                                                                                                            postfix_expression
+                                                                                                                              primary_expression	s
+                                                              assignment_expression
+                                                                conditional_expression
+                                                                  logical_or_expression
+                                                                    logical_and_expression
+                                                                      inclusive_or_expression
+                                                                        exclusive_or_expression
+                                                                          and_expression
+                                                                            equality_expression
+                                                                              relational_expression
+                                                                                shift_expression
+                                                                                  additive_expression
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	true
+    external_declaration
+      function_definition
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        declarator
+          direct_declarator
+            direct_declarator	DebugAIPlayerWave
+            parameter_type_list
+              parameter_list
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	int
+                  declarator
+                    direct_declarator	player
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s
+        compound_statement
+          statement_list
+            statement
+              selection_statement
+                if
+                expression
+                  assignment_expression
+                    conditional_expression
+                      logical_or_expression
+                        logical_and_expression
+                          inclusive_or_expression
+                            exclusive_or_expression
+                              and_expression
+                                equality_expression
+                                  relational_expression
+                                    shift_expression
+                                      additive_expression
+                                        multiplicative_expression
+                                          cast_expression
+                                            unary_expression
+                                              postfix_expression
+                                                primary_expression	DEBUG_WAVE
+                statement
+                  compound_statement
+                    statement_list
+                      statement
+                        expression_statement
+                          expression
+                            assignment_expression
+                              conditional_expression
+                                logical_or_expression
+                                  logical_and_expression
+                                    inclusive_or_expression
+                                      exclusive_or_expression
+                                        and_expression
+                                          equality_expression
+                                            relational_expression
+                                              shift_expression
+                                                additive_expression
+                                                  multiplicative_expression
+                                                    cast_expression
+                                                      unary_expression
+                                                        postfix_expression
+                                                          primary_expression	DebugAIPlayer
+                                                          postfix_suffix
+                                                            argument_expression_list
+                                                              assignment_expression
+                                                                conditional_expression
+                                                                  logical_or_expression
+                                                                    logical_and_expression
+                                                                      inclusive_or_expression
+                                                                        exclusive_or_expression
+                                                                          and_expression
+                                                                            equality_expression
+                                                                              relational_expression
+                                                                                shift_expression
+                                                                                  additive_expression
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	player
+                                                              assignment_expression
+                                                                conditional_expression
+                                                                  logical_or_expression
+                                                                    logical_and_expression
+                                                                      inclusive_or_expression
+                                                                        exclusive_or_expression
+                                                                          and_expression
+                                                                            equality_expression
+                                                                              relational_expression
+                                                                                shift_expression
+                                                                                  additive_expression
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	s
+    external_declaration
+      function_definition
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        declarator
+          direct_declarator
+            direct_declarator	DebugVarInt
+            parameter_type_list
+              parameter_list
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	int
+                  declarator
+                    direct_declarator	value
+        compound_statement
+          statement_list
+            statement
+              expression_statement
+                expression
+                  assignment_expression
+                    conditional_expression
+                      logical_or_expression
+                        logical_and_expression
+                          inclusive_or_expression
+                            exclusive_or_expression
+                              and_expression
+                                equality_expression
+                                  relational_expression
+                                    shift_expression
+                                      additive_expression
+                                        multiplicative_expression
+                                          cast_expression
+                                            unary_expression
+                                              postfix_expression
+                                                primary_expression	DebugAI
+                                                postfix_suffix
+                                                  argument_expression_list
+                                                    assignment_expression
+                                                      conditional_expression
+                                                        logical_or_expression
+                                                          logical_and_expression
+                                                            inclusive_or_expression
+                                                              exclusive_or_expression
+                                                                and_expression
+                                                                  equality_expression
+                                                                    relational_expression
+                                                                      shift_expression
+                                                                        additive_expression
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	s
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	"= "
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	IntToString
+                                                                                  postfix_suffix
+                                                                                    argument_expression_list
+                                                                                      assignment_expression
+                                                                                        conditional_expression
+                                                                                          logical_or_expression
+                                                                                            logical_and_expression
+                                                                                              inclusive_or_expression
+                                                                                                exclusive_or_expression
+                                                                                                  and_expression
+                                                                                                    equality_expression
+                                                                                                      relational_expression
+                                                                                                        shift_expression
+                                                                                                          additive_expression
+                                                                                                            multiplicative_expression
+                                                                                                              cast_expression
+                                                                                                                unary_expression
+                                                                                                                  postfix_expression
+                                                                                                                    primary_expression	value
+    external_declaration
+      function_definition
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        declarator
+          direct_declarator
+            direct_declarator	DebugVarString
+            parameter_type_list
+              parameter_list
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	value
+        compound_statement
+          statement_list
+            statement
+              expression_statement
+                expression
+                  assignment_expression
+                    conditional_expression
+                      logical_or_expression
+                        logical_and_expression
+                          inclusive_or_expression
+                            exclusive_or_expression
+                              and_expression
+                                equality_expression
+                                  relational_expression
+                                    shift_expression
+                                      additive_expression
+                                        multiplicative_expression
+                                          cast_expression
+                                            unary_expression
+                                              postfix_expression
+                                                primary_expression	DebugAI
+                                                postfix_suffix
+                                                  argument_expression_list
+                                                    assignment_expression
+                                                      conditional_expression
+                                                        logical_or_expression
+                                                          logical_and_expression
+                                                            inclusive_or_expression
+                                                              exclusive_or_expression
+                                                                and_expression
+                                                                  equality_expression
+                                                                    relational_expression
+                                                                      shift_expression
+                                                                        additive_expression
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	s
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	"= "
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	value
+    external_declaration
+      function_definition
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        declarator
+          direct_declarator
+            direct_declarator	DebugVarInt2
+            parameter_type_list
+              parameter_list
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s1
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	int
+                  declarator
+                    direct_declarator	value1
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s2
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	int
+                  declarator
+                    direct_declarator	value2
+        compound_statement
+          statement_list
+            statement
+              expression_statement
+                expression
+                  assignment_expression
+                    conditional_expression
+                      logical_or_expression
+                        logical_and_expression
+                          inclusive_or_expression
+                            exclusive_or_expression
+                              and_expression
+                                equality_expression
+                                  relational_expression
+                                    shift_expression
+                                      additive_expression
+                                        multiplicative_expression
+                                          cast_expression
+                                            unary_expression
+                                              postfix_expression
+                                                primary_expression	DebugAI
+                                                postfix_suffix
+                                                  argument_expression_list
+                                                    assignment_expression
+                                                      conditional_expression
+                                                        logical_or_expression
+                                                          logical_and_expression
+                                                            inclusive_or_expression
+                                                              exclusive_or_expression
+                                                                and_expression
+                                                                  equality_expression
+                                                                    relational_expression
+                                                                      shift_expression
+                                                                        additive_expression
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	s1
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	"= "
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	IntToString
+                                                                                  postfix_suffix
+                                                                                    argument_expression_list
+                                                                                      assignment_expression
+                                                                                        conditional_expression
+                                                                                          logical_or_expression
+                                                                                            logical_and_expression
+                                                                                              inclusive_or_expression
+                                                                                                exclusive_or_expression
+                                                                                                  and_expression
+                                                                                                    equality_expression
+                                                                                                      relational_expression
+                                                                                                        shift_expression
+                                                                                                          additive_expression
+                                                                                                            multiplicative_expression
+                                                                                                              cast_expression
+                                                                                                                unary_expression
+                                                                                                                  postfix_expression
+                                                                                                                    primary_expression	value1
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	", "
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	s2
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	"= "
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	IntToString
+                                                                                  postfix_suffix
+                                                                                    argument_expression_list
+                                                                                      assignment_expression
+                                                                                        conditional_expression
+                                                                                          logical_or_expression
+                                                                                            logical_and_expression
+                                                                                              inclusive_or_expression
+                                                                                                exclusive_or_expression
+                                                                                                  and_expression
+                                                                                                    equality_expression
+                                                                                                      relational_expression
+                                                                                                        shift_expression
+                                                                                                          additive_expression
+                                                                                                            multiplicative_expression
+                                                                                                              cast_expression
+                                                                                                                unary_expression
+                                                                                                                  postfix_expression
+                                                                                                                    primary_expression	value2
+    external_declaration
+      function_definition
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        declarator
+          direct_declarator
+            direct_declarator	DebugVarInt3
+            parameter_type_list
+              parameter_list
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s1
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	int
+                  declarator
+                    direct_declarator	value1
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s2
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	int
+                  declarator
+                    direct_declarator	value2
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s3
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	int
+                  declarator
+                    direct_declarator	value3
+        compound_statement
+          statement_list
+            statement
+              expression_statement
+                expression
+                  assignment_expression
+                    conditional_expression
+                      logical_or_expression
+                        logical_and_expression
+                          inclusive_or_expression
+                            exclusive_or_expression
+                              and_expression
+                                equality_expression
+                                  relational_expression
+                                    shift_expression
+                                      additive_expression
+                                        multiplicative_expression
+                                          cast_expression
+                                            unary_expression
+                                              postfix_expression
+                                                primary_expression	DebugAI
+                                                postfix_suffix
+                                                  argument_expression_list
+                                                    assignment_expression
+                                                      conditional_expression
+                                                        logical_or_expression
+                                                          logical_and_expression
+                                                            inclusive_or_expression
+                                                              exclusive_or_expression
+                                                                and_expression
+                                                                  equality_expression
+                                                                    relational_expression
+                                                                      shift_expression
+                                                                        additive_expression
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	s1
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	"= "
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	IntToString
+                                                                                  postfix_suffix
+                                                                                    argument_expression_list
+                                                                                      assignment_expression
+                                                                                        conditional_expression
+                                                                                          logical_or_expression
+                                                                                            logical_and_expression
+                                                                                              inclusive_or_expression
+                                                                                                exclusive_or_expression
+                                                                                                  and_expression
+                                                                                                    equality_expression
+                                                                                                      relational_expression
+                                                                                                        shift_expression
+                                                                                                          additive_expression
+                                                                                                            multiplicative_expression
+                                                                                                              cast_expression
+                                                                                                                unary_expression
+                                                                                                                  postfix_expression
+                                                                                                                    primary_expression	value1
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	", "
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	s2
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	"= "
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	IntToString
+                                                                                  postfix_suffix
+                                                                                    argument_expression_list
+                                                                                      assignment_expression
+                                                                                        conditional_expression
+                                                                                          logical_or_expression
+                                                                                            logical_and_expression
+                                                                                              inclusive_or_expression
+                                                                                                exclusive_or_expression
+                                                                                                  and_expression
+                                                                                                    equality_expression
+                                                                                                      relational_expression
+                                                                                                        shift_expression
+                                                                                                          additive_expression
+                                                                                                            multiplicative_expression
+                                                                                                              cast_expression
+                                                                                                                unary_expression
+                                                                                                                  postfix_expression
+                                                                                                                    primary_expression	value2
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	", "
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	s3
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	"= "
+                                                                          +
+                                                                          multiplicative_expression
+                                                                            cast_expression
+                                                                              unary_expression
+                                                                                postfix_expression
+                                                                                  primary_expression	IntToString
+                                                                                  postfix_suffix
+                                                                                    argument_expression_list
+                                                                                      assignment_expression
+                                                                                        conditional_expression
+                                                                                          logical_or_expression
+                                                                                            logical_and_expression
+                                                                                              inclusive_or_expression
+                                                                                                exclusive_or_expression
+                                                                                                  and_expression
+                                                                                                    equality_expression
+                                                                                                      relational_expression
+                                                                                                        shift_expression
+                                                                                                          additive_expression
+                                                                                                            multiplicative_expression
+                                                                                                              cast_expression
+                                                                                                                unary_expression
+                                                                                                                  postfix_expression
+                                                                                                                    primary_expression	value3
+    external_declaration
+      function_definition
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	void
+        declarator
+          direct_declarator
+            direct_declarator	DebugVarBool
+            parameter_type_list
+              parameter_list
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	string
+                  declarator
+                    direct_declarator	s
+                parameter_declaration
+                  declaration_specifiers
+                    type_specifier
+                      base_type_specifier	bool
+                  declarator
+                    direct_declarator	value
+        compound_statement
+          statement_list
+            statement
+              selection_statement
+                if
+                expression
+                  assignment_expression
+                    conditional_expression
+                      logical_or_expression
+                        logical_and_expression
+                          inclusive_or_expression
+                            exclusive_or_expression
+                              and_expression
+                                equality_expression
+                                  relational_expression
+                                    shift_expression
+                                      additive_expression
+                                        multiplicative_expression
+                                          cast_expression
+                                            unary_expression
+                                              postfix_expression
+                                                primary_expression	value
+                statement
+                  compound_statement
+                    statement_list
+                      statement
+                        expression_statement
+                          expression
+                            assignment_expression
+                              conditional_expression
+                                logical_or_expression
+                                  logical_and_expression
+                                    inclusive_or_expression
+                                      exclusive_or_expression
+                                        and_expression
+                                          equality_expression
+                                            relational_expression
+                                              shift_expression
+                                                additive_expression
+                                                  multiplicative_expression
+                                                    cast_expression
+                                                      unary_expression
+                                                        postfix_expression
+                                                          primary_expression	DebugAI
+                                                          postfix_suffix
+                                                            argument_expression_list
+                                                              assignment_expression
+                                                                conditional_expression
+                                                                  logical_or_expression
+                                                                    logical_and_expression
+                                                                      inclusive_or_expression
+                                                                        exclusive_or_expression
+                                                                          and_expression
+                                                                            equality_expression
+                                                                              relational_expression
+                                                                                shift_expression
+                                                                                  additive_expression
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	s
+                                                                                    +
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	"= true"
+                else
+                statement
+                  compound_statement
+                    statement_list
+                      statement
+                        expression_statement
+                          expression
+                            assignment_expression
+                              conditional_expression
+                                logical_or_expression
+                                  logical_and_expression
+                                    inclusive_or_expression
+                                      exclusive_or_expression
+                                        and_expression
+                                          equality_expression
+                                            relational_expression
+                                              shift_expression
+                                                additive_expression
+                                                  multiplicative_expression
+                                                    cast_expression
+                                                      unary_expression
+                                                        postfix_expression
+                                                          primary_expression	DebugAI
+                                                          postfix_suffix
+                                                            argument_expression_list
+                                                              assignment_expression
+                                                                conditional_expression
+                                                                  logical_or_expression
+                                                                    logical_and_expression
+                                                                      inclusive_or_expression
+                                                                        exclusive_or_expression
+                                                                          and_expression
+                                                                            equality_expression
+                                                                              relational_expression
+                                                                                shift_expression
+                                                                                  additive_expression
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	s
+                                                                                    +
+                                                                                    multiplicative_expression
+                                                                                      cast_expression
+                                                                                        unary_expression
+                                                                                          postfix_expression
+                                                                                            primary_expression	"= false"

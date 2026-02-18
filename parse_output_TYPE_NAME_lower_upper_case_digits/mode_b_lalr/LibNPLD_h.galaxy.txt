@@ -1,0 +1,4 @@
+[ERROR]
+Unexpected token Token('IDENTIFIER', 'libNPLD_gs_Hanamura') at line 52, column 1.
+Expected one of: 
+	* LBRACE

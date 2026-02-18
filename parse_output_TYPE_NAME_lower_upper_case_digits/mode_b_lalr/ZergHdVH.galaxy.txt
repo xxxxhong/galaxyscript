@@ -1,0 +1,4 @@
+[ERROR]
+Unexpected token Token('RBRACE', '}') at line 50, column 115.
+Expected one of: 
+	* WHILE

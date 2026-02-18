@@ -1,0 +1,10 @@
+[ERROR]
+Unexpected token Token('UNIT', 'unit') at line 151, column 10.
+Expected one of: 
+	* LPAR
+	* STATIC
+	* TYPEDEF
+	* SEMICOLON
+	* IDENTIFIER
+	* CONST
+	* LSQB

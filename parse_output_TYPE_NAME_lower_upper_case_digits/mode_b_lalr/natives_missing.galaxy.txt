@@ -1,0 +1,11 @@
+[ERROR]
+Unexpected token Token('POINT', 'point') at line 77, column 9.
+Expected one of: 
+	* LPAR
+	* TYPEDEF
+	* CONST
+	* STATIC
+	* RPAR
+	* LSQB
+	* COMMA
+	* IDENTIFIER

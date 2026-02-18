@@ -1,0 +1,32 @@
+[ERROR]
+Unexpected token Token('IDENTIFIER', 'lv_symbioteHivemind') at line 5502, column 33.
+Expected one of: 
+	* DOT
+	* GT_OP
+	* DIV_ASSIGN
+	* LEFT_OP
+	* SEMICOLON
+	* LOGICAL_AND_OP
+	* ADD_OP
+	* CIRCUMFLEX
+	* LOGICAL_OR_OP
+	* LT_OP
+	* ASSIGN
+	* LE_OP
+	* NE_OP
+	* RIGHT_OP
+	* LPAR
+	* AMPERSAND
+	* MUL_OP
+	* LSQB
+	* SUB_ASSIGN
+	* GE_OP
+	* QMARK
+	* MUL_ASSIGN
+	* MOD_OP
+	* VBAR
+	* DIV_OP
+	* ADD_ASSIGN
+	* COMMA
+	* SUB_OP
+	* EQ_OP

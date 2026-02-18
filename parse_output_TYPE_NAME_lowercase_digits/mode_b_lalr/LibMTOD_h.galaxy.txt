@@ -1,0 +1,6 @@
+[ERROR]
+Unexpected token Token('TYPE_NAME', 'lv_fort') at line 56, column 40.
+Expected one of: 
+	* SEMICOLON
+	* COLON
+	* COMMA

@@ -1,0 +1,4 @@
+[ERROR]
+Unexpected token Token('IDENTIFIER', 'libAtDe_gs_ResetRoundVariables') at line 63, column 1.
+Expected one of: 
+	* LBRACE

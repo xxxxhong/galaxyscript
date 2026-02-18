@@ -1,0 +1,32 @@
+[ERROR]
+Unexpected token Token('IDENTIFIER', 'lv_questArrayBuffer') at line 14422, column 34.
+Expected one of: 
+	* LT_OP
+	* ASSIGN
+	* QMARK
+	* CIRCUMFLEX
+	* LE_OP
+	* LOGICAL_AND_OP
+	* LSQB
+	* GT_OP
+	* NE_OP
+	* COMMA
+	* MUL_ASSIGN
+	* LEFT_OP
+	* GE_OP
+	* DOT
+	* SUB_OP
+	* MUL_OP
+	* DIV_OP
+	* RIGHT_OP
+	* DIV_ASSIGN
+	* LOGICAL_OR_OP
+	* MOD_OP
+	* SEMICOLON
+	* ADD_ASSIGN
+	* LPAR
+	* ADD_OP
+	* SUB_ASSIGN
+	* EQ_OP
+	* AMPERSAND
+	* VBAR

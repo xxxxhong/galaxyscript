@@ -1,0 +1,8 @@
+[ERROR]
+Unexpected token Token('LSQB', '[') at line 105, column 33.
+Expected one of: 
+	* SEMICOLON
+	* COLON
+	* COMMA
+	* LPAR
+Previous tokens: [Token('IDENTIFIER', 'AIAI_gs_HeroAITalentBuild')]

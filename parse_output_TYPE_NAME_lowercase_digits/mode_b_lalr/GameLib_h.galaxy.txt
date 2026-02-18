@@ -1,0 +1,8 @@
+[ERROR]
+Unexpected token Token('LSQB', '[') at line 565, column 39.
+Expected one of: 
+	* SEMICOLON
+	* COLON
+	* COMMA
+	* LPAR
+Previous tokens: [Token('IDENTIFIER', 'Game_gs_DeathRecapMaxDamageAbil')]

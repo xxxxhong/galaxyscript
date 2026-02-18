@@ -1,0 +1,54 @@
+start
+  translation_unit
+    external_declaration
+      include_directive
+        include
+        "TriggerLibs/natives"
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	point
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator
+                direct_declarator	libLGrm_gf_GetPathableEndPointFromIdealTargetPoint
+                parameter_type_list
+                  parameter_list
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	unit
+                      declarator
+                        direct_declarator	lp_pathingUnit
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	point
+                      declarator
+                        direct_declarator	lp_targetPoint
+                    parameter_declaration
+                      declaration_specifiers
+                        type_specifier
+                          base_type_specifier	fixed
+                      declarator
+                        direct_declarator	lp_distanceIncrement
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libLGrm_gt_CommanderInit
+    external_declaration
+      declaration
+        declaration_specifiers
+          type_specifier
+            base_type_specifier	trigger
+        init_declarator_list
+          init_declarator
+            declarator
+              direct_declarator	libLGrm_gt_RecklessChargeCast
