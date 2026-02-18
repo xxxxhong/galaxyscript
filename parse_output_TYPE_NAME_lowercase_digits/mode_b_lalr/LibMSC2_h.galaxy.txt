@@ -1,4 +1,0 @@
-[ERROR]
-Unexpected token Token('IDENTIFIER', 'libMSC2_gs_MMSC2WarheadPoints') at line 104, column 1.
-Expected one of: 
-	* LBRACE

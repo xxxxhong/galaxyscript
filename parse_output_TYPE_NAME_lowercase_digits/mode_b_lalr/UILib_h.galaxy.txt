@@ -1,8 +1,0 @@
-[ERROR]
-Unexpected token Token('LSQB', '[') at line 690, column 38.
-Expected one of: 
-	* SEMICOLON
-	* COLON
-	* COMMA
-	* LPAR
-Previous tokens: [Token('IDENTIFIER', 'UIUI_gs_UITabScreenPlayerStats')]

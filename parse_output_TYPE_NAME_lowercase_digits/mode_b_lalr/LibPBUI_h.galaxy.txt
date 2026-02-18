@@ -1,4 +1,0 @@
-[ERROR]
-Unexpected token Token('IDENTIFIER', 'libPBUI_gs_CurateHeroSelectionSetting') at line 95, column 1.
-Expected one of: 
-	* LBRACE

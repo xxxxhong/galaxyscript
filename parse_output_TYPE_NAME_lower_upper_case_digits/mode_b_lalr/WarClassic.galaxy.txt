@@ -1,6 +1,0 @@
-[ERROR]
-Unexpected token Token('RPAR', ')') at line 80, column 29.
-Expected one of: 
-	* LPAR
-	* IDENTIFIER
-Previous tokens: [Token('LPAR', '(')]

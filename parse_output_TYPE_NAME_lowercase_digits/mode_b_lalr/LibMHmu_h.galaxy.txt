@@ -1,4 +1,0 @@
-[ERROR]
-Unexpected token Token('IDENTIFIER', 'libMHmu_gs_Elevator') at line 54, column 1.
-Expected one of: 
-	* LBRACE

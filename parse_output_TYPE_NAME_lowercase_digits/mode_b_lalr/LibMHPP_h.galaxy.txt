@@ -1,4 +1,0 @@
-[ERROR]
-Unexpected token Token('IDENTIFIER', 'libMHPP_gs_Payload') at line 88, column 1.
-Expected one of: 
-	* LBRACE

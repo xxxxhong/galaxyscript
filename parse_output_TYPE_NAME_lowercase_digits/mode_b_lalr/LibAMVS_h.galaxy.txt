@@ -1,4 +1,0 @@
-[ERROR]
-Unexpected token Token('IDENTIFIER', 'libAMVS_gs_TrGr_UI') at line 118, column 1.
-Expected one of: 
-	* LBRACE

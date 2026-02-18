@@ -1,4 +1,0 @@
-[ERROR]
-Unexpected token Token('IDENTIFIER', 'libHAUR_gs_HeroAurielResurrectFrameRecord') at line 60, column 1.
-Expected one of: 
-	* LBRACE

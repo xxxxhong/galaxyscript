@@ -1,4 +1,0 @@
-[ERROR]
-Unexpected token Token('IDENTIFIER', 'libIGHS_gs_CuratedHero') at line 97, column 1.
-Expected one of: 
-	* LBRACE

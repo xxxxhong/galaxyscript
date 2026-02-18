@@ -1,4 +1,0 @@
-[ERROR]
-Unexpected token Token('IDENTIFIER', 'libPVEB_gs_PBNPCHero') at line 106, column 1.
-Expected one of: 
-	* LBRACE

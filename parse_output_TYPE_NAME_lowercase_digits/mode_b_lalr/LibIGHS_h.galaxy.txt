@@ -1,8 +1,0 @@
-[ERROR]
-Unexpected token Token('LSQB', '[') at line 29, column 37.
-Expected one of: 
-	* SEMICOLON
-	* COLON
-	* COMMA
-	* LPAR
-Previous tokens: [Token('IDENTIFIER', 'IGHS_gs_ShufflePlayerSettings')]

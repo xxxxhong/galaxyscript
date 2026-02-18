@@ -1,4 +1,0 @@
-[ERROR]
-Unexpected token Token('IDENTIFIER', 'libPVEU_gs_PvEUICurateHeroSelectionSetting') at line 142, column 1.
-Expected one of: 
-	* LBRACE
