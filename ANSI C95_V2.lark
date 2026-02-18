@@ -249,7 +249,7 @@ base_type_specifier: VOID
 	| WAVEINFO
 	| struct_or_union_specifier
 	// | TYPE_NAME
-	// | IDENTIFIER
+	| IDENTIFIER
 
 struct_or_union_specifier: struct_or_union IDENTIFIER "{" struct_declaration_list "}"
 	| struct_or_union "{" struct_declaration_list "}"
@@ -608,7 +608,7 @@ STRING_LITERAL: /L?"(\\.|[^\\"])*"/
 BLOCK_COMMENT: /\/\*(.|\n)*?\*\//
 LINE_COMMENT: /\/\/[^\n]*/
 
-TYPE_NAME: /[a-z_][a-z0-9_]*/
+// TYPE_NAME: /[a-z_][a-z0-9_]*/
 IDENTIFIER: /[a-zA-Z_][a-zA-Z0-9_]*/
 
 %import common.WS
