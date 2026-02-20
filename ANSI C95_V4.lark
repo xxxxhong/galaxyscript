@@ -464,68 +464,68 @@ include_directive: INCLUDE STRING_LITERAL
 native_declaration: NATIVE declaration_specifiers declarator ";"
 // forward_declaration: declaration_specifiers declarator ";"	//parse_output_forward_version
 
-BREAKPOINT.2: "breakpoint"	// parse_output_return_version
-CONTINUE.2: "continue"
-RETURN.2: "return"
-BREAK.2: "break"
-WHILE.2: "while"
-ELSE.2: "else"
-FOR.2: "for"
-DO.2: "do"
-IF.2: "if"
+BREAKPOINT.2: /breakpoint\b/	// parse_output_return_version
+CONTINUE.2: /continue\b/
+RETURN.2: /return\b/
+BREAK.2: /break\b/
+WHILE.2: /while\b/
+ELSE.2: /else\b/
+FOR.2: /for\b/
+DO.2: /do\b/
+IF.2: /if\b/
 
-STRING.2: "string"
-FIXED.2: "fixed"
-BOOLEAN.2: "boolean"	//rarely used, but included for completeness
-INTEGER.2: "integer"	//rarely used, but included for completeness
-BOOL.2: "bool"
-VOID.2: "void"
-INT.2: "int"
+STRING.2: /string\b/
+FIXED.2: /fixed\b/
+BOOLEAN.2: /boolean\b/	//rarely used, but included for completeness
+INTEGER.2: /integer\b/	//rarely used, but included for completeness
+BOOL.2: /bool\b/
+VOID.2: /void\b/
+INT.2: /int\b/
 
-FALSE.2: "false" 
-CONST.2: "const"
-NULL.2: "null"
-TRUE.2: "true"
+FALSE.2: /false\b/ 
+CONST.2: /const\b/
+NULL.2: /null\b/
+TRUE.2: /true\b/
 
-TYPEDEF.2: "typedef"
-STATIC.2: "static"
-STRUCT.2: "struct"
-INCLUDE.2: "include"
-NATIVE.2: "native"
+TYPEDEF.2: /typedef\b/
+STATIC.2: /static\b/
+STRUCT.2: /struct\b/
+INCLUDE.2: /include\b/
+NATIVE.2: /native\b/
 
 // ENTRYSET: "entryset"
-UNITFILTER.2: "unitfilter"
-UNITGROUP.2: "unitgroup"
-UNITREF.2: "unitref"
-UNIT.2: "unit"
-WAVETARGET.2: "wavetarget"
-WAVEINFO.2: "waveinfo"
-WAVE.2: "wave"
-ACTORSCOPE.2: "actorscope"
-ACTOR.2: "actor"
-SOUNDLINK.2: "soundlink"
-SOUND.2: "sound"
-POINT.2: "point"
-TIMER.2: "timer"
-REGION.2: "region"
-TRIGGER.2: "trigger"
-REVEALER.2: "revealer"
-PLAYERGROUP.2: "playergroup"
-TEXT.2: "text"
-COLOR.2: "color"
-SHUFFLER.2: "shuffler"
-ABILCMD.2: "abilcmd"
-ORDER.2: "order"
-MARKER.2: "marker"
-BANK.2: "bank"
-CAMERAINFO.2: "camerainfo"
-AIFILTER.2: "aifilter"
-EFFECTHISTORY.2: "effecthistory"
-BITMASK.2: "bitmask"
-DATETIME.2: "datetime"
-DOODAD.2: "doodad"
-GENERICHANDLE.2: "generichandle"
-TRANSMISSIONSOURCE.2: "transmissionsource"
+UNITFILTER.2: /unitfilter\b/
+UNITGROUP.2: /unitgroup\b/
+UNITREF.2: /unitref\b/
+UNIT.2: /unit\b/
+WAVETARGET.2: /wavetarget\b/
+WAVEINFO.2: /waveinfo\b/
+WAVE.2: /wave\b/
+ACTORSCOPE.2: /actorscope\b/
+ACTOR.2: /actor\b/
+SOUNDLINK.2: /soundlink\b/
+SOUND.2: /sound\b/
+POINT.2: /point\b/
+TIMER.2: /timer\b/
+REGION.2: /region\b/
+TRIGGER.2: /trigger\b/
+REVEALER.2: /revealer\b/
+PLAYERGROUP.2: /playergroup\b/
+TEXT.2: /text\b/
+COLOR.2: /color\b/
+SHUFFLER.2: /shuffler\b/
+ABILCMD.2: /abilcmd\b/
+ORDER.2: /order\b/
+MARKER.2: /marker\b/
+BANK.2: /bank\b/
+CAMERAINFO.2: /camerainfo\b/
+AIFILTER.2: /aifilter\b/
+EFFECTHISTORY.2: /effecthistory\b/
+BITMASK.2: /bitmask\b/
+DATETIME.2: /datetime\b/
+DOODAD.2: /doodad\b/
+GENERICHANDLE.2: /generichandle\b/
+TRANSMISSIONSOURCE.2: /transmissionsource\b/
 // AUTO: "auto"
 // SWITCH: "switch"
 // CASE: "case"

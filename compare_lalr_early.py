@@ -5,7 +5,7 @@ from lark import Lark
 
 # ==================== 配置 ====================
 GALAXY_DIR = r"D:\galaxyscript\galaxy_scripts"
-OUTPUT_DIR = r"D:\galaxyscript\parse_output"
+OUTPUT_DIR = r"D:\galaxyscript\parse_output_WITHOUT_TYPE_NAME"
 GRAMMAR_FILE = r"D:\galaxyscript\ANSI C95_V2.lark"  # 改成你的语法文件路径
 
 MODE_A_DIR = os.path.join(OUTPUT_DIR, "mode_a_earley")
