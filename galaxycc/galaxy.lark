@@ -18,10 +18,15 @@ primary_expression: IDENTIFIER
 	// | postfix_expression DEC_OP
 
 postfix_expression: primary_expression postfix_suffix*
-postfix_suffix: "[" expression "]"
-    | "(" ")"
-    | "(" argument_expression_list ")"
-    | "." IDENTIFIER
+// postfix_suffix: "[" expression "]"
+//     | "(" ")"
+//     | "(" argument_expression_list ")"
+//     | "." IDENTIFIER
+
+postfix_suffix: "[" expression "]"  -> array_suffix
+    | "(" ")"                       -> call_suffix_empty
+    | "(" argument_expression_list ")" -> call_suffix
+    | "." IDENTIFIER                -> member_suffix
 
 
 // argument_expression_list: assignment_expression

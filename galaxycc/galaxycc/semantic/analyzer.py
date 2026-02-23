@@ -334,12 +334,29 @@ class GalaxyAnalyzer:
             self.diag.error(
                 f"do-while 条件表达式类型 '{cond_type}' 无法转换为 bool", node.cond)
 
+    # def _visit_ForStmt(self, node: ForStmt):
+    #     self.table.enter_block()   # for 自己的作用域（存放 init 中声明的变量）
+    #     if node.init:
+    #         self._visit(node.init)
+    #     if node.cond:
+    #         cond_type = self._visit(node.cond)
+    #         if not can_assign(BOOL, cond_type):
+    #             self.diag.error(
+    #                 f"for 条件表达式类型 '{cond_type}' 无法转换为 bool", node.cond)
+    #     if node.post:
+    #         self._visit(node.post)
+    #     self._loop_depth += 1
+    #     self._visit(node.body)
+    #     self._loop_depth -= 1
+    #     self.table.leave_scope()
+    
     def _visit_ForStmt(self, node: ForStmt):
-        self.table.enter_block()   # for 自己的作用域（存放 init 中声明的变量）
+        self.table.enter_block()
         if node.init:
             self._visit(node.init)
         if node.cond:
-            cond_type = self._visit(node.cond)
+            cond_node = node.cond.expr if isinstance(node.cond, ExprStmt) else node.cond
+            cond_type = self._visit(cond_node)
             if not can_assign(BOOL, cond_type):
                 self.diag.error(
                     f"for 条件表达式类型 '{cond_type}' 无法转换为 bool", node.cond)

@@ -244,8 +244,14 @@ def can_assign(dst: GType, src: GType) -> bool:
     # bool 可以接受任何数值
     if dst == BOOL and is_numeric(src):
         return True
+    # # null 可以赋给句柄
+    # if isinstance(dst, HandleType) and isinstance(src, NullType):
+    #     return True
     # null 可以赋给句柄
     if isinstance(dst, HandleType) and isinstance(src, NullType):
+        return True
+    # null 也可以赋给 string
+    if dst == STRING and isinstance(src, NullType):
         return True
     # typedef 透明穿透
     if isinstance(dst, TypedefType):

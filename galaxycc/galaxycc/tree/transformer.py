@@ -243,7 +243,8 @@ class BinaryOp(ASTNode):
     right: ASTNode = None
 
     def __repr__(self):
-        return f"BinOp({self.op})"
+        # return f"BinOp({self.op})"
+        return f"BinOp({self.left} {self.op} {self.right})"
 
 
 @dataclass
@@ -336,8 +337,9 @@ class GalaxyTransformer(Transformer):
     # ── 顶层 ────────────────────────────────────────────────────────────────
 
     def start(self, items):
-        node = TranslationUnit(decls=[i for i in items if i is not None])
-        return node
+        # node = TranslationUnit(decls=[i for i in items if i is not None])
+        # return node
+        return items[0]
     # @v_args(meta=True)
     # def translation_unit(self, meta, items):
     #     node = TranslationUnit(decls=[i for i in items if i is not None])
@@ -347,11 +349,36 @@ class GalaxyTransformer(Transformer):
         node = TranslationUnit(decls=[i for i in items if i is not None])
         return node
 
+    # @v_args(meta=True)
+    # def include_directive(self, meta, items):
+    #     path_tok = items[1] if len(items) > 1 else items[0]
+    #     node = IncludeDirective(path=_str(path_tok))
+    #     return self._set_pos(node, meta)
+    
+    # @v_args(meta=True)
+    # def include_directive(self, meta, items):
+    #     path_tok = items[1] if len(items) > 1 else items[0]
+    #     node = IncludeDirective(path=_str(path_tok))
+    #     return self._set_pos(node, meta)
+    
+    # @v_args(meta=True)
+    # def include_directive(self, meta, items):
+    #     print("include items:", items)
+    #     path_tok = items[1] if len(items) > 1 else items[0]
+    #     node = IncludeDirective(path=_str(path_tok))
+    #     return self._set_pos(node, meta)
+    
     @v_args(meta=True)
     def include_directive(self, meta, items):
         path_tok = items[1] if len(items) > 1 else items[0]
-        node = IncludeDirective(path=_str(path_tok))
+        if isinstance(path_tok, StringLiteral):
+            path = path_tok.value   # '"TriggerLibs/natives"' 含引号
+            # 或者用 path_tok.value 取去掉引号的 'TriggerLibs/natives'
+        else:
+            path = _str(path_tok)
+        node = IncludeDirective(path=path)
         return self._set_pos(node, meta)
+
 
     # ── 类型说明 ─────────────────────────────────────────────────────────────
 
@@ -515,11 +542,31 @@ class GalaxyTransformer(Transformer):
 
     # ── 声明辅助 ─────────────────────────────────────────────────────────────
 
+    # def _parse_decl_spec_declarator(self, items):
+    #     """
+    #     从 [declaration_specifiers..., declarator] 中提取：
+    #     (TypeSpecNode, func_name, params, is_static, is_const)
+    #     """
+    #     type_spec  = None
+    #     name       = ''
+    #     params     = []
+    #     is_static  = False
+    #     is_const   = False
+
+    #     for item in items:
+    #         if isinstance(item, (TypeSpecNode, StructDef)):
+    #             type_spec = item
+    #         elif _is_tok(item, 'STATIC'):
+    #             is_static = True
+    #         elif _is_tok(item, 'CONST'):
+    #             is_const = True
+    #         elif isinstance(item, tuple):
+    #             # declarator → (name, params_or_none, init_or_none)
+    #             name   = item[0]
+    #             params = item[1] or []
+    #     return type_spec, name, params, is_static, is_const
+
     def _parse_decl_spec_declarator(self, items):
-        """
-        从 [declaration_specifiers..., declarator] 中提取：
-        (TypeSpecNode, func_name, params, is_static, is_const)
-        """
         type_spec  = None
         name       = ''
         params     = []
@@ -527,16 +574,24 @@ class GalaxyTransformer(Transformer):
         is_const   = False
 
         for item in items:
-            if isinstance(item, (TypeSpecNode, StructDef)):
+            if isinstance(item, list):          # 处理列表包装
+                for sub in item:
+                    if isinstance(sub, (TypeSpecNode, StructDef)):
+                        type_spec = sub
+                    elif _is_tok(sub, 'STATIC'):
+                        is_static = True
+                    elif _is_tok(sub, 'CONST'):
+                        is_const = True
+            elif isinstance(item, (TypeSpecNode, StructDef)):
                 type_spec = item
             elif _is_tok(item, 'STATIC'):
                 is_static = True
             elif _is_tok(item, 'CONST'):
                 is_const = True
             elif isinstance(item, tuple):
-                # declarator → (name, params_or_none, init_or_none)
                 name   = item[0]
                 params = item[1] or []
+
         return type_spec, name, params, is_static, is_const
 
     @v_args(meta=True)
@@ -598,13 +653,35 @@ class GalaxyTransformer(Transformer):
     def parameter_list(self, meta, items):
         return [i for i in items if isinstance(i, ParamDecl)]
 
+    # @v_args(meta=True)
+    # def parameter_declaration(self, meta, items):
+    #     print("param items:", items)
+    #     type_spec  = None
+    #     name       = ''
+    #     is_const   = False
+    #     for item in items:
+    #         if isinstance(item, (TypeSpecNode, StructDef)):
+    #             type_spec = item
+    #         elif _is_tok(item, 'CONST'):
+    #             is_const = True
+    #         elif isinstance(item, tuple):
+    #             name = item[0]
+    #     node = ParamDecl(type_spec=type_spec, name=name, is_const=is_const)
+    #     return self._set_pos(node, meta)
+    
     @v_args(meta=True)
     def parameter_declaration(self, meta, items):
-        type_spec  = None
-        name       = ''
-        is_const   = False
+        type_spec = None
+        name = ''
+        is_const = False
         for item in items:
-            if isinstance(item, (TypeSpecNode, StructDef)):
+            if isinstance(item, list):                    # 处理列表包装
+                for sub in item:
+                    if isinstance(sub, TypeSpecNode):
+                        type_spec = sub
+                    elif _is_tok(sub, 'CONST'):
+                        is_const = True
+            elif isinstance(item, (TypeSpecNode, StructDef)):
                 type_spec = item
             elif _is_tok(item, 'CONST'):
                 is_const = True
@@ -623,9 +700,20 @@ class GalaxyTransformer(Transformer):
 
     # ── 语句 ────────────────────────────────────────────────────────────────
 
+    # @v_args(meta=True)
+    # def compound_statement(self, meta, items):
+    #     node = CompoundStmt(items=[i for i in items if i is not None])
+    #     return self._set_pos(node, meta)
+    
     @v_args(meta=True)
     def compound_statement(self, meta, items):
-        node = CompoundStmt(items=[i for i in items if i is not None])
+        flat = []
+        for item in items:
+            if isinstance(item, list):
+                flat.extend(item)  # 展开子列表
+            elif item is not None:
+                flat.append(item)
+        node = CompoundStmt(items=flat)
         return self._set_pos(node, meta)
 
     @v_args(meta=True)
@@ -715,19 +803,37 @@ class GalaxyTransformer(Transformer):
         return self._set_pos(node, meta)
 
     # 以下二元运算规则统一处理（左结合，多个运算符）
+    # def _fold_binary(self, meta, items):
+    #     result = items[0]
+    #     i = 1
+    #     while i < len(items):
+    #         op  = _str(items[i]); i += 1
+    #         rhs = items[i];       i += 1
+    #         node = BinaryOp(op=op, left=result, right=rhs)
+    #         self._set_pos(node, meta)
+    #         result = node
+    #     return result
+    
     def _fold_binary(self, meta, items):
+        # print("fold items:", items)  # 加这行
         result = items[0]
         i = 1
         while i < len(items):
             op  = _str(items[i]); i += 1
             rhs = items[i];       i += 1
+            # print(f"  op={op}, rhs={rhs}")  # 加这行
             node = BinaryOp(op=op, left=result, right=rhs)
             self._set_pos(node, meta)
             result = node
         return result
 
+    # @v_args(meta=True)
+    # def logical_or_expression(self, meta, items):
+    #     return self._fold_binary(meta, items)
+    
     @v_args(meta=True)
     def logical_or_expression(self, meta, items):
+        # print("logical_or items:", items)
         return self._fold_binary(meta, items)
 
     @v_args(meta=True)
@@ -810,7 +916,10 @@ class GalaxyTransformer(Transformer):
         expr        = items[1]
         node = CastExpr(target_type=target_type, expr=expr)
         return self._set_pos(node, meta)
-
+    
+    def unary_operator(self, items):
+        return items[0]
+    
     @v_args(meta=True)
     def unary_expression(self, meta, items):
         if len(items) == 1:
@@ -851,28 +960,40 @@ class GalaxyTransformer(Transformer):
     #         return ('member', _str(items[1]))
     #     return ('unknown', None)
     
-    def postfix_suffix(self, items):
-        if not items:
-            # "()" 空参数调用
-            return ('call', [])
+    # def postfix_suffix(self, items):
+    #     if not items:
+    #         # "()" 空参数调用
+    #         return ('call', [])
         
-        first = items[0]
+    #     first = items[0]
         
-        # "[" expr "]" → 数组访问
-        if isinstance(first, Token) and first.type == 'LSQB':
-            return ('index', items[1])
+    #     # "[" expr "]" → 数组访问
+    #     if isinstance(first, Token) and first.type == 'LSQB':
+    #         return ('index', items[1])
         
-        # "." IDENTIFIER → 成员访问
-        if isinstance(first, Token) and first.type == 'DOT':
-            return ('member', str(items[1]))
+    #     # "." IDENTIFIER → 成员访问
+    #     if isinstance(first, Token) and first.type == 'DOT':
+    #         return ('member', str(items[1]))
         
-        # "(" args ")" → 函数调用（有参数）
-        # items[0] 就是 argument_expression_list 的结果（已是列表）
-        if isinstance(first, list):
-            return ('call', first)
+    #     # "(" args ")" → 函数调用（有参数）
+    #     # items[0] 就是 argument_expression_list 的结果（已是列表）
+    #     if isinstance(first, list):
+    #         return ('call', first)
         
-        # 单个表达式作为参数
-        return ('call', [first])
+    #     # 单个表达式作为参数
+    #     return ('call', [first])
+    
+    def array_suffix(self, items):
+        return ('index', items[0])
+
+    def call_suffix_empty(self, items):
+        return ('call', [])
+
+    def call_suffix(self, items):
+        return ('call', items[0] if isinstance(items[0], list) else [items[0]])
+
+    def member_suffix(self, items):
+        return ('member', str(items[0]))
 
     @v_args(meta=True)
     def argument_expression_list(self, meta, items):

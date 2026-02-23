@@ -145,8 +145,8 @@ def demo_batch(scripts_dir: str, grammar_path: str):
     frontend = GalaxyFrontend(grammar_file=grammar_path)
     frontend.load_natives_common()
 
-    # scripts = list(Path(scripts_dir).rglob("*.galaxy"))
-    scripts = list(Path(scripts_dir).rglob("*.galaxy"))[400:600]
+    scripts = list(Path(scripts_dir).rglob("*.galaxy"))
+    # scripts = list(Path(scripts_dir).rglob("*.galaxy"))[600:989]
     print(f"找到 {len(scripts)} 个 .galaxy 文件\n")
 
     total_errors   = 0
@@ -178,6 +178,12 @@ def demo_batch(scripts_dir: str, grammar_path: str):
             print(f"\n  [{path.name}]")
             for d in diags.errors[:3]:          # 每个文件最多 3 条
                 print(f"    {d}")
+    # 另外单独打印有警告的文件
+    print("\n详细警告：")
+    for script in scripts:
+        result = frontend.process_file(script)
+        for d in result.diags.warnings:
+            print(f"  [{script.name}] {d}")
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -240,6 +246,6 @@ if __name__ == '__main__':
     # 批量分析示例（按需取消注释）：
     demo_batch(
         scripts_dir="D:\galaxyscript\galaxy_scripts",
-        # scripts_dir="D:\galaxyscript\smallset",
+        #scripts_dir="D:\galaxyscript\smallset",
         grammar_path="D:\galaxyscript\galaxycc\galaxy.lark",
     )
