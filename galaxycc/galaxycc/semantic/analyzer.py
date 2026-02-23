@@ -199,10 +199,10 @@ class GalaxyAnalyzer:
         
         # 调试：看 include 之后 const 变量有没有被加载进来
         # print(f"[DEBUG] include 后符号表中的 const 变量:")
-        print(f"[DEBUG] [{self._curr_file}] include 后符号表中的 const 变量:")
-        for name, sym in self.table._scopes[0]._table.items():
-            if sym.is_const:
-                print(f"  {name} = {sym.const_value}")
+        # print(f"[DEBUG] [{self._curr_file}] include 后符号表中的 const 变量:")
+        # for name, sym in self.table._scopes[0]._table.items():
+        #     if sym.is_const:
+        #         print(f"  {name} = {sym.const_value}")
         
         # Step 2a: 先注册 const 变量（struct 成员数组维度可能依赖它们）
         for decl in node.decls:
@@ -211,13 +211,13 @@ class GalaxyAnalyzer:
 
         
         # 看 Step 2a 处理了多少 const 变量
-        const_decls = [d for d in node.decls if isinstance(d, VarDecl) and d.is_const]
-        all_vars = [d for d in node.decls if isinstance(d, VarDecl)]
-        print(f"[DEBUG] [{self._curr_file}] VarDecl 总数={len(all_vars)}, is_const=True 的数量={len(const_decls)}")
-        if all_vars:
-            # 打印前3个变量看看
-            for v in all_vars[:3]:
-                print(f"  name={v.name}, is_const={v.is_const}")
+        # const_decls = [d for d in node.decls if isinstance(d, VarDecl) and d.is_const]
+        # all_vars = [d for d in node.decls if isinstance(d, VarDecl)]
+        # print(f"[DEBUG] [{self._curr_file}] VarDecl 总数={len(all_vars)}, is_const=True 的数量={len(const_decls)}")
+        # if all_vars:
+        #     # 打印前3个变量看看
+        #     for v in all_vars[:3]:
+        #         print(f"  name={v.name}, is_const={v.is_const}")
         # # Step 2b: 注册类型和函数签名
         # for decl in node.decls:
         #     if isinstance(decl, (StructDef, TypedefDecl)):
