@@ -47,6 +47,7 @@ class Symbol:
         self.is_const  = is_const
         self.defined   = defined
         self.node      = node
+        self.const_value = None   # 加这行
 
     def __repr__(self):
         flags = []

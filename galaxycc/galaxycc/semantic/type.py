@@ -253,6 +253,9 @@ def can_assign(dst: GType, src: GType) -> bool:
     # null 也可以赋给 string
     if dst == STRING and isinstance(src, NullType):
         return True
+    # null 也可以赋给 text
+    if dst == TEXT and isinstance(src, NullType):
+        return True
     # typedef 透明穿透
     if isinstance(dst, TypedefType):
         return can_assign(dst.resolve(), src)
@@ -298,6 +301,9 @@ def resolve_binary_op(op: str, ltype: GType, rtype: GType):
 
     # 相等
     if op in ('==', '!='):
+        # null 可以和任何非基础类型比较
+        if ltype == NULL_T or rtype == NULL_T:
+            return BOOL
         if is_comparable(ltype) and is_comparable(rtype):
             if can_assign(ltype, rtype) or can_assign(rtype, ltype):
                 return BOOL

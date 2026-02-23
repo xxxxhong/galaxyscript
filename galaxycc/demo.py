@@ -72,6 +72,7 @@ def demo_inline():
     # 加载常用内置函数（约 30 个常见 API）
     frontend.load_natives_common()
 
+
     # 可选：加载完整的 SC2 native 函数库
     # natives_path = Path("path/to/natives.galaxy")
     # count = frontend.load_natives_from_file(natives_path)
@@ -142,8 +143,14 @@ def demo_batch(scripts_dir: str, grammar_path: str):
     print("示例 2：批量分析")
     print("=" * 60)
 
-    frontend = GalaxyFrontend(grammar_file=grammar_path)
-    frontend.load_natives_common()
+    frontend = GalaxyFrontend(grammar_file=grammar_path, search_dirs=[r"D:\galaxyscript\SC2GameData-master\SC2GameData-master\mods\core.sc2mod\base.sc2data"])
+    # frontend.load_natives_common()
+    
+    # 优先从真实文件加载，找不到再 fallback
+    natives_path = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods\core.sc2mod\base.sc2data\triggerlibs\natives.galaxy"
+    if not frontend.load_natives_from_file(natives_path):
+        print("[WARN] 未找到 natives.galaxy，使用内置定义（签名可能不准确）")
+        frontend.load_natives_common()
 
     scripts = list(Path(scripts_dir).rglob("*.galaxy"))
     # scripts = list(Path(scripts_dir).rglob("*.galaxy"))[600:989]
@@ -163,8 +170,12 @@ def demo_batch(scripts_dir: str, grammar_path: str):
         if errors > 0:
             failed_files.append((script, result.diags))
             print(f"✗ {script.name}: {errors} error(s), {warnings} warning(s)")
+            for d in result.diags.errors:
+                print(f"  [{script.name}] {d}")
         elif warnings > 0:
             print(f"△ {script.name}: {warnings} warning(s)")
+            for d in result.diags.warnings:
+                print(f"  [{script.name}] {d}")
         else:
             print(f"✓ {script.name}")
 
@@ -172,19 +183,21 @@ def demo_batch(scripts_dir: str, grammar_path: str):
     print(f"总计: {total_errors} 错误, {total_warnings} 警告")
     print(f"失败文件: {len(failed_files)} / {len(scripts)}")
 
-    if failed_files:
-        print("\n详细错误：")
-        for path, diags in failed_files[:5]:   # 最多显示前 5 个
-            print(f"\n  [{path.name}]")
-            for d in diags.errors[:3]:          # 每个文件最多 3 条
-                print(f"    {d}")
+    # if failed_files:
+    #     print("\n详细错误：")
+    #     for path, diags in failed_files[:5]:   # 最多显示前 5 个
+    #         print(f"\n  [{path.name}]")
+    #         for d in diags.errors[:3]:          # 每个文件最多 3 条
+    #             print(f"    {d}")
     # 另外单独打印有警告的文件
-    print("\n详细警告：")
-    for script in scripts:
-        result = frontend.process_file(script)
-        for d in result.diags.warnings:
-            print(f"  [{script.name}] {d}")
-
+    # print("\n详细警告：")
+    # for script in scripts:
+    #     # result = frontend.process_file(script)
+    #     # for d in result.diags.warnings:
+    #     #     print(f"  [{script.name}] {d}")
+    #     for d in result.diags.warnings:
+    #         print(f"  [{script.name}] {d}")
+# nohup python -u demo.py > output.log_semantic_errors_warnings 2>&1 &
 
 # ════════════════════════════════════════════════════════════════════════════
 # 示例 3：只做语义分析（跳过 Transformer，手动构建 AST）
@@ -245,7 +258,7 @@ if __name__ == '__main__':
 
     # 批量分析示例（按需取消注释）：
     demo_batch(
-        scripts_dir="D:\galaxyscript\galaxy_scripts",
+        scripts_dir="D:\galaxyscript\smallset",
         #scripts_dir="D:\galaxyscript\smallset",
         grammar_path="D:\galaxyscript\galaxycc\galaxy.lark",
     )

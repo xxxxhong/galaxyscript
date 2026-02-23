@@ -400,6 +400,12 @@ class GalaxyTransformer(Transformer):
         node = TypeSpecNode(base_name=base_name, dimensions=dims)
         return self._set_pos(node, meta)
 
+    def type_qualifier(self, items):
+        return items[0]  # 直接返回 CONST token
+
+    def storage_class_specifier(self, items):
+        return items[0]  # 直接返回 TYPEDEF/STATIC token
+    
     @v_args(meta=True)
     def base_type_specifier(self, meta, items):
         # 可能是关键字 Token，或者是 struct_or_union_specifier
@@ -475,7 +481,7 @@ class GalaxyTransformer(Transformer):
         node = FuncDef(type_spec=type_spec, name=name, params=params,
                        body=body, is_static=is_static)
         return self._set_pos(node, meta)
-
+    
     @v_args(meta=True)
     def declaration(self, meta, items):
         """

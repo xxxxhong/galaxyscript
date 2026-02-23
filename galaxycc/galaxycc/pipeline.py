@@ -51,11 +51,12 @@ class GalaxyFrontend:
         print(result.diags.report())
     """
 
-    def __init__(self, grammar_file: str | Path = None, grammar_text: str = None):
+    def __init__(self, grammar_file: str | Path = None, grammar_text: str = None, search_dirs=None):
         """
         Args:
             grammar_file: .lark 文件路径（与 grammar_text 二选一）
             grammar_text: 直接传入 grammar 字符串
+            search_dirs: include 搜索目录列表
         """
         if grammar_file is None and grammar_text is None:
             raise ValueError("必须提供 grammar_file 或 grammar_text")
@@ -74,6 +75,8 @@ class GalaxyFrontend:
 
         self._transformer = GalaxyTransformer()
         self._native_loader = NativeLoader()
+        
+        self._search_dirs = search_dirs or []
 
     # ── 加载 native 函数 ───────────────────────────────────────────────────
 
@@ -101,6 +104,25 @@ class GalaxyFrontend:
         source = path.read_text(encoding='utf-8', errors='replace')
         return self.process_string(source, source_name=str(path))
 
+    def _parse_source(self, source: str) -> TranslationUnit:
+        cst = self._parser.parse(source)
+        return self._transformer.transform(cst)
+
+    def _make_file_loader(self):
+        import os
+        dirs = self._search_dirs
+        def loader(path):
+            for d in dirs:
+                for candidate in [
+                    os.path.join(d, path + '.galaxy'),
+                    os.path.join(d, path),
+                ]:
+                    if os.path.exists(candidate):
+                        with open(candidate, encoding='utf-8', errors='replace') as f:
+                            return f.read()
+            raise FileNotFoundError(path)
+        return loader
+        
     def process_string(self, source: str, source_name: str = '<input>') -> FrontendResult:
         """
         分析源码字符串，返回 FrontendResult。
@@ -139,8 +161,14 @@ class GalaxyFrontend:
 
         # ── Step 3: 语义分析 ─────────────────────────────────────────────
         try:
+            # analyzer = GalaxyAnalyzer(
+            #     native_builtins=self._native_loader.get_builtins()
+            # )
+            
             analyzer = GalaxyAnalyzer(
-                native_builtins=self._native_loader.get_builtins()
+                native_builtins=self._native_loader.get_builtins(),
+                file_loader=self._make_file_loader(),
+                parser=self._parse_source,
             )
             sem_diag = analyzer.analyze(ast)
             # 合并诊断

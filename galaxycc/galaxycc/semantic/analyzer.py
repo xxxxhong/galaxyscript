@@ -56,13 +56,17 @@ class GalaxyAnalyzer:
             print(diags.report())
     """
 
-    def __init__(self, native_builtins: dict = None):
+    def __init__(self, native_builtins: dict = None, file_loader=None, parser=None):
         """
         Args:
             native_builtins: 预定义的 native 函数字典
                              { func_name: FunctionType }
                              通常由外部加载 Galaxy API 定义后传入
         """
+        self._file_loader = file_loader
+        self._parser = parser
+        self._curr_file = '<main>'
+        self._included = set()
         self.diag  = DiagnosticBag()
         self.table = SymbolTable()
 
@@ -86,11 +90,12 @@ class GalaxyAnalyzer:
     # 入口
     # ══════════════════════════════════════════════════════════════════════
 
-    def analyze(self, root: TranslationUnit) -> DiagnosticBag:
+    def analyze(self, root: TranslationUnit, source_name='<main>') -> DiagnosticBag:
         """
         分析整个翻译单元，返回诊断信息袋。
         分析后每个 AST 节点的 .gtype 会被填写。
         """
+        self._curr_file = source_name
         self._visit(root)
         return self.diag
 
@@ -120,22 +125,122 @@ class GalaxyAnalyzer:
                     if isinstance(item, ASTNode):
                         self._visit(item)
 
+    # def _process_include(self, node: IncludeDirective):
+    #     if self._file_loader is None or node.path in self._included:
+    #         return
+    #     self._included.add(node.path)
+    #     try:
+    #         source = self._file_loader(node.path)
+    #         included_ast = parse(source)
+    #         self._visit_TranslationUnit(included_ast)
+    #     except FileNotFoundError:
+    #         self.diag.warning(f"找不到 include 文件 '{node.path}'", node)
+    
+    # def _process_include(self, node: IncludeDirective):
+    #     if self._file_loader is None or self._parser is None:
+    #         return
+    #     if node.path in self._included:
+    #         return
+    #     self._included.add(node.path)
+    #     try:
+    #         source = self._file_loader(node.path)
+    #         included_ast = self._parser(source)
+    #         self._visit_TranslationUnit(included_ast)
+    #     except FileNotFoundError:
+    #         self.diag.warning(f"找不到 include 文件 '{node.path}'", node)
+            
+    def _process_include(self, node: IncludeDirective):
+        if self._file_loader is None or self._parser is None:
+            return
+        if node.path in self._included:
+            return
+        self._included.add(node.path)
+        try:
+            source = self._file_loader(node.path)
+            included_ast = self._parser(source)
+            self._curr_file = node.path  # 新增
+            self._visit_TranslationUnit(included_ast)
+        except FileNotFoundError:
+            self.diag.warning(f"找不到 include 文件 '{node.path}'", node)
+    
+    def _register_type_forward(self, node):
+        if isinstance(node, StructDef):
+            sym = Symbol(node.name, StructType(node.name, members=None), SymbolKind.TYPE)
+            self.table.define(sym)
+        elif isinstance(node, TypedefDecl):
+            sym = Symbol(node.alias, VOID, SymbolKind.TYPE)  # 临时占位
+            self.table.define(sym)
+    
     # ══════════════════════════════════════════════════════════════════════
     # 顶层
     # ══════════════════════════════════════════════════════════════════════
 
+    # def _visit_TranslationUnit(self, node: TranslationUnit):
+    #     # 两遍扫描：先收集所有顶层函数/类型声明（处理前向引用），再分析函数体
+    #     # 第一遍：注册 struct、typedef、函数签名（不分析函数体）
+    #     for decl in node.decls:
+    #         if isinstance(decl, (StructDef, TypedefDecl)):
+    #             self._register_type(decl)
+    #         elif isinstance(decl, (FuncDecl, FuncDef)):
+    #             self._register_func(decl)
+    #         elif isinstance(decl, VarDecl):
+    #             self._register_global_var(decl)
+
+    #     # 第二遍：分析函数体
+    #     for decl in node.decls:
+    #         if isinstance(decl, FuncDef):
+    #             self._visit_FuncDef(decl, body_only=True)
+          
     def _visit_TranslationUnit(self, node: TranslationUnit):
-        # 两遍扫描：先收集所有顶层函数/类型声明（处理前向引用），再分析函数体
-        # 第一遍：注册 struct、typedef、函数签名（不分析函数体）
+        # Step 1: 处理 include
+        for decl in node.decls:
+            if isinstance(decl, IncludeDirective):
+                self._process_include(decl)
+        
+        # 调试：看 include 之后 const 变量有没有被加载进来
+        # print(f"[DEBUG] include 后符号表中的 const 变量:")
+        print(f"[DEBUG] [{self._curr_file}] include 后符号表中的 const 变量:")
+        for name, sym in self.table._scopes[0]._table.items():
+            if sym.is_const:
+                print(f"  {name} = {sym.const_value}")
+        
+        # Step 2a: 先注册 const 变量（struct 成员数组维度可能依赖它们）
+        for decl in node.decls:
+            if isinstance(decl, VarDecl) and decl.is_const:
+                self._register_global_var(decl)
+
+        
+        # 看 Step 2a 处理了多少 const 变量
+        const_decls = [d for d in node.decls if isinstance(d, VarDecl) and d.is_const]
+        all_vars = [d for d in node.decls if isinstance(d, VarDecl)]
+        print(f"[DEBUG] [{self._curr_file}] VarDecl 总数={len(all_vars)}, is_const=True 的数量={len(const_decls)}")
+        if all_vars:
+            # 打印前3个变量看看
+            for v in all_vars[:3]:
+                print(f"  name={v.name}, is_const={v.is_const}")
+        # # Step 2b: 注册类型和函数签名
+        # for decl in node.decls:
+        #     if isinstance(decl, (StructDef, TypedefDecl)):
+        #         self._register_type(decl)
+        #     elif isinstance(decl, (FuncDecl, FuncDef)):
+        #         self._register_func(decl)
+                
+        # Step 2b-1: 先注册所有 struct/typedef 的名字（空壳，不解析成员）
+        for decl in node.decls:
+            if isinstance(decl, (StructDef, TypedefDecl)):
+                self._register_type_forward(decl)
+
+        # Step 2b-2: 再填充成员
         for decl in node.decls:
             if isinstance(decl, (StructDef, TypedefDecl)):
                 self._register_type(decl)
-            elif isinstance(decl, (FuncDecl, FuncDef)):
-                self._register_func(decl)
-            elif isinstance(decl, VarDecl):
+
+        # Step 3: 注册其余全局变量
+        for decl in node.decls:
+            if isinstance(decl, VarDecl) and not decl.is_const:
                 self._register_global_var(decl)
 
-        # 第二遍：分析函数体
+        # Step 4: 分析函数体
         for decl in node.decls:
             if isinstance(decl, FuncDef):
                 self._visit_FuncDef(decl, body_only=True)
@@ -222,12 +327,44 @@ class GalaxyAnalyzer:
         self.table.define(sym)
         node.symbol = sym
 
+    # def _register_global_var(self, node: VarDecl):
+    #     gtype = self._resolve_type_spec(node.type_spec)
+    #     sym = Symbol(node.name, gtype, SymbolKind.VAR,
+    #                  is_static=node.is_static,
+    #                  is_const=node.is_const,
+    #                  node=node)
+    #     if not self.table.define(sym):
+    #         self.diag.error(f"全局变量 '{node.name}' 重复定义", node)
+    #         return
+    
     def _register_global_var(self, node: VarDecl):
         gtype = self._resolve_type_spec(node.type_spec)
         sym = Symbol(node.name, gtype, SymbolKind.VAR,
-                     is_static=node.is_static,
-                     is_const=node.is_const,
-                     node=node)
+                    is_static=node.is_static,
+                    is_const=node.is_const,
+                    node=node)
+        
+        # # 记录 const int 的编译期值
+        # if node.is_const and gtype == INT and node.init:
+        #     val = self._eval_const_int(node.init)
+        #     if val is not None:
+        #         sym.const_value = val
+        
+        if node.is_const and node.init:
+            if gtype == INT:
+                val = self._eval_const_int(node.init)
+                if val is not None:
+                    sym.const_value = val
+            elif gtype == STRING:
+                if isinstance(node.init, StringLiteral):
+                    sym.const_value = node.init.value  # 存去掉引号的字符串
+            elif gtype == BOOL:
+                if isinstance(node.init, BoolLiteral):
+                    sym.const_value = node.init.value  # 存 True/False
+            elif gtype == FIXED:
+                if isinstance(node.init, FixedLiteral):
+                    sym.const_value = node.init.value  # 存 float
+        
         if not self.table.define(sym):
             self.diag.error(f"全局变量 '{node.name}' 重复定义", node)
             return
@@ -356,10 +493,11 @@ class GalaxyAnalyzer:
             self._visit(node.init)
         if node.cond:
             cond_node = node.cond.expr if isinstance(node.cond, ExprStmt) else node.cond
-            cond_type = self._visit(cond_node)
-            if not can_assign(BOOL, cond_type):
-                self.diag.error(
-                    f"for 条件表达式类型 '{cond_type}' 无法转换为 bool", node.cond)
+            if cond_node is not None:  # 空条件（for(;;)）直接跳过检查
+                cond_type = self._visit(cond_node)
+                if not can_assign(BOOL, cond_type):
+                    self.diag.error(
+                        f"for 条件表达式类型 '{cond_type}' 无法转换为 bool", node.cond)
         if node.post:
             self._visit(node.post)
         self._loop_depth += 1
@@ -722,10 +860,17 @@ class GalaxyAnalyzer:
         """
         if isinstance(node, IntLiteral):
             return node.value
+        # if isinstance(node, Identifier):
+        #     sym = self.table.lookup(node.name)
+        #     if sym and sym.is_const and isinstance(sym.gtype, BasicType):
+        #         return None   # 暂时不跟踪 const 变量的值（可扩展）
+        
         if isinstance(node, Identifier):
             sym = self.table.lookup(node.name)
-            if sym and sym.is_const and isinstance(sym.gtype, BasicType):
-                return None   # 暂时不跟踪 const 变量的值（可扩展）
+            if sym and sym.is_const and sym.const_value is not None:
+                return sym.const_value   # 改这里
+            return None
+        
         if isinstance(node, BinaryOp):
             l = self._eval_const_int(node.left)
             r = self._eval_const_int(node.right)
