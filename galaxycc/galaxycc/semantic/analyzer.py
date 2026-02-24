@@ -240,10 +240,17 @@ class GalaxyAnalyzer:
             if isinstance(decl, VarDecl) and not decl.is_const:
                 self._register_global_var(decl)
 
+        # Step 3.5: 注册函数签名
+        for decl in node.decls:
+            if isinstance(decl, (FuncDecl, FuncDef)):
+                self._register_func(decl)
+        
         # Step 4: 分析函数体
         for decl in node.decls:
             if isinstance(decl, FuncDef):
                 self._visit_FuncDef(decl, body_only=True)
+                
+                
 
     def _visit_IncludeDirective(self, node: IncludeDirective):
         pass   # 词法层面已展开，此处无需处理
@@ -386,6 +393,10 @@ class GalaxyAnalyzer:
             return   # 第一遍应该已经注册，这里保险
 
         func_type = func_sym.gtype
+        if not isinstance(func_type, FunctionType):
+            self.diag.error(
+                f"'{node.name}' 在符号表中不是函数类型，实际为 {type(func_type).__name__}({func_type})", node)
+            return
         self._curr_func      = func_type
         self._curr_func_name = node.name
         self._loop_depth = 0
@@ -686,17 +697,32 @@ class GalaxyAnalyzer:
         node.gtype = ltype
         return ltype
 
-    def _visit_CastExpr(self, node: CastExpr) -> GType:
-        src_type    = self._visit(node.expr)
-        target_type = self._resolve_type_spec(node.target_type)
+    # def _visit_CastExpr(self, node: CastExpr) -> GType:
+    #     src_type    = self._visit(node.expr)
+    #     target_type = self._resolve_type_spec(node.target_type)
 
-        # Galaxy Script 允许的显式转换：
-        #   int  ↔ fixed, int/fixed → bool
-        #   其他强转视为警告（与 SC2 Editor 行为一致）
+    #     # Galaxy Script 允许的显式转换：
+    #     #   int  ↔ fixed, int/fixed → bool
+    #     #   其他强转视为警告（与 SC2 Editor 行为一致）
+    #     if not can_assign(target_type, src_type):
+    #         self.diag.warning(
+    #             f"强制类型转换 '{src_type}' → '{target_type}' 可能不安全", node)
+
+    #     node.gtype = target_type
+    #     return target_type
+    
+    def _visit_CastExpr(self, node: CastExpr) -> GType:
+        target_type = self._resolve_type_spec(node.target_type)
+        
+        # 如果 target_type 解析失败，说明是误识别的 cast（如 (FuncName)(args)）
+        # 直接分析内部表达式，当作普通括号表达式处理
+        if isinstance(target_type, ErrorType):
+            return self._visit(node.expr)
+        
+        src_type = self._visit(node.expr)
         if not can_assign(target_type, src_type):
             self.diag.warning(
                 f"强制类型转换 '{src_type}' → '{target_type}' 可能不安全", node)
-
         node.gtype = target_type
         return target_type
 
@@ -709,8 +735,15 @@ class GalaxyAnalyzer:
             return ERROR_T
 
         if not isinstance(callee_type, FunctionType):
+            # self.diag.error(
+            #     f"'{self._expr_name(node.callee)}' 不是可调用的函数类型", node.callee)
+            # node.gtype = ERROR_T
+            # return ERROR_T
+            
+            import traceback; traceback.print_stack()
+            print(f"[DEBUG] FuncCall 类型错误: callee={self._expr_name(node.callee)}, type={callee_type}, type_class={type(callee_type).__name__}")
             self.diag.error(
-                f"'{self._expr_name(node.callee)}' 不是可调用的函数类型", node.callee)
+                f"'{self._expr_name(node.callee)}' 不是可调用的函数类型，实际类型={callee_type}", node.callee)
             node.gtype = ERROR_T
             return ERROR_T
 
@@ -832,7 +865,9 @@ class GalaxyAnalyzer:
         # 查找基础类型
         sym = self.table.lookup(node.base_name)
         if sym is None or sym.kind != SymbolKind.TYPE:
-            self.diag.error(f"未知类型 '{node.base_name}'", node)
+            # self.diag.error(f"未知类型 '{node.base_name}'", node)
+            # return ERROR_T
+            # 不报错，让调用方决定如何处理
             return ERROR_T
 
         base_type = sym.gtype
@@ -867,6 +902,7 @@ class GalaxyAnalyzer:
         
         if isinstance(node, Identifier):
             sym = self.table.lookup(node.name)
+            print(f"[DEBUG] eval '{node.name}': found={sym is not None}, is_const={getattr(sym,'is_const',None)}, const_value={getattr(sym,'const_value',None)}")
             if sym and sym.is_const and sym.const_value is not None:
                 return sym.const_value   # 改这里
             return None

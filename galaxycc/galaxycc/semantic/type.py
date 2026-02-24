@@ -200,6 +200,7 @@ BUILTIN_TYPES: dict[str, GType] = {
     'void': VOID, 'int': INT, 'integer': INT,   # integer 是 int 的别名
     'fixed': FIXED, 'bool': BOOL, 'boolean': BOOL,
     'string': STRING, 'text': TEXT,
+    'byte': INT,   # 加这一行
     **HANDLE_TYPES,
 }
 

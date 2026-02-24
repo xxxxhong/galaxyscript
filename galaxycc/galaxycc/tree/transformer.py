@@ -525,12 +525,15 @@ class GalaxyTransformer(Transformer):
 
         results = []
         for decl_name, decl_suffix, decl_init in decl_items:
+            #print(f"[DEBUG] decl: name={decl_name}, suffix={decl_suffix}, suffix_is_none={decl_suffix is None}")
             if is_typedef:
                 alias = decl_name
                 node = TypedefDecl(type_spec=type_spec, alias=alias)
                 self._set_pos(node, meta)
                 results.append(node)
-            elif decl_suffix:  # 函数前向声明
+            # elif decl_suffix:  # 函数前向声明
+            elif decl_suffix is not None:
+                #print(f"[DEBUG] → FuncDecl")
                 params = decl_suffix
                 node = FuncDecl(type_spec=type_spec, name=decl_name,
                                 params=params, is_static=is_static)
@@ -636,10 +639,24 @@ class GalaxyTransformer(Transformer):
     #         return (inner_name, suffix)
     #     return (inner_name, inner_suffix)
     
+    # @v_args(meta=True)
+    # def direct_declarator(self, meta, items):
+    #     first = items[0]
+    #     # 现在 items[0] 是原始 Token（因为删掉了 IDENTIFIER 方法）
+    #     if isinstance(first, Token) and first.type == 'IDENTIFIER':
+    #         name = str(first)
+    #         suffix = None
+    #         if len(items) > 1 and not isinstance(items[1], Token):
+    #             suffix = items[1]
+    #         return (name, suffix)
+    #     # 带后缀的情况（递归）
+    #     inner_name, inner_suffix = first
+    #     suffix = items[1] if len(items) > 1 and not isinstance(items[1], Token) else inner_suffix
+    #     return (inner_name, suffix)
+    
     @v_args(meta=True)
     def direct_declarator(self, meta, items):
         first = items[0]
-        # 现在 items[0] 是原始 Token（因为删掉了 IDENTIFIER 方法）
         if isinstance(first, Token) and first.type == 'IDENTIFIER':
             name = str(first)
             suffix = None
@@ -648,7 +665,11 @@ class GalaxyTransformer(Transformer):
             return (name, suffix)
         # 带后缀的情况（递归）
         inner_name, inner_suffix = first
-        suffix = items[1] if len(items) > 1 and not isinstance(items[1], Token) else inner_suffix
+        if len(items) > 1 and not isinstance(items[1], Token):
+            suffix = items[1]
+        else:
+            # items 只有一个元素说明是 "(" ")" 空参数，suffix 应为 []
+            suffix = [] if inner_suffix is None else inner_suffix
         return (inner_name, suffix)
 
     @v_args(meta=True)
