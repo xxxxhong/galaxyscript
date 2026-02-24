@@ -157,12 +157,14 @@ class GalaxyAnalyzer:
         self._included.add(node.path)
         saved_file = self._curr_file
         try:
+            print(f"[DEBUG] 尝试加载: {node.path}")  # 加这行
             source = self._file_loader(node.path)
             included_ast = self._parser(source)
             self._curr_file = node.path  # 新增
             self._visit_TranslationUnit(included_ast)
             self._curr_file = saved_file  # 恢复
-        except FileNotFoundError:
+        except FileNotFoundError as e:
+            print(f"[DEBUG] 找不到: {node.path}, 异常: {e}")  # 加这行
             self.diag.warning(f"找不到 include 文件 '{node.path}'", node)
         finally:
             self._curr_file = saved_file
@@ -195,65 +197,98 @@ class GalaxyAnalyzer:
     #         if isinstance(decl, FuncDef):
     #             self._visit_FuncDef(decl, body_only=True)
           
+    # def _visit_TranslationUnit(self, node: TranslationUnit):
+    #     # 调试：看 include 之后 const 变量有没有被加载进来
+    #     # print(f"[DEBUG] include 后符号表中的 const 变量:")
+    #     # print(f"[DEBUG] [{self._curr_file}] include 后符号表中的 const 变量:")
+    #     # for name, sym in self.table._scopes[0]._table.items():
+    #     #     if sym.is_const:
+    #     #         print(f"  {name} = {sym.const_value}")
+        
+    #     # Step 2a: 先注册 const 变量（struct 成员数组维度可能依赖它们）
+    #     for decl in node.decls:
+    #         if isinstance(decl, VarDecl) and decl.is_const:
+    #             self._register_global_var(decl)
+
+        
+    #     # 看 Step 2a 处理了多少 const 变量
+    #     # const_decls = [d for d in node.decls if isinstance(d, VarDecl) and d.is_const]
+    #     # all_vars = [d for d in node.decls if isinstance(d, VarDecl)]
+    #     # print(f"[DEBUG] [{self._curr_file}] VarDecl 总数={len(all_vars)}, is_const=True 的数量={len(const_decls)}")
+    #     # if all_vars:
+    #     #     # 打印前3个变量看看
+    #     #     for v in all_vars[:3]:
+    #     #         print(f"  name={v.name}, is_const={v.is_const}")
+    #     # # Step 2b: 注册类型和函数签名
+    #     # for decl in node.decls:
+    #     #     if isinstance(decl, (StructDef, TypedefDecl)):
+    #     #         self._register_type(decl)
+    #     #     elif isinstance(decl, (FuncDecl, FuncDef)):
+    #     #         self._register_func(decl)
+                
+    #     # Step 2b-1: 先注册所有 struct/typedef 的名字（空壳，不解析成员）
+    #     for decl in node.decls:
+    #         if isinstance(decl, (StructDef, TypedefDecl)):
+    #             self._register_type_forward(decl)
+
+    #     # Step 2b-2: 再填充成员
+    #     for decl in node.decls:
+    #         if isinstance(decl, (StructDef, TypedefDecl)):
+    #             self._register_type(decl)
+
+    #     # Step 3: 注册其余全局变量
+    #     for decl in node.decls:
+    #         if isinstance(decl, VarDecl) and not decl.is_const:
+    #             self._register_global_var(decl)
+
+    #     # Step 3.5: 注册函数签名
+    #     for decl in node.decls:
+    #         if isinstance(decl, (FuncDecl, FuncDef)):
+    #             self._register_func(decl)
+        
+    #     # Step 1: 处理 include
+    #     for decl in node.decls:
+    #         if isinstance(decl, IncludeDirective):
+    #             self._process_include(decl)
+        
+    #     # # 只在分析目标文件时打印
+    #     # if '0_refined' in self._curr_file:
+    #     #     sym = self.table.lookup('AIPlayerDifficulty')
+    #     #     print(f"[DEBUG] 分析前查找 AIPlayerDifficulty: {sym}")
+    #     #     sym2 = self.table.lookup('c_combatFlagDisable')
+    #     #     print(f"[DEBUG] 分析前查找 c_combatFlagDisable: {sym2}")
+
+
+    #     # Step 4: 分析函数体
+    #     for decl in node.decls:
+    #         if isinstance(decl, FuncDef):
+    #             self._visit_FuncDef(decl, body_only=True)
     def _visit_TranslationUnit(self, node: TranslationUnit):
-        # Step 1: 处理 include
-        for decl in node.decls:
-            if isinstance(decl, IncludeDirective):
-                self._process_include(decl)
-        
-        # 调试：看 include 之后 const 变量有没有被加载进来
-        # print(f"[DEBUG] include 后符号表中的 const 变量:")
-        # print(f"[DEBUG] [{self._curr_file}] include 后符号表中的 const 变量:")
-        # for name, sym in self.table._scopes[0]._table.items():
-        #     if sym.is_const:
-        #         print(f"  {name} = {sym.const_value}")
-        
-        # Step 2a: 先注册 const 变量（struct 成员数组维度可能依赖它们）
+        # 第一遍：先把所有 const 变量注册（不管顺序）
         for decl in node.decls:
             if isinstance(decl, VarDecl) and decl.is_const:
                 self._register_global_var(decl)
 
-        
-        # 看 Step 2a 处理了多少 const 变量
-        # const_decls = [d for d in node.decls if isinstance(d, VarDecl) and d.is_const]
-        # all_vars = [d for d in node.decls if isinstance(d, VarDecl)]
-        # print(f"[DEBUG] [{self._curr_file}] VarDecl 总数={len(all_vars)}, is_const=True 的数量={len(const_decls)}")
-        # if all_vars:
-        #     # 打印前3个变量看看
-        #     for v in all_vars[:3]:
-        #         print(f"  name={v.name}, is_const={v.is_const}")
-        # # Step 2b: 注册类型和函数签名
-        # for decl in node.decls:
-        #     if isinstance(decl, (StructDef, TypedefDecl)):
-        #         self._register_type(decl)
-        #     elif isinstance(decl, (FuncDecl, FuncDef)):
-        #         self._register_func(decl)
-                
-        # Step 2b-1: 先注册所有 struct/typedef 的名字（空壳，不解析成员）
+        # 第二遍：按顺序处理其余声明和 include
         for decl in node.decls:
-            if isinstance(decl, (StructDef, TypedefDecl)):
-                self._register_type_forward(decl)
-
-        # Step 2b-2: 再填充成员
-        for decl in node.decls:
-            if isinstance(decl, (StructDef, TypedefDecl)):
-                self._register_type(decl)
-
-        # Step 3: 注册其余全局变量
-        for decl in node.decls:
-            if isinstance(decl, VarDecl) and not decl.is_const:
+            if isinstance(decl, IncludeDirective):
+                self._process_include(decl)
+            elif isinstance(decl, VarDecl) and not decl.is_const:
                 self._register_global_var(decl)
-
-        # Step 3.5: 注册函数签名
-        for decl in node.decls:
-            if isinstance(decl, (FuncDecl, FuncDef)):
+            elif isinstance(decl, StructDef):
+                self._register_type_forward(decl)
+                self._register_type(decl)
+            elif isinstance(decl, TypedefDecl):
+                self._register_type_forward(decl)
+                self._register_type(decl)
+            elif isinstance(decl, (FuncDecl, FuncDef)):
                 self._register_func(decl)
-        
-        # Step 4: 分析函数体
+
+        # 第三遍：分析函数体
         for decl in node.decls:
             if isinstance(decl, FuncDef):
                 self._visit_FuncDef(decl, body_only=True)
-                
+    
                 
 
     def _visit_IncludeDirective(self, node: IncludeDirective):
@@ -318,13 +353,26 @@ class GalaxyAnalyzer:
             if existing.kind != SymbolKind.FUNC:
                 self.diag.error(f"'{func_name}' 已被定义为非函数类型", node)
                 return
+            # if existing.gtype != func_type:
+            #     print(f"[REGISTER_FUNC] {func_name}: {func_type}, is_native={is_native}, node_type={type(node).__name__}, file={self._curr_file}")
+            #     self.diag.error(
+            #         f"函数 '{func_name}' 的重声明与原声明类型不一致\n"
+            #         f"  原声明: {existing.gtype} (定义于 {existing.node})\n"
+            #         f"  新声明: {func_type} (定义于 {node})", node)
+            #     return
+            
             if existing.gtype != func_type:
+                print(f"[REGISTER_FUNC] {func_name}")
+                print(f"  原声明: {existing.gtype}, node_type={type(existing.node).__name__}, file={getattr(existing.node, 'file', '?')}, line={getattr(existing.node, 'line', '?')}")
+                print(f"  新声明: {func_type}, node_type={type(node).__name__}, file={self._curr_file}, line={getattr(node, 'line', '?')}")
                 self.diag.error(
                     f"函数 '{func_name}' 的重声明与原声明类型不一致\n"
                     f"  原声明: {existing.gtype}\n"
                     f"  新声明: {func_type}", node)
                 return
+
             if isinstance(node, FuncDef) and existing.defined:
+                print(f"[DEBUG] InitCounters 重复: existing.node={existing.node}, file={getattr(existing.node, 'file', '?')}")
                 self.diag.error(f"函数 '{func_name}' 重复定义", node)
                 return
             if isinstance(node, FuncDef):
@@ -569,6 +617,7 @@ class GalaxyAnalyzer:
         sym = self.table.lookup(node.name)
         if sym is None:
             # 跨文件符号暂时降级为 warning，不阻断分析
+            print(f"[DEBUG] 查找失败: '{node.name}', 当前文件={self._curr_file}, 当前作用域深度={len(self.table._scopes)}")
             self.diag.warning(f"未声明的标识符 '{node.name}'（可能来自 include 文件）", node)
             node.gtype = ERROR_T
             return ERROR_T
@@ -909,7 +958,7 @@ class GalaxyAnalyzer:
         
         if isinstance(node, Identifier):
             sym = self.table.lookup(node.name)
-            #print(f"[DEBUG] eval '{node.name}': found={sym is not None}, is_const={getattr(sym,'is_const',None)}, const_value={getattr(sym,'const_value',None)}")
+            print(f"[DEBUG] eval '{node.name}': found={sym is not None}, is_const={getattr(sym,'is_const',None)}, const_value={getattr(sym,'const_value',None)}")
             if sym and sym.is_const and sym.const_value is not None:
                 return sym.const_value   # 改这里
             return None

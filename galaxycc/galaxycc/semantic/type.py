@@ -245,6 +245,9 @@ def can_assign(dst: GType, src: GType) -> bool:
     # bool 可以接受任何数值
     if dst == BOOL and is_numeric(src):
         return True
+    # handle 类型可隐式转换为 bool（判断非 null）
+    if dst == BOOL and isinstance(src, HandleType):
+        return True
     # # null 可以赋给句柄
     # if isinstance(dst, HandleType) and isinstance(src, NullType):
     #     return True

@@ -15,7 +15,7 @@ GalaxyCC 使用示例
 
 import sys
 from pathlib import Path
-
+import os
 # ── 如果 galaxycc 不在 sys.path，手动添加 ─────────────────────────────────
 sys.path.insert(0, str(Path(__file__).parent))
 
@@ -143,7 +143,14 @@ def demo_batch(scripts_dir: str, grammar_path: str):
     print("示例 2：批量分析")
     print("=" * 60)
 
-    frontend = GalaxyFrontend(grammar_file=grammar_path, search_dirs=[r"D:\galaxyscript\SC2GameData-master\SC2GameData-master\mods\core.sc2mod\base.sc2data"])
+    base = r"D:\galaxyscript\SC2GameData-master\SC2GameData-master\mods"
+    search_dirs = []
+    for root, dirs, files in os.walk(base):
+        if os.path.basename(root) == "base.sc2data":
+            search_dirs.append(root)
+    
+    #frontend = GalaxyFrontend(grammar_file=grammar_path, search_dirs=[r"D:\galaxyscript\SC2GameData-master\SC2GameData-master\mods\core.sc2mod\base.sc2data"])
+    frontend = GalaxyFrontend(grammar_file=grammar_path, search_dirs=search_dirs)
     # frontend.load_natives_common()
     
     # 优先从真实文件加载，找不到再 fallback
@@ -151,13 +158,9 @@ def demo_batch(scripts_dir: str, grammar_path: str):
     if not frontend.load_natives_from_file(natives_path):
         print("[WARN] 未找到 natives.galaxy，使用内置定义（签名可能不准确）")
         frontend.load_natives_common()
-    ai_path = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods\core.sc2mod\base.sc2data\triggerlibs\AI.galaxy"
+    ai_path = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods\core.sc2mod\base.sc2data\triggerlibs\ai.galaxy"
     if not frontend.load_natives_from_file(ai_path):
         print("[WARN] 未找到 AI.galaxy，使用内置定义（签名可能不准确）")
-        frontend.load_natives_common()
-    computer_path = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods\core.sc2mod\base.sc2data\triggerlibs\Computer.galaxy"
-    if not frontend.load_natives_from_file(computer_path):
-        print("[WARN] 未找到 Computer.galaxy，使用内置定义（签名可能不准确）")
         frontend.load_natives_common()
         
     scripts = list(Path(scripts_dir).rglob("*.galaxy"))
