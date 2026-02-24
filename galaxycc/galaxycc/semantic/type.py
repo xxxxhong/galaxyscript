@@ -278,6 +278,8 @@ def resolve_binary_op(op: str, ltype: GType, rtype: GType):
             return FIXED if FIXED in (ltype, rtype) else INT
         if op == '+' and ltype == STRING and rtype == STRING:
             return STRING   # 字符串拼接（Galaxy Script 支持）
+        if op == '+' and ltype == TEXT and rtype == TEXT:
+            return TEXT
         return None
 
     # 移位

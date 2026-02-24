@@ -151,7 +151,15 @@ def demo_batch(scripts_dir: str, grammar_path: str):
     if not frontend.load_natives_from_file(natives_path):
         print("[WARN] 未找到 natives.galaxy，使用内置定义（签名可能不准确）")
         frontend.load_natives_common()
-
+    ai_path = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods\core.sc2mod\base.sc2data\triggerlibs\AI.galaxy"
+    if not frontend.load_natives_from_file(ai_path):
+        print("[WARN] 未找到 AI.galaxy，使用内置定义（签名可能不准确）")
+        frontend.load_natives_common()
+    computer_path = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods\core.sc2mod\base.sc2data\triggerlibs\Computer.galaxy"
+    if not frontend.load_natives_from_file(computer_path):
+        print("[WARN] 未找到 Computer.galaxy，使用内置定义（签名可能不准确）")
+        frontend.load_natives_common()
+        
     scripts = list(Path(scripts_dir).rglob("*.galaxy"))
     # scripts = list(Path(scripts_dir).rglob("*.galaxy"))[600:989]
     print(f"找到 {len(scripts)} 个 .galaxy 文件\n")

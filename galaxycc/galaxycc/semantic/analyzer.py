@@ -155,13 +155,17 @@ class GalaxyAnalyzer:
         if node.path in self._included:
             return
         self._included.add(node.path)
+        saved_file = self._curr_file
         try:
             source = self._file_loader(node.path)
             included_ast = self._parser(source)
             self._curr_file = node.path  # 新增
             self._visit_TranslationUnit(included_ast)
+            self._curr_file = saved_file  # 恢复
         except FileNotFoundError:
             self.diag.warning(f"找不到 include 文件 '{node.path}'", node)
+        finally:
+            self._curr_file = saved_file
     
     def _register_type_forward(self, node):
         if isinstance(node, StructDef):
@@ -597,6 +601,8 @@ class GalaxyAnalyzer:
         rtype = self._visit(node.right)
         result = resolve_binary_op(node.op, ltype, rtype)
         if result is None:
+            if ltype == TEXT or rtype == TEXT:
+                print(f"[DEBUG] text+text: op={node.op}, left={node.left}, ltype={ltype}, right={node.right}, rtype={rtype}")
             self.diag.error(
                 f"运算符 '{node.op}' 不支持操作数类型 '{ltype}' 和 '{rtype}'", node)
             result = ERROR_T
@@ -613,6 +619,7 @@ class GalaxyAnalyzer:
 
         if op in ('+', '-'):
             if not is_arithmetic(operand_type):
+                print(f"[DEBUG] unary '{op}' on '{operand_type}': operand type={type(node.operand).__name__}, operand={node.operand}")
                 self.diag.error(
                     f"一元运算符 '{op}' 要求数值类型，实际为 '{operand_type}'", node.operand)
                 node.gtype = ERROR_T
@@ -902,7 +909,7 @@ class GalaxyAnalyzer:
         
         if isinstance(node, Identifier):
             sym = self.table.lookup(node.name)
-            print(f"[DEBUG] eval '{node.name}': found={sym is not None}, is_const={getattr(sym,'is_const',None)}, const_value={getattr(sym,'const_value',None)}")
+            #print(f"[DEBUG] eval '{node.name}': found={sym is not None}, is_const={getattr(sym,'is_const',None)}, const_value={getattr(sym,'const_value',None)}")
             if sym and sym.is_const and sym.const_value is not None:
                 return sym.const_value   # 改这里
             return None

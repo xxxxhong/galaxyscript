@@ -50,8 +50,8 @@ unary_expression: postfix_expression
 // 	| "~"
 // 	| "!"
 
-unary_operator: ADD_OP 	//"+"
-	| SUB_OP			//"-"
+unary_operator: SUB_OP			//"-"
+	//ADD_OP 	//"+"
 	| LOGICAL_NOT	// logical not
 	| BITWISE_NOT	// bitwise not, not used in GalaxyScript but included for completeness
 
