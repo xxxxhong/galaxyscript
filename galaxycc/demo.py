@@ -143,8 +143,8 @@ def demo_batch(scripts_dir: str, grammar_path: str):
     print("示例 2：批量分析")
     print("=" * 60)
 
-    # base = r"D:\galaxyscript\SC2GameData-master\SC2GameData-master\mods"
-    base = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods"
+    base = r"D:\galaxyscript\SC2GameData-master\SC2GameData-master\mods"
+    # base = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods"
     search_dirs = []
     for root, dirs, files in os.walk(base):
         if os.path.basename(root) == "base.sc2data":
