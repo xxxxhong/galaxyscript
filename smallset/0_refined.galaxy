@@ -1,0 +1,328 @@
+//==================================================================================================
+include "TriggerLibs/NativeLib"
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+void InitLibs () {
+    libNtve_InitLib();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Global Variables
+//--------------------------------------------------------------------------------------------------
+bool gv_MainBaseUnderAttack;    // Flags when player attacks main base
+bool gv_DistractionActive;      // Flags when distraction attack is active
+bool gv_EnemyForcesDiverted;    // Flags when enemy forces are diverted to distraction
+int gv_AttackWaveCounter;       // Tracks attack wave numbers
+
+void InitGlobals () {
+    gv_MainBaseUnderAttack = false;
+    gv_DistractionActive = false;
+    gv_EnemyForcesDiverted = false;
+    gv_AttackWaveCounter = 0;
+}
+
+//--------------------------------------------------------------------------------------------------
+// Global Function Declarations
+//--------------------------------------------------------------------------------------------------
+void gf_SpawnInitialForces ();
+void gf_SpawnPlayerForces ();
+void gf_SpawnEnemyForces ();
+void gf_EnemyDefendMainBase ();
+void gf_EnemyRespondToDistraction ();
+void gf_EnemyLaunchCounterAttack ();
+
+//--------------------------------------------------------------------------------------------------
+// Trigger Variables
+//--------------------------------------------------------------------------------------------------
+trigger gt_MapInitialization;
+trigger gt_PlayerDistractionTrigger;
+trigger gt_PlayerMainAttackTrigger;
+trigger gt_EnemyBaseDefense;
+trigger gt_EnemyDistractionResponse;
+trigger gt_EnemyCounterAttack;
+trigger gt_ResetDistraction;
+
+//--------------------------------------------------------------------------------------------------
+// Global Functions
+//--------------------------------------------------------------------------------------------------
+
+// Spawn all initial forces on the map
+void gf_SpawnInitialForces () {
+    // Player 1 (Human/AI) starting position at bottom-left of map
+    // Based on terrain analysis, coordinates near (30, 10) provide good starting area
+    gf_SpawnPlayerForces();
+    
+    // Player 2 (Enemy AI) main base at top-right, distraction target at top-left
+    // Based on terrain ramps and accessible areas
+    gf_SpawnEnemyForces();
+}
+
+// Spawn player forces at starting position
+void gf_SpawnPlayerForces () {
+    // Player main base with economy and defensive structures
+    libNtve_gf_CreateUnitsWithDefaultFacing(1, "CommandCenter", 0, 1, Point(24.0, 16.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(3, "SupplyDepot", 0, 1, Point(22.0, 14.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(2, "Barracks", 0, 1, Point(26.0, 14.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(1, "Refinery", 0, 1, Point(20.0, 18.0));
+    
+    // Initial army composition - split into distraction and main attack forces
+    // Distraction force (smaller, mobile)
+    libNtve_gf_CreateUnitsWithDefaultFacing(6, "Marine", 0, 1, Point(24.0, 12.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(2, "Reaper", 0, 1, Point(24.0, 12.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(1, "Medivac", 0, 1, Point(24.0, 12.0));
+    
+    // Main attack force (larger, stronger)
+    libNtve_gf_CreateUnitsWithDefaultFacing(8, "Marine", 0, 1, Point(28.0, 12.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(4, "Marauder", 0, 1, Point(28.0, 12.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(2, "SiegeTank", 0, 1, Point(28.0, 12.0));
+}
+
+// Spawn enemy forces at strategic positions
+void gf_SpawnEnemyForces () {
+    // Enemy main base at top-right (primary objective)
+    libNtve_gf_CreateUnitsWithDefaultFacing(1, "Nexus", 0, 2, Point(70.0, 70.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(3, "Pylon", 0, 2, Point(68.0, 72.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(2, "Gateway", 0, 2, Point(72.0, 68.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(1, "Assimilator", 0, 2, Point(74.0, 72.0));
+    
+    // Enemy distraction base at top-left (secondary target)
+    libNtve_gf_CreateUnitsWithDefaultFacing(1, "Nexus", 0, 2, Point(24.0, 70.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(2, "Pylon", 0, 2, Point(22.0, 72.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(1, "Gateway", 0, 2, Point(26.0, 68.0));
+    
+    // Initial enemy defensive forces split between two bases
+    // Main base defenders (larger force)
+    libNtve_gf_CreateUnitsWithDefaultFacing(6, "Zealot", 0, 2, Point(70.0, 68.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(4, "Stalker", 0, 2, Point(70.0, 68.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(2, "Sentry", 0, 2, Point(70.0, 68.0));
+    
+    // Distraction base defenders (smaller force)
+    libNtve_gf_CreateUnitsWithDefaultFacing(4, "Zealot", 0, 2, Point(24.0, 68.0));
+    libNtve_gf_CreateUnitsWithDefaultFacing(2, "Stalker", 0, 2, Point(24.0, 68.0));
+}
+
+// Enemy AI: Defend main base when under direct attack
+void gf_EnemyDefendMainBase () {
+    UnitGroupIssueOrder(
+        UnitGroup(null, 2, RegionEntireMap(), 
+            UnitFilter(0, 0, (1 << c_targetFilterMissile), 
+                (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 
+            0), 
+        OrderTargetingPoint(AbilityCommand("attack", 0), Point(70.0, 70.0)), 
+        c_orderQueueReplace
+    );
+}
+
+// Enemy AI: Respond to distraction attack by diverting forces
+void gf_EnemyRespondToDistraction () {
+    // Only divert forces if distraction is active and main base isn't under attack
+    if (gv_DistractionActive && !gv_MainBaseUnderAttack) {
+        gv_EnemyForcesDiverted = true;
+        
+        // Order 70% of main base defenders to distraction base
+        UnitGroupIssueOrder(UnitGroup(null, 2, 
+            RegionCircle(Point(70.0, 70.0), 15.0), 
+            UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), 
+            OrderTargetingPoint(AbilityCommand("attack", 0), Point(24.0, 70.0)), 
+            c_orderQueueReplace
+        );
+    }
+}
+
+// Enemy AI: Launch counter-attack after dealing with distraction
+void gf_EnemyLaunchCounterAttack () {
+    if (!gv_DistractionActive && gv_EnemyForcesDiverted) {
+        // Return forces to main base first      
+        UnitGroupIssueOrder(UnitGroup(null, 2, RegionEntireMap(), 
+            UnitFilter(0, 0, (1 << c_targetFilterMissile), 
+                (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 
+            0), 
+            OrderTargetingPoint(AbilityCommand("move", 0), Point(70.0, 70.0)), 
+            c_orderQueueReplace
+        );
+        
+        // Launch counter-attack wave
+        Wait(10.0, c_timeGame);
+        
+        UnitGroupIssueOrder(UnitGroup(null, 2, RegionEntireMap(), 
+            UnitFilter(0, 0, (1 << c_targetFilterMissile), 
+                (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 
+            0), 
+            OrderTargetingPoint(AbilityCommand("attack", 0), Point(24.0, 16.0)), 
+            c_orderQueueReplace
+        );
+        
+        gv_AttackWaveCounter += 1;
+    }
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Map Initialization
+//--------------------------------------------------------------------------------------------------
+bool gt_MapInitialization_Func (bool testConds, bool runActions) {
+    if (!runActions) {
+        return true;
+    }
+
+    // Disable fog of war for testing
+    VisEnable(c_visTypeFog, false);
+    VisEnable(c_visTypeMask, false);
+    
+    // Initialize global variables
+    InitGlobals();
+    
+    // Spawn initial forces
+    gf_SpawnInitialForces();
+       
+    return true;
+}
+
+void gt_MapInitialization_Init () {
+    gt_MapInitialization = TriggerCreate("gt_MapInitialization_Func");
+    TriggerAddEventMapInit(gt_MapInitialization);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Enemy Base Defense (Main Base Under Attack)
+//--------------------------------------------------------------------------------------------------
+bool gt_EnemyBaseDefense_Func (bool testConds, bool runActions) {
+    // Conditions: Player units approach enemy main base
+    if (testConds) {
+        if (!(UnitGroupCount(UnitGroup(null, 1, 
+            RegionCircle(Point(70.0, 70.0), 12.0), 
+            UnitFilter(0, 0, (1 << c_targetFilterMissile), 
+                (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 
+            0), c_unitCountAlive) >= 3)) {
+            return false;
+        }
+    }
+
+    if (!runActions) {
+        return true;
+    }
+
+    gv_MainBaseUnderAttack = true;
+    gf_EnemyDefendMainBase();
+    return true;
+}
+
+void gt_EnemyBaseDefense_Init () {
+    gt_EnemyBaseDefense = TriggerCreate("gt_EnemyBaseDefense_Func");
+    TriggerAddEventUnitDied(gt_EnemyBaseDefense, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Enemy Distraction Response
+//--------------------------------------------------------------------------------------------------
+bool gt_EnemyDistractionResponse_Func (bool testConds, bool runActions) {
+    // Conditions: Player units attack enemy secondary base
+    if (testConds) {
+        if (!(UnitGroupCount(UnitGroup(null, 1, 
+            RegionCircle(Point(24.0, 70.0), 10.0), 
+            UnitFilter(0, 0, (1 << c_targetFilterMissile), 
+                (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 
+            0), c_unitCountAlive) >= 3)) {
+            return false;
+        }
+    }
+
+    if (!runActions) {
+        return true;
+    }
+
+    gf_EnemyRespondToDistraction();
+    return true;
+}
+
+void gt_EnemyDistractionResponse_Init () {
+    gt_EnemyDistractionResponse = TriggerCreate("gt_EnemyDistractionResponse_Func");
+    TriggerAddEventUnitDied(gt_EnemyDistractionResponse, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Enemy Counter-Attack
+//--------------------------------------------------------------------------------------------------
+bool gt_EnemyCounterAttack_Func (bool testConds, bool runActions) {
+    // Conditions: Distraction force eliminated or retreated
+    if (testConds) {
+        if (!(UnitGroupCount(UnitGroup(null, 1, 
+            RegionCircle(Point(24.0, 70.0), 15.0), 
+            UnitFilter(0, 0, (1 << c_targetFilterMissile), 
+                (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 
+            0), c_unitCountAlive) <= 2)) {
+            return false;
+        }
+    }
+
+    if (!runActions) {
+        return true;
+    }
+
+    gf_EnemyLaunchCounterAttack();
+    return true;
+}
+
+void gt_EnemyCounterAttack_Init () {
+    gt_EnemyCounterAttack = TriggerCreate("gt_EnemyCounterAttack_Func");
+
+    // 当任意单位死亡时检查是否满足反击条件
+    TriggerAddEventUnitDied(gt_EnemyCounterAttack, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Reset Distraction Flag
+//--------------------------------------------------------------------------------------------------
+bool gt_ResetDistraction_Func (bool testConds, bool runActions) {
+    // Conditions: Distraction force eliminated
+    if (testConds) {
+        if (!(UnitGroupCount(UnitGroup(null, 1, 
+            RegionEntireMap(), 
+            UnitFilter(0, 0, (1 << c_targetFilterMissile), 
+                (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 
+            0), c_unitCountAlive) <= 5)) {
+            return false;
+        }
+    }
+
+    if (!runActions) {
+        return true;
+    }
+
+    gv_DistractionActive = false;
+    
+    // After 30 seconds, reset enemy diversion flag
+    Wait(30.0, c_timeGame);
+    gv_EnemyForcesDiverted = false;
+    
+    return true;
+}
+
+void gt_ResetDistraction_Init () {
+    gt_ResetDistraction = TriggerCreate("gt_ResetDistraction_Func");
+
+    // 当任意单位死亡时检查
+    TriggerAddEventUnitDied(gt_ResetDistraction, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger Initialization
+//--------------------------------------------------------------------------------------------------
+void InitTriggers () {
+    gt_MapInitialization_Init();
+    gt_EnemyBaseDefense_Init();
+    gt_EnemyDistractionResponse_Init();
+    gt_EnemyCounterAttack_Init();
+    gt_ResetDistraction_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Map Initialization
+//--------------------------------------------------------------------------------------------------
+void InitMap () {
+    InitLibs();
+    InitGlobals();
+    InitTriggers();
+}
+//==================================================================================================
