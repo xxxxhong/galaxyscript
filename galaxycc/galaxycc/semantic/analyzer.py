@@ -95,6 +95,8 @@ class GalaxyAnalyzer:
         分析整个翻译单元，返回诊断信息袋。
         分析后每个 AST 节点的 .gtype 会被填写。
         """
+        self._const_collected = set()
+        self._collect_consts_recursive(root)  # 预收集所有 const 变量，确保它们在分析 struct 成员时可用
         self._curr_file = source_name
         self._visit(root)
         return self.diag
@@ -263,17 +265,27 @@ class GalaxyAnalyzer:
     #     for decl in node.decls:
     #         if isinstance(decl, FuncDef):
     #             self._visit_FuncDef(decl, body_only=True)
-    def _visit_TranslationUnit(self, node: TranslationUnit):
-        # 第一遍：先把所有 const 变量注册（不管顺序）
+    def _collect_consts_recursive(self, node: TranslationUnit):
+        """递归预收集所有 const 变量，包括 include 的文件"""
         for decl in node.decls:
-            if isinstance(decl, VarDecl) and decl.is_const:
+            if isinstance(decl, IncludeDirective):
+                if decl.path not in self._const_collected:
+                    self._const_collected.add(decl.path)
+                    try:
+                        source = self._file_loader(decl.path)
+                        included_ast = self._parser(source)
+                        self._collect_consts_recursive(included_ast)
+                    except FileNotFoundError:
+                        pass
+            elif isinstance(decl, VarDecl) and decl.is_const:
                 self._register_global_var(decl)
-
-        # 第二遍：按顺序处理其余声明和 include
+            
+    def _visit_TranslationUnit(self, node: TranslationUnit):
+        # 按顺序处理所有声明和 include
         for decl in node.decls:
             if isinstance(decl, IncludeDirective):
                 self._process_include(decl)
-            elif isinstance(decl, VarDecl) and not decl.is_const:
+            elif isinstance(decl, VarDecl):
                 self._register_global_var(decl)
             elif isinstance(decl, StructDef):
                 self._register_type_forward(decl)
@@ -284,11 +296,10 @@ class GalaxyAnalyzer:
             elif isinstance(decl, (FuncDecl, FuncDef)):
                 self._register_func(decl)
 
-        # 第三遍：分析函数体
+        # 分析函数体
         for decl in node.decls:
             if isinstance(decl, FuncDef):
                 self._visit_FuncDef(decl, body_only=True)
-    
                 
 
     def _visit_IncludeDirective(self, node: IncludeDirective):
@@ -397,6 +408,10 @@ class GalaxyAnalyzer:
     #         return
     
     def _register_global_var(self, node: VarDecl):
+        # 已存在则跳过（预收集阶段可能已注册）
+        existing = self.table.lookup_local(node.name)
+        if existing is not None:
+            return
         gtype = self._resolve_type_spec(node.type_spec)
         sym = Symbol(node.name, gtype, SymbolKind.VAR,
                     is_static=node.is_static,
@@ -613,12 +628,23 @@ class GalaxyAnalyzer:
     #     node.symbol = sym
     #     return sym.gtype
     
+    def _is_stdlib_file(self, path: str) -> bool:
+        """判断是否是标准库文件"""
+        stdlib_prefixes = [
+            'TriggerLibs/',
+            'Lib',  # LibCOMU, Lib92258800_h 等
+        ]
+        return any(path.startswith(p) for p in stdlib_prefixes)
+    
     def _visit_Identifier(self, node: Identifier) -> GType:
         sym = self.table.lookup(node.name)
         if sym is None:
             # 跨文件符号暂时降级为 warning，不阻断分析
-            print(f"[DEBUG] 查找失败: '{node.name}', 当前文件={self._curr_file}, 当前作用域深度={len(self.table._scopes)}")
-            self.diag.warning(f"未声明的标识符 '{node.name}'（可能来自 include 文件）", node)
+            # print(f"[DEBUG] 查找失败: '{node.name}', 当前文件={self._curr_file}, 当前作用域深度={len(self.table._scopes)}")
+             # 只对用户文件报 warning，标准库文件的缺失符号忽略
+            if not self._is_stdlib_file(self._curr_file):
+                self.diag.warning(f"未声明的标识符 '{node.name}'（可能来自 include 文件）", node)
+            # self.diag.warning(f"未声明的标识符 '{node.name}'（可能来自 include 文件）", node)
             node.gtype = ERROR_T
             return ERROR_T
         node.gtype  = sym.gtype
@@ -937,7 +963,9 @@ class GalaxyAnalyzer:
                     # 尝试静态求值数组大小
                     size = self._eval_const_int(dim_expr)
                     if size is None:
-                        self.diag.error("数组大小必须是编译期常量整数表达式", dim_expr)
+                        # 改为 warning，不阻断分析
+                        self.diag.warning("数组大小无法静态求值，将忽略大小信息", dim_expr)
+                        #self.diag.error("数组大小必须是编译期常量整数表达式", dim_expr)
                 result = ArrayType(result, size)
             return result
 

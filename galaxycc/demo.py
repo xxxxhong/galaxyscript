@@ -143,7 +143,8 @@ def demo_batch(scripts_dir: str, grammar_path: str):
     print("示例 2：批量分析")
     print("=" * 60)
 
-    base = r"D:\galaxyscript\SC2GameData-master\SC2GameData-master\mods"
+    # base = r"D:\galaxyscript\SC2GameData-master\SC2GameData-master\mods"
+    base = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods"
     search_dirs = []
     for root, dirs, files in os.walk(base):
         if os.path.basename(root) == "base.sc2data":
@@ -158,10 +159,10 @@ def demo_batch(scripts_dir: str, grammar_path: str):
     if not frontend.load_natives_from_file(natives_path):
         print("[WARN] 未找到 natives.galaxy，使用内置定义（签名可能不准确）")
         frontend.load_natives_common()
-    ai_path = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods\core.sc2mod\base.sc2data\triggerlibs\ai.galaxy"
-    if not frontend.load_natives_from_file(ai_path):
-        print("[WARN] 未找到 AI.galaxy，使用内置定义（签名可能不准确）")
-        frontend.load_natives_common()
+    # ai_path = r"D:\galaxyscript\cascviewer_galaxy_scripts\mods\core.sc2mod\base.sc2data\triggerlibs\ai.galaxy"
+    # if not frontend.load_natives_from_file(ai_path):
+    #     print("[WARN] 未找到 AI.galaxy，使用内置定义（签名可能不准确）")
+    #     frontend.load_natives_common()
         
     scripts = list(Path(scripts_dir).rglob("*.galaxy"))
     # scripts = list(Path(scripts_dir).rglob("*.galaxy"))[600:989]
